@@ -69,7 +69,7 @@ const UseCases: React.FC = () => {
       ]
     },
     {
-      icon: "/lovable-uploads/6a147bac-908d-4dec-8bae-06d9444c8cad.png", // House icon
+      icon: "/lovable-uploads/9e5500f1-50bc-4b10-b37b-3d2709a57ea0.png", // New homeowner icon
       title: "Homeowners",
       description: "Keep appliance manuals, warranties, and service history accessible.",
       benefits: [

@@ -38,14 +38,6 @@ const Hero: React.FC = () => {
             </a>
           </div>
         </div>
-        
-        <div className="mt-16 max-w-4xl mx-auto">
-          <ArtworkImage 
-            src="/lovable-uploads/17db235b-2998-40fd-afe4-eb2e90b66bd9.png"
-            alt="Industrial worker scanning QR code"
-            className="w-full aspect-[16/9] shadow-2xl animate-float"
-          />
-        </div>
       </div>
     </section>
   );

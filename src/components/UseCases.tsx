@@ -1,9 +1,10 @@
 
 import React from 'react';
-import { Briefcase, Home, Factory, Wrench, Building, LandPlot, Check } from 'lucide-react';
+import { Check } from 'lucide-react';
+import ArtworkImage from './ArtworkImage';
 
 interface UseCaseProps {
-  icon: React.ReactNode;
+  icon: string;
   title: string;
   description: string;
   benefits: string[];
@@ -12,11 +13,16 @@ interface UseCaseProps {
 const UseCase: React.FC<UseCaseProps> = ({ icon, title, description, benefits }) => {
   return (
     <div className="p-6 rounded-2xl bg-white border border-border hover:shadow-lg transition-all duration-300">
-      <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
-        {icon}
+      <div className="w-16 h-16 mb-4 mx-auto">
+        <ArtworkImage 
+          src={icon}
+          alt={title}
+          iconMode={true}
+          className="w-full h-full"
+        />
       </div>
-      <h3 className="text-lg font-medium mb-2">{title}</h3>
-      <p className="text-sm text-muted-foreground mb-4">{description}</p>
+      <h3 className="text-lg font-medium mb-2 text-center">{title}</h3>
+      <p className="text-sm text-muted-foreground mb-4 text-center">{description}</p>
       
       <ul className="space-y-2">
         {benefits.map((benefit, index) => (
@@ -33,7 +39,7 @@ const UseCase: React.FC<UseCaseProps> = ({ icon, title, description, benefits })
 const UseCases: React.FC = () => {
   const useCases = [
     {
-      icon: <Factory className="h-6 w-6 text-primary" />,
+      icon: "/lovable-uploads/054c0ab9-924f-4a90-b5b4-41250e17ad26.png", // Factory icon
       title: "Manufacturers",
       description: "Track service history for your custom products with ease.",
       benefits: [
@@ -43,7 +49,7 @@ const UseCases: React.FC = () => {
       ]
     },
     {
-      icon: <Briefcase className="h-6 w-6 text-primary" />,
+      icon: "/lovable-uploads/9ba2c5c3-0920-410e-abaa-16e8d0f204eb.png", // Buildings/Bench icon
       title: "Contractors",
       description: "Simplify post-installation support with smart tagging.",
       benefits: [
@@ -53,7 +59,7 @@ const UseCases: React.FC = () => {
       ]
     },
     {
-      icon: <Wrench className="h-6 w-6 text-primary" />,
+      icon: "/lovable-uploads/07fca938-7aed-4923-b293-6606867840ce.png", // Washing machine icon
       title: "Service Teams",
       description: "Provide fast, reliable support with instant access.",
       benefits: [
@@ -63,7 +69,7 @@ const UseCases: React.FC = () => {
       ]
     },
     {
-      icon: <Home className="h-6 w-6 text-primary" />,
+      icon: "/lovable-uploads/6a147bac-908d-4dec-8bae-06d9444c8cad.png", // Industrial complex icon
       title: "Homeowners",
       description: "Keep appliance manuals, warranties, and service history accessible.",
       benefits: [
@@ -73,7 +79,7 @@ const UseCases: React.FC = () => {
       ]
     },
     {
-      icon: <Building className="h-6 w-6 text-primary" />,
+      icon: "/lovable-uploads/054c0ab9-924f-4a90-b5b4-41250e17ad26.png", // Factory icon (reused)
       title: "Rent & Lease",
       description: "Track maintenance for rental properties and equipment.",
       benefits: [
@@ -83,7 +89,7 @@ const UseCases: React.FC = () => {
       ]
     },
     {
-      icon: <LandPlot className="h-6 w-6 text-primary" />,
+      icon: "/lovable-uploads/1dc7fcb1-0524-4a33-9c30-0eb497688ea0.png", // Coffee cup icon
       title: "Public Asset Management",
       description: "Enable issue reporting for public assets like parks and buildings.",
       benefits: [

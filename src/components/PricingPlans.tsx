@@ -59,7 +59,7 @@ const PricingCard: React.FC<PricingCardProps> = ({
         <h3 className="text-xl font-medium">{title}</h3>
         <div className="mt-4 flex items-baseline">
           <span className="text-3xl font-bold">{price}</span>
-          <span className="text-sm text-muted-foreground ml-1">per tag</span>
+          <span className="text-sm text-muted-foreground ml-1">{price !== "$0" ? "¢ per tag/month" : " per tag"}</span>
         </div>
         
         <p className="mt-2 text-sm text-muted-foreground">{description}</p>
@@ -108,7 +108,7 @@ const PricingPlans: React.FC = () => {
       },
       {
         title: "Starter",
-        price: "$10",
+        price: "10",
         description: "For small businesses or contractors",
         limit: "Up to 1000 active tags",
         recommended: true,
@@ -123,7 +123,7 @@ const PricingPlans: React.FC = () => {
       },
       {
         title: "Scale-Up",
-        price: "$3",
+        price: "3",
         description: "For mid-sized manufacturers",
         limit: "Up to 10,000 active tags",
         features: [
@@ -138,7 +138,7 @@ const PricingPlans: React.FC = () => {
       },
       {
         title: "Enterprise",
-        price: "$1",
+        price: "1",
         description: "For high-volume manufacturers",
         limit: "10,000+ active tags",
         features: [

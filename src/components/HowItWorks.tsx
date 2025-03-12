@@ -1,6 +1,7 @@
 
 import React from 'react';
-import { QrCode, FileText, Share2 } from 'lucide-react';
+import { QrCode, FileText, Share2, Nfc } from 'lucide-react';
+import ArtworkImage from './ArtworkImage';
 
 interface StepProps {
   number: number;
@@ -55,9 +56,9 @@ const HowItWorks: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-4 max-w-5xl mx-auto">
           <Step 
             number={1}
-            icon={<QrCode className="h-8 w-8 text-primary" />}
+            icon={<div className="flex items-center gap-1"><QrCode className="h-6 w-6 text-primary" /><Nfc className="h-6 w-6 text-primary" /></div>}
             title="Tag It"
-            description="Use QR codes (visible) or RFID (invisible) to label your products for easy identification."
+            description="Use QR codes (visible) or NFC/RFID (invisible) to label your products for easy identification."
           />
           
           <Step 
@@ -71,38 +72,67 @@ const HowItWorks: React.FC = () => {
             number={3}
             icon={<Share2 className="h-8 w-8 text-primary" />}
             title="Share It"
-            description="Customers & technicians can scan a QR code or RFID to access info or request service."
+            description="Customers & technicians can scan a QR code or tap an NFC tag to access info or request service."
           />
         </div>
         
-        <div className="mt-20 max-w-3xl mx-auto">
-          <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-primary/5 to-secondary/5 p-1">
-            <div className="rounded-xl bg-white p-8 shadow-sm">
-              <div className="flex flex-col md:flex-row items-center">
-                <div className="mb-8 md:mb-0 md:mr-8 w-full md:w-auto">
-                  <div className="relative aspect-square w-full max-w-[280px] mx-auto">
-                    <div className="w-full h-full rounded-2xl overflow-hidden bg-muted/30 flex items-center justify-center p-4">
-                      <QrCode className="w-3/4 h-3/4 text-primary" strokeWidth={1} />
-                    </div>
-                    <div className="absolute -bottom-2 -right-2 w-16 h-16 bg-white rounded-xl shadow-md flex items-center justify-center">
-                      <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center">
-                        <Share2 className="h-6 w-6 text-primary" />
+        <div className="mt-20 max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-primary/5 to-secondary/5 p-1">
+              <div className="rounded-xl bg-white p-8 shadow-sm">
+                <div className="flex flex-col items-center">
+                  <div className="mb-6 w-full">
+                    <div className="relative aspect-square w-full max-w-[280px] mx-auto">
+                      <div className="w-full h-full rounded-2xl overflow-hidden bg-muted/30 flex items-center justify-center p-4">
+                        <QrCode className="w-3/4 h-3/4 text-primary" strokeWidth={1} />
+                      </div>
+                      <div className="absolute -bottom-2 -right-2 w-16 h-16 bg-white rounded-xl shadow-md flex items-center justify-center">
+                        <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center">
+                          <Share2 className="h-6 w-6 text-primary" />
+                        </div>
                       </div>
                     </div>
                   </div>
+                  
+                  <div className="w-full text-center">
+                    <h3 className="text-2xl font-medium mb-4">QR Code Tracking</h3>
+                    <p className="text-muted-foreground mb-6">
+                      Scan this demo QR code to see how Hoolala works in real time. No download required - just point your camera and experience the simplicity.
+                    </p>
+                    <a
+                      href="#"
+                      className="inline-flex items-center justify-center px-6 py-3 rounded-full bg-primary text-white hover:bg-primary/90 transition-all"
+                    >
+                      Try QR Demo
+                    </a>
+                  </div>
                 </div>
-                
-                <div className="w-full">
-                  <h3 className="text-2xl font-medium mb-4">Experience It Yourself</h3>
-                  <p className="text-muted-foreground mb-6">
-                    Scan this demo QR code to see how Hoolala works in real time. No download required - just point your camera and experience the simplicity.
-                  </p>
-                  <a
-                    href="#"
-                    className="inline-flex items-center justify-center px-6 py-3 rounded-full bg-primary text-white hover:bg-primary/90 transition-all"
-                  >
-                    Try Demo
-                  </a>
+              </div>
+            </div>
+            
+            <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-primary/5 to-secondary/5 p-1">
+              <div className="rounded-xl bg-white p-8 shadow-sm">
+                <div className="flex flex-col items-center">
+                  <div className="mb-6 w-full">
+                    <ArtworkImage 
+                      src="/lovable-uploads/17db235b-2998-40fd-afe4-eb2e90b66bd9.png"
+                      alt="Water heater with NFC tag"
+                      className="w-full max-w-[280px] aspect-square mx-auto"
+                    />
+                  </div>
+                  
+                  <div className="w-full text-center">
+                    <h3 className="text-2xl font-medium mb-4">NFC/RFID Tracking</h3>
+                    <p className="text-muted-foreground mb-6">
+                      Simply tap your phone on equipment with invisible NFC/RFID tags to instantly access service history, documentation, and support options.
+                    </p>
+                    <a
+                      href="#"
+                      className="inline-flex items-center justify-center px-6 py-3 rounded-full bg-primary text-white hover:bg-primary/90 transition-all"
+                    >
+                      Learn About NFC
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>

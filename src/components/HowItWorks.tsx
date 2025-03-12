@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { QrCode, FileText, Share2, Nfc } from 'lucide-react';
 import ArtworkImage from './ArtworkImage';
@@ -13,7 +12,6 @@ interface StepProps {
 const Step: React.FC<StepProps> = ({ number, icon, title, description }) => {
   return (
     <div className="relative">
-      {/* Line connector (except the last item) */}
       {number < 3 && (
         <div className="absolute top-16 left-1/2 w-full h-0.5 bg-gradient-to-r from-transparent via-primary/20 to-transparent md:block hidden"></div>
       )}
@@ -82,22 +80,17 @@ const HowItWorks: React.FC = () => {
               <div className="rounded-xl bg-white p-8 shadow-sm">
                 <div className="flex flex-col items-center">
                   <div className="mb-6 w-full">
-                    <div className="relative aspect-square w-full max-w-[280px] mx-auto">
-                      <div className="w-full h-full rounded-2xl overflow-hidden bg-muted/30 flex items-center justify-center p-4">
-                        <QrCode className="w-3/4 h-3/4 text-primary" strokeWidth={1} />
-                      </div>
-                      <div className="absolute -bottom-2 -right-2 w-16 h-16 bg-white rounded-xl shadow-md flex items-center justify-center">
-                        <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center">
-                          <Share2 className="h-6 w-6 text-primary" />
-                        </div>
-                      </div>
-                    </div>
+                    <ArtworkImage 
+                      src="/lovable-uploads/1cf5264e-3223-446b-86b4-35fd700b25ea.png"
+                      alt="Water heater with QR code"
+                      className="w-full max-w-[280px] aspect-square mx-auto rounded-xl"
+                    />
                   </div>
                   
                   <div className="w-full text-center">
                     <h3 className="text-2xl font-medium mb-4">QR Code Tracking</h3>
                     <p className="text-muted-foreground mb-6">
-                      Scan this demo QR code to see how Hoolala works in real time. No download required - just point your camera and experience the simplicity.
+                      Scan QR codes on equipment like water heaters to instantly access service history, documentation, and support options. No app download required.
                     </p>
                     <a
                       href="#"

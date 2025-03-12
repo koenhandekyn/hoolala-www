@@ -59,7 +59,7 @@ const UseCases: React.FC = () => {
       ]
     },
     {
-      icon: "/lovable-uploads/07fca938-7aed-4923-b293-6606867840ce.png", // Washing machine icon
+      icon: "/lovable-uploads/1cf5264e-3223-446b-86b4-35fd700b25ea.png", // Tools/service icon
       title: "Service Teams",
       description: "Provide fast, reliable support with instant access.",
       benefits: [
@@ -69,7 +69,7 @@ const UseCases: React.FC = () => {
       ]
     },
     {
-      icon: "/lovable-uploads/6a147bac-908d-4dec-8bae-06d9444c8cad.png", // Industrial complex icon
+      icon: "/lovable-uploads/6a147bac-908d-4dec-8bae-06d9444c8cad.png", // House icon
       title: "Homeowners",
       description: "Keep appliance manuals, warranties, and service history accessible.",
       benefits: [
@@ -79,7 +79,7 @@ const UseCases: React.FC = () => {
       ]
     },
     {
-      icon: "/lovable-uploads/054c0ab9-924f-4a90-b5b4-41250e17ad26.png", // Factory icon (reused)
+      icon: "/lovable-uploads/07fca938-7aed-4923-b293-6606867840ce.png", // Washing machine icon
       title: "Rent & Lease",
       description: "Track maintenance for rental properties and equipment.",
       benefits: [
@@ -89,7 +89,7 @@ const UseCases: React.FC = () => {
       ]
     },
     {
-      icon: "/lovable-uploads/1dc7fcb1-0524-4a33-9c30-0eb497688ea0.png", // Coffee cup icon
+      icon: "/lovable-uploads/1dc7fcb1-0524-4a33-9c30-0eb497688ea0.png", // Coffee cup/public space icon
       title: "Public Asset Management",
       description: "Enable issue reporting for public assets like parks and buildings.",
       benefits: [

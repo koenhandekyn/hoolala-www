@@ -1,4 +1,3 @@
-
 import React from 'react';
 import ArtworkImage from '@/components/ArtworkImage';
 import { Card, CardContent } from '@/components/ui/card';
@@ -191,28 +190,26 @@ const Summary: React.FC = () => {
         </div>
       </div>
 
-      <style>
-        {`
-          @media print {
-            @page {
-              size: A4;
-              margin: 0;
-            }
-            body {
-              margin: 0;
-              padding: 0;
-              width: 210mm;
-              height: 297mm;
-              -webkit-print-color-adjust: exact;
-              print-color-adjust: exact;
-            }
-            .container {
-              padding: 12mm !important;
-              max-width: 210mm !important;
-            }
+      <style dangerouslySetInnerHTML={{ __html: `
+        @media print {
+          @page {
+            size: A4;
+            margin: 0;
           }
-        `}
-      </style>
+          body {
+            margin: 0;
+            padding: 0;
+            width: 210mm;
+            height: 297mm;
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
+          }
+          .container {
+            padding: 12mm !important;
+            max-width: 210mm !important;
+          }
+        }
+      `}} />
     </div>
   );
 };

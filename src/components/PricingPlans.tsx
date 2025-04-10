@@ -27,6 +27,7 @@ interface PricingCardProps {
   limit: string;
   recommended?: boolean;
   features: string[];
+  isMonthly: boolean;
 }
 
 const PricingCard: React.FC<PricingCardProps> = ({ 
@@ -35,7 +36,8 @@ const PricingCard: React.FC<PricingCardProps> = ({
   description, 
   limit, 
   recommended = false,
-  features 
+  features,
+  isMonthly
 }) => {
   return (
     <div 
@@ -59,7 +61,11 @@ const PricingCard: React.FC<PricingCardProps> = ({
         <h3 className="text-xl font-medium">{title}</h3>
         <div className="mt-4 flex items-baseline">
           <span className="text-3xl font-bold">{price}</span>
-          <span className="text-sm text-muted-foreground ml-1">{price !== "$0" ? "¢ per tag/month" : " per tag"}</span>
+          <span className="text-sm text-muted-foreground ml-1">
+            {price !== "$0" 
+              ? isMonthly ? "¢ per tag/month" : " per tag" 
+              : " per tag"}
+          </span>
         </div>
         
         <p className="mt-2 text-sm text-muted-foreground">{description}</p>
@@ -269,6 +275,7 @@ const PricingPlans: React.FC = () => {
               limit={plan.limit}
               recommended={plan.recommended}
               features={plan.features}
+              isMonthly={isMonthly}
             />
           ))}
         </div>

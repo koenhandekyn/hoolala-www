@@ -62,8 +62,8 @@ const PricingCard: React.FC<PricingCardProps> = ({
         <div className="mt-4 flex items-baseline">
           <span className="text-3xl font-bold">{price}</span>
           <span className="text-sm text-muted-foreground ml-1">
-            {price !== "$0" 
-              ? isMonthly ? "¢ per tag/month" : " per tag" 
+            {price !== "€0" 
+              ? isMonthly ? "€ per tag/month" : "€ per tag" 
               : " per tag"}
           </span>
         </div>
@@ -102,7 +102,7 @@ const PricingPlans: React.FC = () => {
     monthly: [
       {
         title: "Free",
-        price: "$0",
+        price: "€0",
         description: "For personal projects and experiments",
         limit: "Up to 10 active tags",
         features: [
@@ -161,7 +161,7 @@ const PricingPlans: React.FC = () => {
     prepaid: [
       {
         title: "Free",
-        price: "$0",
+        price: "€0",
         description: "For personal projects and experiments",
         limit: "Up to 10 active tags",
         features: [
@@ -173,7 +173,7 @@ const PricingPlans: React.FC = () => {
       },
       {
         title: "Starter",
-        price: "$4",
+        price: "€4",
         description: "For small businesses or contractors",
         limit: "10 - 1000 tags",
         recommended: true,
@@ -188,7 +188,7 @@ const PricingPlans: React.FC = () => {
       },
       {
         title: "Scale-Up",
-        price: "$1",
+        price: "€1",
         description: "For mid-sized manufacturers",
         limit: "1000 - 10,000 tags",
         features: [
@@ -203,7 +203,7 @@ const PricingPlans: React.FC = () => {
       },
       {
         title: "Enterprise",
-        price: "$0.25",
+        price: "€0.25",
         description: "For high-volume manufacturers",
         limit: "10,000+ tags",
         features: [

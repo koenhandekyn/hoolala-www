@@ -137,7 +137,7 @@ const Summary: React.FC = () => {
         <div className="hidden print:block page-break-after-always"></div>
 
         {/* Use Cases */}
-        <div className="mb-10">
+        <div className="mb-10 print:pt-8">
           <h2 className="text-2xl font-semibold mb-4">Use Cases</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 print:grid-cols-2 print:gap-4">
             <Card className="border border-border rounded-lg p-4 print:shadow-none">
@@ -219,7 +219,6 @@ const Summary: React.FC = () => {
             page-break-after: always;
             break-after: page;
             height: 0;
-            margin-top: 8rem;
           }
           .print-fixed {
             position: fixed !important;

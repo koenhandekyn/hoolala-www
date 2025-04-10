@@ -5,7 +5,7 @@ import { Card, CardContent } from '@/components/ui/card';
 
 const Summary: React.FC = () => {
   return (
-    <div className="bg-white min-h-screen pt-20 print:bg-white">
+    <div className="bg-white min-h-screen pt-20 print:pt-0 print:bg-white">
       <div className="container mx-auto py-8 px-4 max-w-[210mm] print:max-w-full print:w-[210mm] print:p-[12mm] print:m-0 print:shadow-none">
         {/* Header */}
         <div className="border-b border-border pb-6 mb-8 flex justify-between items-center">
@@ -210,6 +210,7 @@ const Summary: React.FC = () => {
           }
           .container {
             padding: 12mm !important;
+            margin: 0 !important;
             max-width: 210mm !important;
             position: relative !important;
             min-height: 297mm !important; 
@@ -229,4 +230,3 @@ const Summary: React.FC = () => {
 };
 
 export default Summary;
-

@@ -185,7 +185,7 @@ const Summary: React.FC = () => {
         </div>
         
         {/* Page break after use cases */}
-        <div className="hidden print:block print:page-break-after"></div>
+        <div className="hidden print:block page-break-after-always"></div>
 
         {/* Footer - positioned at bottom of second page */}
         <div className="mt-auto pt-6 border-t border-border text-center text-sm text-muted-foreground print:fixed print:bottom-[12mm] print:left-[12mm] print:right-[12mm] print:w-[calc(210mm-24mm)]">
@@ -194,7 +194,7 @@ const Summary: React.FC = () => {
         </div>
       </div>
 
-      <style dangerouslySetInnerHTML={{ __html: `
+      <style jsx>{`
         @media print {
           @page {
             size: A4;
@@ -214,7 +214,7 @@ const Summary: React.FC = () => {
             position: relative !important;
             min-height: 297mm !important; 
           }
-          .print\\:page-break-after {
+          .page-break-after-always {
             page-break-after: always;
             break-after: page;
             height: 0;
@@ -223,7 +223,7 @@ const Summary: React.FC = () => {
             position: fixed !important;
           }
         }
-      `}} />
+      `}</style>
     </div>
   );
 };

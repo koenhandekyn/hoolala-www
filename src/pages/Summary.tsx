@@ -219,6 +219,7 @@ const Summary: React.FC = () => {
             page-break-after: always;
             break-after: page;
             height: 0;
+            margin-top: 8rem;
           }
           .print-fixed {
             position: fixed !important;

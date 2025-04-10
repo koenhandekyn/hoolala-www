@@ -17,6 +17,15 @@ const Header: React.FC = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const scrollToSection = (e: React.MouseEvent<HTMLAnchorElement>, sectionId: string) => {
+    e.preventDefault();
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+      setIsMenuOpen(false);
+    }
+  };
+
   return (
     <header 
       className={cn(
@@ -45,10 +54,14 @@ const Header: React.FC = () => {
             <a href="#pricing" className="text-sm font-medium hover:text-primary transition-colors">
               Pricing
             </a>
-            <Link to="/summary" className="text-sm font-medium hover:text-primary transition-colors flex items-center">
+            <a 
+              href="#summary" 
+              onClick={(e) => scrollToSection(e, 'summary')}
+              className="text-sm font-medium hover:text-primary transition-colors flex items-center"
+            >
               <FileText className="h-4 w-4 mr-1" />
               Summary
-            </Link>
+            </a>
           </nav>
           
           <div className="hidden md:flex">
@@ -113,14 +126,17 @@ const Header: React.FC = () => {
             >
               Pricing
             </a>
-            <Link 
-              to="/summary" 
-              onClick={() => setIsMenuOpen(false)}
+            <a 
+              href="#summary" 
+              onClick={(e) => {
+                setIsMenuOpen(false);
+                scrollToSection(e, 'summary');
+              }}
               className="text-lg font-medium hover:text-primary transition-colors flex items-center"
             >
               <FileText className="h-5 w-5 mr-2" />
               Summary
-            </Link>
+            </a>
           </nav>
           
           <div className="mt-auto mb-8">

@@ -194,7 +194,7 @@ const Summary: React.FC = () => {
         </div>
       </div>
 
-      <style jsx>{`
+      <style dangerouslySetInnerHTML={{ __html: `
         @media print {
           @page {
             size: A4;
@@ -223,7 +223,7 @@ const Summary: React.FC = () => {
             position: fixed !important;
           }
         }
-      `}</style>
+      `}} />
     </div>
   );
 };

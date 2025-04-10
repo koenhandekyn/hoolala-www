@@ -188,9 +188,9 @@ const Summary: React.FC = () => {
         </div>
         
         {/* Footer - positioned at bottom of second page */}
-        <div className="mt-auto pt-6 border-t border-border text-center text-sm text-muted-foreground print:fixed print:bottom-[12mm] print:left-[12mm] print:right-[12mm] print:w-[calc(210mm-24mm)]">
+        <div className="mt-auto pt-6 border-t border-border text-center text-sm text-muted-foreground print:fixed print:bottom-[12mm] print:left-[12mm] print:right-[12mm] print:w-[calc(210mm-18mm)]">
           <p>For more information, visit our website or contact us directly.</p>
-          <p className="mt-2">© 2025 Hoolala. All rights reserved.</p>
+          <p className="mt-1">© 2025 Hoolala. All rights reserved.</p>
         </div>
       </div>
 

@@ -1,7 +1,8 @@
 
 import React, { useState, useEffect } from 'react';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, FileText } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import { Link } from 'react-router-dom';
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -27,9 +28,9 @@ const Header: React.FC = () => {
     >
       <div className="container mx-auto py-4 px-6">
         <div className="flex items-center justify-between">
-          <a href="#" className="text-xl font-bold tracking-tighter text-primary">
+          <Link to="/" className="text-xl font-bold tracking-tighter text-primary">
             Hoolala
-          </a>
+          </Link>
           
           <nav className="hidden md:flex items-center space-x-8">
             <a href="#features" className="text-sm font-medium hover:text-primary transition-colors">
@@ -44,6 +45,10 @@ const Header: React.FC = () => {
             <a href="#pricing" className="text-sm font-medium hover:text-primary transition-colors">
               Pricing
             </a>
+            <Link to="/summary" className="text-sm font-medium hover:text-primary transition-colors flex items-center">
+              <FileText className="h-4 w-4 mr-1" />
+              Summary
+            </Link>
           </nav>
           
           <div className="hidden md:flex">
@@ -108,6 +113,14 @@ const Header: React.FC = () => {
             >
               Pricing
             </a>
+            <Link 
+              to="/summary" 
+              onClick={() => setIsMenuOpen(false)}
+              className="text-lg font-medium hover:text-primary transition-colors flex items-center"
+            >
+              <FileText className="h-5 w-5 mr-2" />
+              Summary
+            </Link>
           </nav>
           
           <div className="mt-auto mb-8">

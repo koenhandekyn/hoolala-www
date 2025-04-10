@@ -1,19 +1,11 @@
 
 import React from 'react';
-import { ArrowLeft } from 'lucide-react';
-import { Link } from 'react-router-dom';
 import ArtworkImage from '@/components/ArtworkImage';
 
 const Summary: React.FC = () => {
   return (
     <div className="bg-white min-h-screen">
       <div className="container mx-auto py-8 px-4 max-w-[210mm]">
-        {/* Back button */}
-        <Link to="/" className="inline-flex items-center text-primary hover:underline mb-8">
-          <ArrowLeft className="h-4 w-4 mr-2" />
-          Back to Home
-        </Link>
-
         {/* Header */}
         <div className="border-b border-border pb-6 mb-8 flex justify-between items-center">
           <h1 className="text-4xl font-bold">Hoolala</h1>

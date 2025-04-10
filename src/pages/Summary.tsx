@@ -219,7 +219,7 @@ const Summary: React.FC = () => {
             break-after: page;
             height: 0;
           }
-          .print\\:fixed {
+          .print-fixed {
             position: fixed !important;
           }
         }
@@ -229,3 +229,4 @@ const Summary: React.FC = () => {
 };
 
 export default Summary;
+

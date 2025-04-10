@@ -1,3 +1,4 @@
+
 import React from 'react';
 import ArtworkImage from '@/components/ArtworkImage';
 import { Card, CardContent } from '@/components/ui/card';
@@ -182,9 +183,12 @@ const Summary: React.FC = () => {
             </Card>
           </div>
         </div>
+        
+        {/* Page break after use cases */}
+        <div className="hidden print:block print:page-break-after"></div>
 
-        {/* Footer */}
-        <div className="border-t border-border pt-6 text-center text-sm text-muted-foreground">
+        {/* Footer - positioned at bottom of second page */}
+        <div className="mt-auto pt-6 border-t border-border text-center text-sm text-muted-foreground print:fixed print:bottom-[12mm] print:left-[12mm] print:right-[12mm] print:w-[calc(210mm-24mm)]">
           <p>For more information, visit our website or contact us directly.</p>
           <p className="mt-2">© 2025 Hoolala. All rights reserved.</p>
         </div>
@@ -207,6 +211,16 @@ const Summary: React.FC = () => {
           .container {
             padding: 12mm !important;
             max-width: 210mm !important;
+            position: relative !important;
+            min-height: 297mm !important; 
+          }
+          .print\\:page-break-after {
+            page-break-after: always;
+            break-after: page;
+            height: 0;
+          }
+          .print\\:fixed {
+            position: fixed !important;
           }
         }
       `}} />

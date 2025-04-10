@@ -5,7 +5,7 @@ import { Card, CardContent } from '@/components/ui/card';
 
 const Summary: React.FC = () => {
   return (
-    <div className="bg-white min-h-screen pt-20 print:pt-0 print:bg-white">
+    <div className="bg-white min-h-screen pt-8 print:pt-0 print:bg-white">
       <div className="container mx-auto py-8 px-4 max-w-[210mm] print:max-w-full print:w-[210mm] print:p-[12mm] print:m-0 print:shadow-none">
         {/* Header */}
         <div className="border-b border-border pb-6 mb-8 flex justify-between items-center">
@@ -133,6 +133,9 @@ const Summary: React.FC = () => {
           </div>
         </div>
 
+        {/* Page break before use cases */}
+        <div className="hidden print:block page-break-after-always"></div>
+
         {/* Use Cases */}
         <div className="mb-10">
           <h2 className="text-2xl font-semibold mb-4">Use Cases</h2>
@@ -184,9 +187,6 @@ const Summary: React.FC = () => {
           </div>
         </div>
         
-        {/* Page break after use cases */}
-        <div className="hidden print:block page-break-after-always"></div>
-
         {/* Footer - positioned at bottom of second page */}
         <div className="mt-auto pt-6 border-t border-border text-center text-sm text-muted-foreground print:fixed print:bottom-[12mm] print:left-[12mm] print:right-[12mm] print:w-[calc(210mm-24mm)]">
           <p>For more information, visit our website or contact us directly.</p>

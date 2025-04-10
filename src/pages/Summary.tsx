@@ -191,26 +191,28 @@ const Summary: React.FC = () => {
         </div>
       </div>
 
-      <style jsx global>{`
-        @media print {
-          @page {
-            size: A4;
-            margin: 0;
+      <style>
+        {`
+          @media print {
+            @page {
+              size: A4;
+              margin: 0;
+            }
+            body {
+              margin: 0;
+              padding: 0;
+              width: 210mm;
+              height: 297mm;
+              -webkit-print-color-adjust: exact;
+              print-color-adjust: exact;
+            }
+            .container {
+              padding: 12mm !important;
+              max-width: 210mm !important;
+            }
           }
-          body {
-            margin: 0;
-            padding: 0;
-            width: 210mm;
-            height: 297mm;
-            -webkit-print-color-adjust: exact;
-            print-color-adjust: exact;
-          }
-          .container {
-            padding: 12mm !important;
-            max-width: 210mm !important;
-          }
-        }
-      `}</style>
+        `}
+      </style>
     </div>
   );
 };

@@ -2,6 +2,7 @@
 import React from 'react';
 import ArtworkImage from '@/components/ArtworkImage';
 import { Card, CardContent } from '@/components/ui/card';
+import '@/styles/print.css'; // Import the print styles
 
 const Summary: React.FC = () => {
   return (
@@ -19,22 +20,20 @@ const Summary: React.FC = () => {
         <div className="mb-10">
           <h2 className="text-2xl font-semibold mb-4">Product Overview</h2>
           <p className="text-muted-foreground mb-4">
-            Hoolala enables tracking, documentation, and service requests with QR codes or RFID tags. 
-            This summary provides an overview of key features and use cases.
+            Hoolala enables tracking, documentation, and service requests with QR codes or RFID tags.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-6 print:grid-cols-2">
             <div>
               <p className="font-medium mb-2">What is Hoolala?</p>
               <p className="text-sm text-muted-foreground mb-4">
-                A comprehensive solution that simplifies tracking, documentation, and service 
-                management through smart tagging technology. Designed for businesses and individuals
-                who need to maintain records and provide excellent service.
+                A comprehensive solution that simplifies tracking, documentation, and service
+                management through smart tagging technology.
               </p>
             </div>
             <div className="flex justify-center">
-              <ArtworkImage 
-                src="/lovable-uploads/c0ab0a08-2c02-468d-978d-ce9776521950.png" 
-                alt="Technician scanning QR code" 
+              <ArtworkImage
+                src="/lovable-uploads/c0ab0a08-2c02-468d-978d-ce9776521950.png"
+                alt="Technician scanning QR code"
                 className="w-48 h-auto print:w-40"
               />
             </div>
@@ -186,45 +185,13 @@ const Summary: React.FC = () => {
             </Card>
           </div>
         </div>
-        
+
         {/* Footer - positioned at bottom of second page */}
         <div className="mt-auto pt-6 border-t border-border text-center text-sm text-muted-foreground print:fixed print:bottom-[12mm] print:left-[12mm] print:right-[12mm] print:w-[calc(210mm-18mm)]">
-          <p>For more information, visit our website or contact us directly.</p>
+          <p>For more information, visit https://www.hoolala.com or contact us at info@hoolala.com.</p>
           <p className="mt-1">© 2025 Hoolala. All rights reserved.</p>
         </div>
       </div>
-
-      <style dangerouslySetInnerHTML={{ __html: `
-        @media print {
-          @page {
-            size: A4;
-            margin: 0;
-          }
-          body {
-            margin: 0;
-            padding: 0;
-            width: 210mm;
-            height: 297mm;
-            -webkit-print-color-adjust: exact;
-            print-color-adjust: exact;
-          }
-          .container {
-            padding: 12mm !important;
-            margin: 0 !important;
-            max-width: 210mm !important;
-            position: relative !important;
-            min-height: 297mm !important; 
-          }
-          .page-break-after-always {
-            page-break-after: always;
-            break-after: page;
-            height: 0;
-          }
-          .print-fixed {
-            position: fixed !important;
-          }
-        }
-      `}} />
     </div>
   );
 };

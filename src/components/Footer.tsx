@@ -1,5 +1,6 @@
+
 import React from 'react';
-import { Mail, Globe } from 'lucide-react';
+import { Mail, Globe, FileText } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import LanguageSwitcher from './LanguageSwitcher';
 

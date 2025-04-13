@@ -24,43 +24,43 @@ const Features: React.FC = () => {
   const features = [
     {
       icon: <Scan className="h-6 w-6 text-primary" />,
-      title: "Instant Access",
-      description: "Scan a QR code, get all the product details and documentation instantly."
+      title: "Digital Fingerprints",
+      description: "Create unique digital twins for each product, linking physical assets to essential data and service history."
     },
     {
       icon: <Smartphone className="h-6 w-6 text-primary" />,
-      title: "Works on Any Modern Phone",
-      description: "No app needed, just scan and go with any smartphone camera."
+      title: "Universal Access",
+      description: "Works on any modern device without requiring app downloads - just scan or tap for instant information."
     },
     {
       icon: <Files className="h-6 w-6 text-primary" />,
-      title: "No More Lost Info",
-      description: "Keep documents & service history in one place, always accessible."
+      title: "Complete Documentation",
+      description: "Keep manuals, warranties, and service records in one place, accessible to both customers and service teams."
     },
     {
       icon: <Archive className="h-6 w-6 text-primary" />,
-      title: "10+ Years Archiving",
-      description: "Keep records available long-term for compliance and peace of mind."
+      title: "Future-Proof Compliance",
+      description: "Prepare for Digital Product Passport regulations and embrace circularity with lifecycle tracking."
     },
     {
       icon: <Zap className="h-6 w-6 text-primary" />,
-      title: "Fast Service Handling",
-      description: "Customers can submit requests with one scan, simplifying the process."
+      title: "Streamlined Service",
+      description: "Empower customers to submit service requests in seconds, reducing support costs and wait times."
     },
     {
       icon: <Clock className="h-6 w-6 text-primary" />,
-      title: "Effortless Follow-ups",
-      description: "QR/RFID make follow-ups seamless for you to find all info."
+      title: "Efficient Follow-ups",
+      description: "Service teams gain immediate access to product history, reducing troubleshooting time."
     },
     {
       icon: <ShieldCheck className="h-6 w-6 text-primary" />,
       title: "Secure & Reliable",
-      description: "Your data is stored safely and accessible only to the right people."
+      description: "Enterprise-grade security ensures your product data is protected while remaining accessible to authorized users."
     },
     {
       icon: <CheckCircle2 className="h-6 w-6 text-primary" />,
-      title: "Convenient",
-      description: "Everything in one place, instantly accessible when needed."
+      title: "Smarter Asset Management",
+      description: "Gain insights into product lifecycles, improving planning, maintenance, and customer satisfaction."
     }
   ];
 
@@ -69,16 +69,16 @@ const Features: React.FC = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center mb-16 animate-fade-in">
           <div className="inline-flex items-center px-3 py-1 rounded-full bg-primary/10 text-primary mb-6">
-            <span className="text-xs font-medium">Features</span>
+            <span className="text-xs font-medium">Key Benefits</span>
           </div>
           
           <h2 className="mb-6">
-            Everything You Need for
-            <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent"> Effortless Tracking</span>
+            Beyond Basic Tracking:
+            <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent"> Smart Product Lifecycle Management</span>
           </h2>
           
           <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Hoolala combines powerful features to revolutionize how you track, document, and service your products.
+            Hoolala creates digital twins for every item, connecting physical assets to essential data for more intelligent service and lifecycle management.
           </p>
         </div>
         

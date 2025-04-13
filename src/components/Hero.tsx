@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { ChevronRight, FileText } from 'lucide-react';
+import { HoverCard, HoverCardContent, HoverCardTrigger } from '@/components/ui/hover-card';
 
 const Hero: React.FC = () => {
   return (
@@ -8,10 +9,25 @@ const Hero: React.FC = () => {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="animate-fade-in">
-            <div className="inline-flex items-center px-3 py-1 rounded-full bg-primary/10 text-primary mb-6">
-              <FileText className="mr-2 h-4 w-4" />
-              <span className="text-xs font-medium">EU Digital Product Passport Ready</span>
-            </div>
+            <HoverCard>
+              <HoverCardTrigger asChild>
+                <div className="inline-flex items-center px-3 py-1 rounded-full bg-primary/10 text-primary mb-6 cursor-help">
+                  <FileText className="mr-2 h-4 w-4" />
+                  <span className="text-xs font-medium">EU Digital Product Passport Ready</span>
+                </div>
+              </HoverCardTrigger>
+              <HoverCardContent className="w-80 md:w-96 p-4">
+                <div className="space-y-2">
+                  <h4 className="font-medium text-sm">EU Digital Product Passport</h4>
+                  <p className="text-xs text-muted-foreground">
+                    The EU Digital Product Passport is a proposed system to track, share, and manage product information across its entire lifecycle. It digitally stores data like raw materials used, manufacturing details, and repair or recycling instructions, making it easier for businesses and consumers to understand the environmental impact and reuse or recycle products efficiently.
+                  </p>
+                  <p className="text-xs text-muted-foreground mt-2">
+                    By centralizing data in one platform, the Digital Product Passport promotes a circular economy, encourages more responsible manufacturing, and reduces waste. The goal is to provide transparency in supply chains, enable better product stewardship, and help organizations meet sustainability regulations while empowering consumers to make more informed purchasing decisions.
+                  </p>
+                </div>
+              </HoverCardContent>
+            </HoverCard>
             
             <h1 className="mb-6 leading-tight">
               Connect Your Products, 

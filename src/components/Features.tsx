@@ -1,5 +1,6 @@
+
 import React from 'react';
-import { Scan, Files, Clock, ShieldCheck, Smartphone, Archive, Zap, CheckCircle2, FileText, Recycle, Globe } from 'lucide-react';
+import { Scan, Files, Clock, ShieldCheck, Smartphone, Archive, Zap, CheckCircle2, FileText, Recycle, Globe, Link, Users, Refresh } from 'lucide-react';
 
 interface FeatureProps {
   icon: React.ReactNode;
@@ -37,9 +38,9 @@ const Features: React.FC = () => {
       description: "Keep manuals, warranties, and service records in one place, accessible to both customers and service teams."
     },
     {
-      icon: <Archive className="h-6 w-6 text-primary" />,
-      title: "Future-Proof Compliance",
-      description: "Prepare for Digital Product Passport regulations and embrace circularity with lifecycle tracking."
+      icon: <Users className="h-6 w-6 text-primary" />,
+      title: "Value Chain Connectivity",
+      description: "Connect all stakeholders from manufacturers to recyclers, enabling seamless communication and data sharing across the entire product ecosystem."
     },
     {
       icon: <Zap className="h-6 w-6 text-primary" />,
@@ -62,18 +63,23 @@ const Features: React.FC = () => {
       description: "Gain insights into product lifecycles, improving planning, maintenance, and customer satisfaction."
     },
     {
-      icon: <Globe className="h-6 w-6 text-primary" />,
-      title: "EU Digital Product Passport Ready",
-      description: "Stay ahead of regulatory requirements with comprehensive product data tracking, supporting transparent reporting on composition, origin, and environmental impact."
+      icon: <Refresh className="h-6 w-6 text-primary" />,
+      title: "Full Lifecycle Support",
+      description: "Track and manage your product through its entire lifecycle, from manufacturing to end-of-life recycling or refurbishment, boosting sustainability efforts."
     },
     {
       icon: <Recycle className="h-6 w-6 text-primary" />,
-      title: "Circularity & Sustainability Tracking",
-      description: "Document your product's entire lifecycle, supporting circular economy initiatives and providing verifiable data on sustainability efforts."
+      title: "Circularity & Sustainability",
+      description: "Support repair, refurbishment, and recycling initiatives with comprehensive product data, meeting Extended Producer Responsibility requirements."
+    },
+    {
+      icon: <Archive className="h-6 w-6 text-primary" />,
+      title: "Digital Product Passport Ready",
+      description: "Prepare for upcoming regulations with transparent reporting on composition, origin, and environmental impact of your products."
     },
     {
       icon: <FileText className="h-6 w-6 text-primary" />,
-      title: "Comprehensive Compliance Documentation",
+      title: "Comprehensive Compliance",
       description: "Centralize and secure all product-related documentation, ensuring easy access and verification for regulatory compliance."
     }
   ];
@@ -83,16 +89,16 @@ const Features: React.FC = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center mb-16 animate-fade-in">
           <div className="inline-flex items-center px-3 py-1 rounded-full bg-primary/10 text-primary mb-6">
-            <span className="text-xs font-medium">Compliance & Innovation</span>
+            <span className="text-xs font-medium">EU Digital Product Passport Compliance</span>
           </div>
           
           <h2 className="mb-6">
-            Future-Proof Your 
+            Connect Your Entire
             <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent"> Product Ecosystem</span>
           </h2>
           
           <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Hoolala helps businesses prepare for upcoming regulations like the EU Digital Product Passport, enabling transparent, sustainable product lifecycle management.
+            Hoolala connects all stakeholders across the value chain, supporting the complete product lifecycle from creation to recycling while ensuring regulatory compliance.
           </p>
         </div>
         

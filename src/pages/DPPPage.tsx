@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -47,14 +48,16 @@ const FaqItem = ({ question, answer }: { question: string; answer: React.ReactNo
     <div className="mb-6 border-b border-border/30 pb-6 last:border-0">
       <Collapsible open={isOpen} onOpenChange={setIsOpen} className="w-full">
         <CollapsibleTrigger className="flex justify-between items-center w-full text-left">
-          <h4 className="text-xl font-bold text-primary tracking-tight px-4 py-2 rounded-lg flex-1">
-            {question}
-          </h4>
-          <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center">
-            {isOpen ? <Minus className="h-4 w-4 text-primary" /> : <Plus className="h-4 w-4 text-primary" />}
+          <div className="flex items-center w-full">
+            <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center mr-4">
+              {isOpen ? <Minus className="h-4 w-4 text-primary" /> : <Plus className="h-4 w-4 text-primary" />}
+            </div>
+            <h4 className="text-xl font-bold text-primary tracking-tight flex-1">
+              {question}
+            </h4>
           </div>
         </CollapsibleTrigger>
-        <CollapsibleContent className="pt-3">
+        <CollapsibleContent className="pt-3 pl-12">
           <div className="text-muted-foreground bg-soft-gray/50 p-4 rounded-lg leading-relaxed">
             {answer}
           </div>

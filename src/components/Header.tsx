@@ -1,5 +1,6 @@
+
 import React, { useState, useEffect } from 'react';
-import { Menu, X, FileText, LogIn } from 'lucide-react';
+import { Menu, X, FileText, ExternalLink } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { Link } from 'react-router-dom';
 
@@ -60,13 +61,15 @@ const Header: React.FC = () => {
               <FileText className="h-4 w-4 mr-1" />
               Summary
             </Link>
-            <Link 
-              to="/login" 
+            <a 
+              href="https://app.hoolala.app" 
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-sm font-medium hover:text-primary transition-colors flex items-center"
             >
-              <LogIn className="h-4 w-4 mr-1" />
+              <ExternalLink className="h-4 w-4 mr-1" />
               Login
-            </Link>
+            </a>
           </nav>
           
           <div className="hidden md:flex">
@@ -138,14 +141,16 @@ const Header: React.FC = () => {
               <FileText className="h-5 w-5 mr-2" />
               Summary
             </Link>
-            <Link 
-              to="/login" 
+            <a 
+              href="https://app.hoolala.app" 
+              target="_blank"
+              rel="noopener noreferrer"
               onClick={() => setIsMenuOpen(false)}
               className="text-lg font-medium hover:text-primary transition-colors flex items-center"
             >
-              <LogIn className="h-5 w-5 mr-2" />
+              <ExternalLink className="h-5 w-5 mr-2" />
               Login
-            </Link>
+            </a>
           </nav>
           
           <div className="mt-auto mb-8">

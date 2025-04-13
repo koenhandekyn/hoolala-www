@@ -1,6 +1,7 @@
+
 import React from 'react';
 import { ChevronRight, FileText, ExternalLink } from 'lucide-react';
-import { HoverCard, HoverCardTrigger } from '@/components/ui/hover-card';
+import { HoverCard, HoverCardContent, HoverCardTrigger } from '@/components/ui/hover-card';
 import { Link } from 'react-router-dom';
 
 const Hero: React.FC = () => {
@@ -16,6 +17,14 @@ const Hero: React.FC = () => {
                   <span className="text-xs font-medium">EU Digital Product Passport Ready</span>
                 </div>
               </HoverCardTrigger>
+              <HoverCardContent className="w-80 md:w-96 p-4">
+                <div className="space-y-2">
+                  <h4 className="font-medium text-sm">EU Digital Product Passport</h4>
+                  <p className="text-xs text-muted-foreground">
+                    The EU Digital Product Passport is a digital system that stores and shares product information across the value chain, making data accessible to consumers and businesses to promote sustainability and circular economy practices.
+                  </p>
+                </div>
+              </HoverCardContent>
             </HoverCard>
             
             <h1 className="mb-6 leading-tight">

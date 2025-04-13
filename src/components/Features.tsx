@@ -1,5 +1,7 @@
 import React from 'react';
-import { Scan, Files, Clock, ShieldCheck, Smartphone, Archive, Zap, CheckCircle2, FileText, Recycle, Globe, Link, Users, RefreshCw } from 'lucide-react';
+import { Scan, Files, Clock, ShieldCheck, Smartphone, Archive, Zap, CheckCircle2, FileText, Recycle, Globe, Link, Users, RefreshCw, Info } from 'lucide-react';
+import { HoverCard, HoverCardContent, HoverCardTrigger } from '@/components/ui/hover-card';
+import { Link as RouterLink } from 'react-router-dom';
 
 interface FeatureProps {
   icon: React.ReactNode;
@@ -74,7 +76,8 @@ const Features: React.FC = () => {
     {
       icon: <Archive className="h-6 w-6 text-primary" />,
       title: "Digital Product Passport Ready",
-      description: "Prepare for upcoming regulations with transparent reporting on composition, origin, and environmental impact of your products."
+      description: "Prepare for upcoming regulations with transparent reporting on composition, origin, and environmental impact of your products.",
+      detailedInfo: true
     },
     {
       icon: <FileText className="h-6 w-6 text-primary" />,
@@ -87,9 +90,31 @@ const Features: React.FC = () => {
     <section id="features" className="py-20 bg-background overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center mb-16 animate-fade-in">
-          <div className="inline-flex items-center px-3 py-1 rounded-full bg-primary/10 text-primary mb-6">
-            <span className="text-xs font-medium">EU Digital Product Passport Compliance</span>
-          </div>
+          <HoverCard>
+            <HoverCardTrigger asChild>
+              <div className="inline-flex items-center px-3 py-1 rounded-full bg-primary/10 text-primary mb-6 cursor-help">
+                <FileText className="mr-2 h-4 w-4" />
+                <span className="text-xs font-medium">EU Digital Product Passport Compliance</span>
+              </div>
+            </HoverCardTrigger>
+            <HoverCardContent className="w-80 md:w-96 p-4">
+              <div className="space-y-2">
+                <h4 className="font-medium text-sm">EU Digital Product Passport</h4>
+                <p className="text-xs text-muted-foreground">
+                  The EU Digital Product Passport is a proposed system to track, share, and manage product information across its entire lifecycle. It digitally stores data like raw materials used, manufacturing details, and repair or recycling instructions, making it easier for businesses and consumers to understand the environmental impact and reuse or recycle products efficiently.
+                </p>
+                <p className="text-xs text-muted-foreground mt-2">
+                  By centralizing data in one platform, the Digital Product Passport promotes a circular economy, encourages more responsible manufacturing, and reduces waste. The goal is to provide transparency in supply chains, enable better product stewardship, and help organizations meet sustainability regulations while empowering consumers to make more informed purchasing decisions.
+                </p>
+                <div className="mt-3 pt-2 border-t border-border">
+                  <RouterLink to="/dpp" className="text-xs text-primary font-medium inline-flex items-center hover:underline">
+                    More info
+                    <Info className="ml-1 h-3 w-3" />
+                  </RouterLink>
+                </div>
+              </div>
+            </HoverCardContent>
+          </HoverCard>
           
           <h2 className="mb-6">
             Connect Your Entire

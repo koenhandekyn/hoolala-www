@@ -1,7 +1,6 @@
-
 import React from 'react';
 import { ChevronRight, FileText, ExternalLink } from 'lucide-react';
-import { HoverCard, HoverCardContent, HoverCardTrigger } from '@/components/ui/hover-card';
+import { HoverCard, HoverCardTrigger } from '@/components/ui/hover-card';
 import { Link } from 'react-router-dom';
 
 const Hero: React.FC = () => {
@@ -17,23 +16,6 @@ const Hero: React.FC = () => {
                   <span className="text-xs font-medium">EU Digital Product Passport Ready</span>
                 </div>
               </HoverCardTrigger>
-              <HoverCardContent className="w-80 md:w-96 p-4">
-                <div className="space-y-2">
-                  <h4 className="font-medium text-sm">EU Digital Product Passport</h4>
-                  <p className="text-xs text-muted-foreground">
-                    The EU Digital Product Passport is a proposed system to track, share, and manage product information across its entire lifecycle. It digitally stores data like raw materials used, manufacturing details, and repair or recycling instructions, making it easier for businesses and consumers to understand the environmental impact and reuse or recycle products efficiently.
-                  </p>
-                  <p className="text-xs text-muted-foreground mt-2">
-                    By centralizing data in one platform, the Digital Product Passport promotes a circular economy, encourages more responsible manufacturing, and reduces waste. The goal is to provide transparency in supply chains, enable better product stewardship, and help organizations meet sustainability regulations while empowering consumers to make more informed purchasing decisions.
-                  </p>
-                  <div className="mt-3 pt-2 border-t border-border">
-                    <Link to="/dpp" className="text-xs text-primary font-medium inline-flex items-center hover:underline">
-                      More info
-                      <ExternalLink className="ml-1 h-3 w-3" />
-                    </Link>
-                  </div>
-                </div>
-              </HoverCardContent>
             </HoverCard>
             
             <h1 className="mb-6 leading-tight">

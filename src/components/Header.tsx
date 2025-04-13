@@ -1,11 +1,15 @@
+
 import React, { useState, useEffect } from 'react';
 import { Menu, X, FileText, ExternalLink } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { Link } from 'react-router-dom';
+import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
+import { useIsMobile } from '@/hooks/use-mobile';
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const isMobile = useIsMobile();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -67,74 +71,140 @@ const Header: React.FC = () => {
             </a>
           </div>
           
-          <button 
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="flex md:hidden focus:outline-none"
-            aria-label="Toggle menu"
-          >
-            {isMenuOpen ? (
-              <X className="h-6 w-6" />
-            ) : (
-              <Menu className="h-6 w-6" />
-            )}
-          </button>
+          {isMobile ? (
+            <Sheet>
+              <SheetTrigger asChild>
+                <button 
+                  className="flex md:hidden focus:outline-none"
+                  aria-label="Toggle menu"
+                >
+                  <Menu className="h-6 w-6" />
+                </button>
+              </SheetTrigger>
+              <SheetContent side="right" className="p-0 pt-16 w-full">
+                <div className="flex flex-col h-full bg-white p-6">
+                  <nav className="flex flex-col space-y-6">
+                    <a 
+                      href="#features" 
+                      className="text-lg font-medium hover:text-primary transition-colors"
+                      onClick={() => {
+                        document.getElementById('features')?.scrollIntoView({ behavior: 'smooth' });
+                      }}
+                    >
+                      Features
+                    </a>
+                    <a 
+                      href="#how-it-works" 
+                      className="text-lg font-medium hover:text-primary transition-colors"
+                      onClick={() => {
+                        document.getElementById('how-it-works')?.scrollIntoView({ behavior: 'smooth' });
+                      }}
+                    >
+                      How It Works
+                    </a>
+                    <Link 
+                      to="/use-cases" 
+                      className="text-lg font-medium hover:text-primary transition-colors"
+                    >
+                      Use Cases
+                    </Link>
+                    <a 
+                      href="#pricing" 
+                      className="text-lg font-medium hover:text-primary transition-colors"
+                      onClick={() => {
+                        document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' });
+                      }}
+                    >
+                      Pricing
+                    </a>
+                  </nav>
+                  
+                  <div className="mt-auto mb-8">
+                    <a 
+                      href="https://app.hoolala.app" 
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block w-full text-center px-5 py-3 rounded-full text-base font-medium bg-primary text-white hover:bg-primary/90 transition-colors flex items-center justify-center"
+                    >
+                      <ExternalLink className="h-5 w-5 mr-2" />
+                      Login
+                    </a>
+                  </div>
+                </div>
+              </SheetContent>
+            </Sheet>
+          ) : (
+            <button 
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              className="flex md:hidden focus:outline-none"
+              aria-label="Toggle menu"
+            >
+              {isMenuOpen ? (
+                <X className="h-6 w-6" />
+              ) : (
+                <Menu className="h-6 w-6" />
+              )}
+            </button>
+          )}
         </div>
       </div>
       
-      <div 
-        className={cn(
-          "fixed inset-0 top-[61px] z-40 transform transition-all duration-300 ease-in-out md:hidden",
-          isMenuOpen
-            ? "translate-x-0 opacity-100"
-            : "translate-x-full opacity-0 pointer-events-none"
-        )}
-      >
-        <div className="flex flex-col h-full bg-white/95 backdrop-blur-lg shadow-xl p-6 text-foreground">
-          <nav className="flex flex-col space-y-6 mt-8">
-            <a 
-              href="#features" 
-              onClick={() => setIsMenuOpen(false)}
-              className="text-lg font-medium hover:text-primary transition-colors"
-            >
-              Features
-            </a>
-            <a 
-              href="#how-it-works" 
-              onClick={() => setIsMenuOpen(false)}
-              className="text-lg font-medium hover:text-primary transition-colors"
-            >
-              How It Works
-            </a>
-            <Link 
-              to="/use-cases" 
-              onClick={() => setIsMenuOpen(false)}
-              className="text-lg font-medium hover:text-primary transition-colors"
-            >
-              Use Cases
-            </Link>
-            <a 
-              href="#pricing" 
-              onClick={() => setIsMenuOpen(false)}
-              className="text-lg font-medium hover:text-primary transition-colors"
-            >
-              Pricing
-            </a>
-          </nav>
-          
-          <div className="mt-auto mb-8">
-            <a 
-              href="https://app.hoolala.app" 
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={() => setIsMenuOpen(false)}
-              className="block w-full text-center px-5 py-3 rounded-full text-base font-medium bg-primary text-white hover:bg-primary/90 transition-colors flex items-center justify-center"
-            >
-              <ExternalLink className="h-5 w-5 mr-2" />
-              Login
-            </a>
+      {!isMobile && (
+        <div 
+          className={cn(
+            "fixed inset-0 top-[61px] z-40 transform transition-all duration-300 ease-in-out md:hidden",
+            isMenuOpen
+              ? "translate-x-0 opacity-100"
+              : "translate-x-full opacity-0 pointer-events-none"
+          )}
+        >
+          <div className="flex flex-col h-full bg-white/95 backdrop-blur-lg shadow-xl p-6 text-foreground">
+            <nav className="flex flex-col space-y-6 mt-8">
+              <a 
+                href="#features" 
+                onClick={(e) => scrollToSection(e, 'features')}
+                className="text-lg font-medium hover:text-primary transition-colors"
+              >
+                Features
+              </a>
+              <a 
+                href="#how-it-works" 
+                onClick={(e) => scrollToSection(e, 'how-it-works')}
+                className="text-lg font-medium hover:text-primary transition-colors"
+              >
+                How It Works
+              </a>
+              <Link 
+                to="/use-cases" 
+                onClick={() => setIsMenuOpen(false)}
+                className="text-lg font-medium hover:text-primary transition-colors"
+              >
+                Use Cases
+              </Link>
+              <a 
+                href="#pricing" 
+                onClick={(e) => scrollToSection(e, 'pricing')}
+                className="text-lg font-medium hover:text-primary transition-colors"
+              >
+                Pricing
+              </a>
+            </nav>
+            
+            <div className="mt-auto mb-8">
+              <a 
+                href="https://app.hoolala.app" 
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setIsMenuOpen(false)}
+                className="block w-full text-center px-5 py-3 rounded-full text-base font-medium bg-primary text-white hover:bg-primary/90 transition-colors flex items-center justify-center"
+              >
+                <ExternalLink className="h-5 w-5 mr-2" />
+                Login
+              </a>
+            </div>
           </div>
         </div>
-      </div>
+      )}
     </header>
   );
 };

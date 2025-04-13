@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { ArrowLeft, FileText, CheckCircle2, AlertTriangle, Recycle, Clock, Globe, FileCode, Plus, Minus } from 'lucide-react';
@@ -40,16 +40,29 @@ const BenefitCard = ({ icon, title, items }: { icon: React.ReactNode; title: str
   </Card>
 );
 
-const FaqItem = ({ question, answer }: { question: string; answer: React.ReactNode }) => (
-  <div className="mb-8 border-b border-border/30 pb-6 last:border-0">
-    <h4 className="text-xl font-bold mb-3 text-primary tracking-tight bg-soft-purple/20 px-4 py-2 rounded-lg">
-      {question}
-    </h4>
-    <div className="text-muted-foreground bg-soft-gray/50 p-4 rounded-lg leading-relaxed">
-      {answer}
+const FaqItem = ({ question, answer }: { question: string; answer: React.ReactNode }) => {
+  const [isOpen, setIsOpen] = useState(false);
+  
+  return (
+    <div className="mb-6 border-b border-border/30 pb-6 last:border-0">
+      <Collapsible open={isOpen} onOpenChange={setIsOpen} className="w-full">
+        <CollapsibleTrigger className="flex justify-between items-center w-full text-left">
+          <h4 className="text-xl font-bold text-primary tracking-tight px-4 py-2 rounded-lg flex-1">
+            {question}
+          </h4>
+          <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center">
+            {isOpen ? <Minus className="h-4 w-4 text-primary" /> : <Plus className="h-4 w-4 text-primary" />}
+          </div>
+        </CollapsibleTrigger>
+        <CollapsibleContent className="pt-3">
+          <div className="text-muted-foreground bg-soft-gray/50 p-4 rounded-lg leading-relaxed">
+            {answer}
+          </div>
+        </CollapsibleContent>
+      </Collapsible>
     </div>
-  </div>
-);
+  );
+};
 
 const DPPPage: React.FC = () => {
   return (
@@ -455,7 +468,7 @@ const DPPPage: React.FC = () => {
                 <h2 className="text-2xl md:text-3xl font-semibold">Frequently Asked Questions</h2>
               </div>
               
-              <div className="space-y-6">
+              <div className="space-y-4">
                 <FaqItem 
                   question="What is the EU Digital Product Passport?"
                   answer={

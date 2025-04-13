@@ -41,6 +41,11 @@ const Footer: React.FC = () => {
                 </a>
               </li>
               <li>
+                <Link to="/use-cases" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                  Use Cases
+                </Link>
+              </li>
+              <li>
                 <a href="#pricing" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                   Pricing
                 </a>

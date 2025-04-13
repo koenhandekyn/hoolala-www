@@ -48,9 +48,9 @@ const Header: React.FC = () => {
             <a href="#how-it-works" className="text-sm font-medium hover:text-primary transition-colors">
               How It Works
             </a>
-            <a href="#use-cases" className="text-sm font-medium hover:text-primary transition-colors">
+            <Link to="/use-cases" className="text-sm font-medium hover:text-primary transition-colors">
               Use Cases
-            </a>
+            </Link>
             <a href="#pricing" className="text-sm font-medium hover:text-primary transition-colors">
               Pricing
             </a>
@@ -106,13 +106,13 @@ const Header: React.FC = () => {
             >
               How It Works
             </a>
-            <a 
-              href="#use-cases" 
+            <Link 
+              to="/use-cases" 
               onClick={() => setIsMenuOpen(false)}
               className="text-lg font-medium hover:text-primary transition-colors"
             >
               Use Cases
-            </a>
+            </Link>
             <a 
               href="#pricing" 
               onClick={() => setIsMenuOpen(false)}

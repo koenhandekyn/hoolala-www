@@ -1,10 +1,11 @@
 
 import React, { useState, useEffect } from 'react';
-import { Menu, X, FileText, ExternalLink } from 'lucide-react';
+import { Menu, X, ExternalLink } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { Link } from 'react-router-dom';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { useIsMobile } from '@/hooks/use-mobile';
+import LanguageSwitcher from './LanguageSwitcher';
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -59,7 +60,8 @@ const Header: React.FC = () => {
             </a>
           </nav>
           
-          <div className="hidden md:flex">
+          <div className="hidden md:flex items-center space-x-2">
+            <LanguageSwitcher />
             <a 
               href="https://app.hoolala.app" 
               target="_blank"
@@ -119,7 +121,10 @@ const Header: React.FC = () => {
                     </a>
                   </nav>
                   
-                  <div className="mt-auto mb-8">
+                  <div className="mt-auto mb-8 flex flex-col space-y-4">
+                    <div className="flex justify-center">
+                      <LanguageSwitcher />
+                    </div>
                     <a 
                       href="https://app.hoolala.app" 
                       target="_blank"
@@ -190,7 +195,10 @@ const Header: React.FC = () => {
               </a>
             </nav>
             
-            <div className="mt-auto mb-8">
+            <div className="mt-auto mb-8 flex flex-col space-y-4">
+              <div className="flex justify-center">
+                <LanguageSwitcher />
+              </div>
               <a 
                 href="https://app.hoolala.app" 
                 target="_blank"

@@ -45,7 +45,7 @@ const FaqItem = ({ question, answer }: { question: string; answer: React.ReactNo
   const [isOpen, setIsOpen] = useState(false);
   
   return (
-    <div className="mb-6 border-b border-border/30 pb-6 last:border-0">
+    <div className="mb-6 pb-6 last:border-0 last:pb-0">
       <Collapsible open={isOpen} onOpenChange={setIsOpen} className="w-full">
         <CollapsibleTrigger className="flex justify-between items-center w-full text-left">
           <div className="flex items-center w-full">

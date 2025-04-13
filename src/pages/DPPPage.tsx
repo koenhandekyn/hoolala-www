@@ -1,12 +1,12 @@
-
 import React from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import { ArrowLeft, FileText, CheckCircle2, AlertTriangle, Recycle, Clock, Globe, FileCode } from 'lucide-react';
+import { ArrowLeft, FileText, CheckCircle2, AlertTriangle, Recycle, Clock, Globe, FileCode, Plus, Minus } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent } from '@/components/ui/card';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 
 const TimelineItem = ({ date, title, icon, color }: { date: string; title: string; icon: React.ReactNode; color: string }) => (
   <div className="flex mb-8 relative">
@@ -17,7 +17,6 @@ const TimelineItem = ({ date, title, icon, color }: { date: string; title: strin
       <div className="font-medium text-sm text-muted-foreground">{date}</div>
       <div className="font-semibold mb-2">{title}</div>
     </div>
-    {/* Vertical connecting line */}
     <div className="absolute left-5 top-10 w-[2px] h-12 bg-border -z-0"></div>
   </div>
 );
@@ -261,31 +260,105 @@ const DPPPage: React.FC = () => {
               </div>
               
               <div className="prose prose-slate max-w-none">
-                <p className="mb-4">
-                  While the DPP offers numerous benefits, implementation faces several challenges:
+                <p className="mb-4 text-lg">
+                  While the Digital Product Passport offers numerous benefits, businesses face several significant challenges when implementing it:
                 </p>
-                <ul className="space-y-3">
-                  <li className="flex items-start">
-                    <AlertTriangle className="h-4 w-4 text-amber-500 mt-1 mr-2 flex-shrink-0" />
-                    <span>Data standardization across diverse supply chains</span>
-                  </li>
-                  <li className="flex items-start">
-                    <AlertTriangle className="h-4 w-4 text-amber-500 mt-1 mr-2 flex-shrink-0" />
-                    <span>Technical infrastructure requirements, particularly for SMEs</span>
-                  </li>
-                  <li className="flex items-start">
-                    <AlertTriangle className="h-4 w-4 text-amber-500 mt-1 mr-2 flex-shrink-0" />
-                    <span>Data security and intellectual property protection</span>
-                  </li>
-                  <li className="flex items-start">
-                    <AlertTriangle className="h-4 w-4 text-amber-500 mt-1 mr-2 flex-shrink-0" />
-                    <span>Verification methods for supplied information</span>
-                  </li>
-                  <li className="flex items-start">
-                    <AlertTriangle className="h-4 w-4 text-amber-500 mt-1 mr-2 flex-shrink-0" />
-                    <span>International alignment with trading partners</span>
-                  </li>
-                </ul>
+                
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                  <Card className="border-amber-200 bg-amber-50/30">
+                    <CardContent className="pt-6">
+                      <h3 className="text-lg font-medium mb-3 flex items-center">
+                        <AlertTriangle className="h-5 w-5 text-amber-500 mr-2" />
+                        Technical Implementation
+                      </h3>
+                      <ul className="space-y-3">
+                        <li className="flex items-start">
+                          <AlertTriangle className="h-4 w-4 text-amber-500 mt-1 mr-2 flex-shrink-0" />
+                          <span>Developing data collection systems across complex supply chains</span>
+                        </li>
+                        <li className="flex items-start">
+                          <AlertTriangle className="h-4 w-4 text-amber-500 mt-1 mr-2 flex-shrink-0" />
+                          <span>Integration with existing enterprise resource planning (ERP) systems</span>
+                        </li>
+                        <li className="flex items-start">
+                          <AlertTriangle className="h-4 w-4 text-amber-500 mt-1 mr-2 flex-shrink-0" />
+                          <span>Implementing suitable technological infrastructure, especially for SMEs</span>
+                        </li>
+                      </ul>
+                    </CardContent>
+                  </Card>
+                  
+                  <Card className="border-amber-200 bg-amber-50/30">
+                    <CardContent className="pt-6">
+                      <h3 className="text-lg font-medium mb-3 flex items-center">
+                        <AlertTriangle className="h-5 w-5 text-amber-500 mr-2" />
+                        Data Management
+                      </h3>
+                      <ul className="space-y-3">
+                        <li className="flex items-start">
+                          <AlertTriangle className="h-4 w-4 text-amber-500 mt-1 mr-2 flex-shrink-0" />
+                          <span>Standardization of data formats across diverse supply chains</span>
+                        </li>
+                        <li className="flex items-start">
+                          <AlertTriangle className="h-4 w-4 text-amber-500 mt-1 mr-2 flex-shrink-0" />
+                          <span>Ensuring data security and protecting intellectual property</span>
+                        </li>
+                        <li className="flex items-start">
+                          <AlertTriangle className="h-4 w-4 text-amber-500 mt-1 mr-2 flex-shrink-0" />
+                          <span>Verifying the accuracy and reliability of supplied information</span>
+                        </li>
+                      </ul>
+                    </CardContent>
+                  </Card>
+                </div>
+                
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <Card className="border-amber-200 bg-amber-50/30">
+                    <CardContent className="pt-6">
+                      <h3 className="text-lg font-medium mb-3 flex items-center">
+                        <AlertTriangle className="h-5 w-5 text-amber-500 mr-2" />
+                        Compliance & Adaptation
+                      </h3>
+                      <ul className="space-y-3">
+                        <li className="flex items-start">
+                          <AlertTriangle className="h-4 w-4 text-amber-500 mt-1 mr-2 flex-shrink-0" />
+                          <span>International alignment with trading partners' regulations</span>
+                        </li>
+                        <li className="flex items-start">
+                          <AlertTriangle className="h-4 w-4 text-amber-500 mt-1 mr-2 flex-shrink-0" />
+                          <span>Managing the costs of implementation and compliance</span>
+                        </li>
+                        <li className="flex items-start">
+                          <AlertTriangle className="h-4 w-4 text-amber-500 mt-1 mr-2 flex-shrink-0" />
+                          <span>Adapting business models and processes to new requirements</span>
+                        </li>
+                      </ul>
+                    </CardContent>
+                  </Card>
+                  
+                  <Card className="border-amber-200 bg-amber-50/30">
+                    <CardContent className="pt-6">
+                      <h3 className="text-lg font-medium mb-3 flex items-center">
+                        <AlertTriangle className="h-5 w-5 text-amber-500 mr-2" />
+                        Supply Chain Complexity
+                      </h3>
+                      <ul className="space-y-3">
+                        <li className="flex items-start">
+                          <AlertTriangle className="h-4 w-4 text-amber-500 mt-1 mr-2 flex-shrink-0" />
+                          <span>Ensuring cooperation from all suppliers, including those outside the EU</span>
+                        </li>
+                        <li className="flex items-start">
+                          <AlertTriangle className="h-4 w-4 text-amber-500 mt-1 mr-2 flex-shrink-0" />
+                          <span>Managing varying levels of digital maturity across the supply chain</span>
+                        </li>
+                        <li className="flex items-start">
+                          <AlertTriangle className="h-4 w-4 text-amber-500 mt-1 mr-2 flex-shrink-0" />
+                          <span>Tracking and updating information throughout complex product lifecycles</span>
+                        </li>
+                      </ul>
+                    </CardContent>
+                  </Card>
+                </div>
               </div>
             </div>
             
@@ -297,48 +370,317 @@ const DPPPage: React.FC = () => {
                 <h2 className="text-2xl md:text-3xl font-semibold">How to Prepare for DPP Implementation</h2>
               </div>
               
-              <div className="bg-gradient-to-br from-primary/5 to-secondary/5 rounded-xl p-6 border border-primary/10">
-                <p className="mb-4">
-                  Organizations can take proactive steps to prepare for Digital Product Passport requirements:
-                </p>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-y-3 gap-x-8">
+              <div className="bg-gradient-to-br from-primary/5 to-secondary/5 rounded-xl p-8 border border-primary/10 mb-8">
+                <h3 className="text-xl font-medium mb-5">Strategic Preparation Steps</h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-y-5 gap-x-8">
                   <div className="flex items-start">
-                    <div className="w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center mr-3 flex-shrink-0">
+                    <div className="w-7 h-7 rounded-full bg-primary/20 flex items-center justify-center mr-3 flex-shrink-0">
                       <span className="text-xs font-semibold text-primary">1</span>
                     </div>
-                    <span>Audit current product information management systems</span>
+                    <div>
+                      <h4 className="font-medium mb-1">Audit Current Systems</h4>
+                      <p className="text-sm text-muted-foreground">Evaluate your product information management systems and identify gaps</p>
+                    </div>
                   </div>
+                  
                   <div className="flex items-start">
-                    <div className="w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center mr-3 flex-shrink-0">
+                    <div className="w-7 h-7 rounded-full bg-primary/20 flex items-center justify-center mr-3 flex-shrink-0">
                       <span className="text-xs font-semibold text-primary">2</span>
                     </div>
-                    <span>Map product lifecycles and supply chains</span>
+                    <div>
+                      <h4 className="font-medium mb-1">Map Supply Chains</h4>
+                      <p className="text-sm text-muted-foreground">Create detailed mapping of your product lifecycles and supplier networks</p>
+                    </div>
                   </div>
+                  
                   <div className="flex items-start">
-                    <div className="w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center mr-3 flex-shrink-0">
+                    <div className="w-7 h-7 rounded-full bg-primary/20 flex items-center justify-center mr-3 flex-shrink-0">
                       <span className="text-xs font-semibold text-primary">3</span>
                     </div>
-                    <span>Identify data gaps in product information</span>
+                    <div>
+                      <h4 className="font-medium mb-1">Identify Data Gaps</h4>
+                      <p className="text-sm text-muted-foreground">Determine what product information is missing and needs to be collected</p>
+                    </div>
                   </div>
+                  
                   <div className="flex items-start">
-                    <div className="w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center mr-3 flex-shrink-0">
+                    <div className="w-7 h-7 rounded-full bg-primary/20 flex items-center justify-center mr-3 flex-shrink-0">
                       <span className="text-xs font-semibold text-primary">4</span>
                     </div>
-                    <span>Collaborate with suppliers on data collection</span>
+                    <div>
+                      <h4 className="font-medium mb-1">Engage Suppliers</h4>
+                      <p className="text-sm text-muted-foreground">Start early collaboration with suppliers on data collection requirements</p>
+                    </div>
                   </div>
+                  
                   <div className="flex items-start">
-                    <div className="w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center mr-3 flex-shrink-0">
+                    <div className="w-7 h-7 rounded-full bg-primary/20 flex items-center justify-center mr-3 flex-shrink-0">
                       <span className="text-xs font-semibold text-primary">5</span>
                     </div>
-                    <span>Invest in digital systems capable of managing DPP data</span>
+                    <div>
+                      <h4 className="font-medium mb-1">Invest in Infrastructure</h4>
+                      <p className="text-sm text-muted-foreground">Develop or acquire digital systems capable of managing DPP data effectively</p>
+                    </div>
                   </div>
+                  
                   <div className="flex items-start">
-                    <div className="w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center mr-3 flex-shrink-0">
+                    <div className="w-7 h-7 rounded-full bg-primary/20 flex items-center justify-center mr-3 flex-shrink-0">
                       <span className="text-xs font-semibold text-primary">6</span>
                     </div>
-                    <span>Monitor regulatory developments and implementation timelines</span>
+                    <div>
+                      <h4 className="font-medium mb-1">Monitor Regulations</h4>
+                      <p className="text-sm text-muted-foreground">Stay informed about regulatory developments and implementation timelines</p>
+                    </div>
                   </div>
                 </div>
+              </div>
+              
+              <div className="bg-gradient-to-br from-secondary/5 to-primary/5 rounded-xl p-8 border border-secondary/10">
+                <h3 className="text-xl font-medium mb-5">Implementation Roadmap</h3>
+                <div className="space-y-6">
+                  <div className="flex">
+                    <div className="w-10 h-10 rounded-full bg-secondary/20 flex items-center justify-center mr-4 flex-shrink-0">
+                      <Clock className="h-5 w-5 text-secondary" />
+                    </div>
+                    <div>
+                      <h4 className="font-medium mb-1">Short-term (Next 6 Months)</h4>
+                      <ul className="space-y-2">
+                        <li className="flex items-start">
+                          <CheckCircle2 className="h-4 w-4 text-secondary mt-1 mr-2 flex-shrink-0" />
+                          <span className="text-sm">Form a cross-functional team to manage DPP implementation</span>
+                        </li>
+                        <li className="flex items-start">
+                          <CheckCircle2 className="h-4 w-4 text-secondary mt-1 mr-2 flex-shrink-0" />
+                          <span className="text-sm">Conduct a gap analysis of current product data management</span>
+                        </li>
+                        <li className="flex items-start">
+                          <CheckCircle2 className="h-4 w-4 text-secondary mt-1 mr-2 flex-shrink-0" />
+                          <span className="text-sm">Begin conversations with key suppliers about data requirements</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  
+                  <div className="flex">
+                    <div className="w-10 h-10 rounded-full bg-secondary/20 flex items-center justify-center mr-4 flex-shrink-0">
+                      <Clock className="h-5 w-5 text-secondary" />
+                    </div>
+                    <div>
+                      <h4 className="font-medium mb-1">Medium-term (6-18 Months)</h4>
+                      <ul className="space-y-2">
+                        <li className="flex items-start">
+                          <CheckCircle2 className="h-4 w-4 text-secondary mt-1 mr-2 flex-shrink-0" />
+                          <span className="text-sm">Develop or acquire necessary technological infrastructure</span>
+                        </li>
+                        <li className="flex items-start">
+                          <CheckCircle2 className="h-4 w-4 text-secondary mt-1 mr-2 flex-shrink-0" />
+                          <span className="text-sm">Establish data collection processes with suppliers</span>
+                        </li>
+                        <li className="flex items-start">
+                          <CheckCircle2 className="h-4 w-4 text-secondary mt-1 mr-2 flex-shrink-0" />
+                          <span className="text-sm">Begin pilot implementation for priority product categories</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  
+                  <div className="flex">
+                    <div className="w-10 h-10 rounded-full bg-secondary/20 flex items-center justify-center mr-4 flex-shrink-0">
+                      <Clock className="h-5 w-5 text-secondary" />
+                    </div>
+                    <div>
+                      <h4 className="font-medium mb-1">Long-term (18+ Months)</h4>
+                      <ul className="space-y-2">
+                        <li className="flex items-start">
+                          <CheckCircle2 className="h-4 w-4 text-secondary mt-1 mr-2 flex-shrink-0" />
+                          <span className="text-sm">Scale implementation across all applicable product categories</span>
+                        </li>
+                        <li className="flex items-start">
+                          <CheckCircle2 className="h-4 w-4 text-secondary mt-1 mr-2 flex-shrink-0" />
+                          <span className="text-sm">Integrate DPP data into business intelligence and decision-making processes</span>
+                        </li>
+                        <li className="flex items-start">
+                          <CheckCircle2 className="h-4 w-4 text-secondary mt-1 mr-2 flex-shrink-0" />
+                          <span className="text-sm">Leverage DPP data for product innovation and sustainability improvements</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div className="mb-16">
+              <div className="flex items-center mb-6">
+                <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center mr-3">
+                  <FileText className="h-4 w-4 text-primary" />
+                </div>
+                <h2 className="text-2xl md:text-3xl font-semibold">Frequently Asked Questions</h2>
+              </div>
+              
+              <div className="bg-card rounded-xl border p-1">
+                <Accordion type="single" collapsible className="w-full">
+                  <AccordionItem value="item-1">
+                    <AccordionTrigger className="px-4 hover:no-underline">
+                      <span className="text-left font-medium">What is the EU Digital Product Passport?</span>
+                    </AccordionTrigger>
+                    <AccordionContent className="px-4 pb-4 text-muted-foreground">
+                      <p>
+                        The EU Digital Product Passport (DPP) is a digital record containing comprehensive information about 
+                        a product's components, materials, chemical properties, repair and dismantling information, and 
+                        environmental footprint. It's a key initiative within the European Green Deal and Circular Economy 
+                        Action Plan, designed to enable circular business models through increased transparency across supply chains.
+                      </p>
+                    </AccordionContent>
+                  </AccordionItem>
+                  
+                  <AccordionItem value="item-2">
+                    <AccordionTrigger className="px-4 hover:no-underline">
+                      <span className="text-left font-medium">When will the Digital Product Passport be implemented?</span>
+                    </AccordionTrigger>
+                    <AccordionContent className="px-4 pb-4 text-muted-foreground">
+                      <p>
+                        The implementation timeline varies by product category, with a phased approach:
+                      </p>
+                      <ul className="list-disc pl-5 mt-2 space-y-1">
+                        <li>Batteries: Starting in 2026</li>
+                        <li>Textiles and Electronics/ICT Equipment: From 2027</li>
+                        <li>Furniture and Construction Products: From 2028</li>
+                        <li>Additional product categories will follow after 2028</li>
+                      </ul>
+                    </AccordionContent>
+                  </AccordionItem>
+                  
+                  <AccordionItem value="item-3">
+                    <AccordionTrigger className="px-4 hover:no-underline">
+                      <span className="text-left font-medium">Which products will require a Digital Product Passport?</span>
+                    </AccordionTrigger>
+                    <AccordionContent className="px-4 pb-4 text-muted-foreground">
+                      <p>
+                        The DPP will initially apply to the following priority product categories:
+                      </p>
+                      <ul className="list-disc pl-5 mt-2 space-y-1">
+                        <li>Batteries</li>
+                        <li>Electronics (including smartphones, tablets, and washing machines)</li>
+                        <li>Textiles (including clothing and footwear)</li>
+                        <li>Furniture</li>
+                        <li>Steel</li>
+                        <li>Cement</li>
+                        <li>Chemicals</li>
+                        <li>Construction products</li>
+                      </ul>
+                      <p className="mt-2">
+                        Additional product categories will be added progressively as the implementation advances.
+                      </p>
+                    </AccordionContent>
+                  </AccordionItem>
+                  
+                  <AccordionItem value="item-4">
+                    <AccordionTrigger className="px-4 hover:no-underline">
+                      <span className="text-left font-medium">What information will be included in the Digital Product Passport?</span>
+                    </AccordionTrigger>
+                    <AccordionContent className="px-4 pb-4 text-muted-foreground">
+                      <p>
+                        The DPP will contain comprehensive information about products, including:
+                      </p>
+                      <ul className="list-disc pl-5 mt-2 space-y-1">
+                        <li>Materials and components used in manufacturing</li>
+                        <li>Chemical composition and substances of concern</li>
+                        <li>Repair and maintenance instructions</li>
+                        <li>Disassembly guidelines</li>
+                        <li>End-of-life handling information</li>
+                        <li>Environmental footprint data (carbon emissions, water usage, etc.)</li>
+                        <li>Durability and reusability information</li>
+                        <li>Sustainable sourcing information</li>
+                        <li>Compliance certifications</li>
+                      </ul>
+                      <p className="mt-2">
+                        The specific information required will vary by product category and will be detailed in delegated acts.
+                      </p>
+                    </AccordionContent>
+                  </AccordionItem>
+                  
+                  <AccordionItem value="item-5">
+                    <AccordionTrigger className="px-4 hover:no-underline">
+                      <span className="text-left font-medium">Who will have access to the information in the Digital Product Passport?</span>
+                    </AccordionTrigger>
+                    <AccordionContent className="px-4 pb-4 text-muted-foreground">
+                      <p>
+                        Access to DPP information will be role-based and tailored to different stakeholders:
+                      </p>
+                      <ul className="list-disc pl-5 mt-2 space-y-1">
+                        <li><span className="font-medium">Consumers:</span> Will have access to information relevant for purchasing decisions, product use, maintenance, and proper disposal.</li>
+                        <li><span className="font-medium">Businesses:</span> Will have access to relevant information based on their role in the supply chain.</li>
+                        <li><span className="font-medium">Regulatory authorities:</span> Will have access to compliance-related information for market surveillance.</li>
+                        <li><span className="font-medium">Repair and recycling operators:</span> Will have access to technical information needed for repair services or end-of-life processing.</li>
+                      </ul>
+                      <p className="mt-2">
+                        Some commercially sensitive information may have restricted access to protect intellectual property rights while still providing necessary transparency.
+                      </p>
+                    </AccordionContent>
+                  </AccordionItem>
+                  
+                  <AccordionItem value="item-6">
+                    <AccordionTrigger className="px-4 hover:no-underline">
+                      <span className="text-left font-medium">How will the Digital Product Passport be implemented technically?</span>
+                    </AccordionTrigger>
+                    <AccordionContent className="px-4 pb-4 text-muted-foreground">
+                      <p>
+                        The technical implementation will likely involve:
+                      </p>
+                      <ul className="list-disc pl-5 mt-2 space-y-1">
+                        <li>A unique product identifier (likely a QR code or RFID tag) physically attached to the product</li>
+                        <li>A decentralized data system where information is stored by different actors in the value chain</li>
+                        <li>Standardized data formats to ensure interoperability</li>
+                        <li>API connections to allow different systems to communicate</li>
+                        <li>Role-based access control to manage information visibility</li>
+                      </ul>
+                      <p className="mt-2">
+                        The European Commission is working with stakeholders to develop technical specifications and standards to ensure 
+                        a harmonized approach across different sectors.
+                      </p>
+                    </AccordionContent>
+                  </AccordionItem>
+                  
+                  <AccordionItem value="item-7">
+                    <AccordionTrigger className="px-4 hover:no-underline">
+                      <span className="text-left font-medium">Which companies must comply with the Digital Product Passport requirements?</span>
+                    </AccordionTrigger>
+                    <AccordionContent className="px-4 pb-4 text-muted-foreground">
+                      <p>
+                        The DPP requirements will apply to all economic operators placing products from the regulated 
+                        categories on the EU market, including:
+                      </p>
+                      <ul className="list-disc pl-5 mt-2 space-y-1">
+                        <li>EU manufacturers</li>
+                        <li>Importers bringing products into the EU market</li>
+                        <li>Authorized representatives of non-EU manufacturers</li>
+                        <li>Distributors and retailers in certain cases</li>
+                      </ul>
+                      <p className="mt-2">
+                        The requirements will apply to both large corporations and SMEs, although there may be simplified obligations 
+                        or transition periods for smaller businesses in some cases.
+                      </p>
+                    </AccordionContent>
+                  </AccordionItem>
+                  
+                  <AccordionItem value="item-8">
+                    <AccordionTrigger className="px-4 hover:no-underline">
+                      <span className="text-left font-medium">What are the benefits of implementing the Digital Product Passport?</span>
+                    </AccordionTrigger>
+                    <AccordionContent className="px-4 pb-4 text-muted-foreground">
+                      <p>
+                        The DPP offers numerous benefits across the value chain:
+                      </p>
+                      <ul className="list-disc pl-5 mt-2 space-y-1">
+                        <li><span className="font-medium">For manufacturers:</span> Enhanced inventory management, improved product quality through data analysis, streamlined regulatory compliance, and better brand reputation.</li>
+                        <li><span className="font-medium">For consumers:</span> Access to verified product information, ability to make more sustainable purchasing decisions, better understanding of product care and maintenance.</li>
+                        <li><span className="font-medium">For recyclers:</span> Detailed information about product composition enables more efficient recycling processes and increased recovery of valuable materials.</li>
+                        <li><span className="font-medium">For the environment:</span> Promotes circular economy principles, extends product lifespan through better maintenance, and reduces waste through improved recyclability.</li>
+                      </ul>
+                    </AccordionContent>
+                  </AccordionItem>
+                </Accordion>
               </div>
             </div>
             

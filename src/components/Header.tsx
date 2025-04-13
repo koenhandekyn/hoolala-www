@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Menu, X, FileText, ExternalLink } from 'lucide-react';
 import { cn } from '@/lib/utils';
@@ -90,7 +89,7 @@ const Header: React.FC = () => {
             : "translate-x-full opacity-0 pointer-events-none"
         )}
       >
-        <div className="flex flex-col h-full bg-white shadow-xl p-6">
+        <div className="flex flex-col h-full bg-white/95 backdrop-blur-lg shadow-xl p-6">
           <nav className="flex flex-col space-y-6 mt-8">
             <a 
               href="#features" 

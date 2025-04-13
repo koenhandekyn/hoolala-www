@@ -1,8 +1,7 @@
-
 import React, { useState } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import { ArrowLeft, FileText, CheckCircle2, AlertTriangle, Recycle, Clock, Globe, FileCode, Plus, Minus } from 'lucide-react';
+import { ArrowLeft, FileText, CheckCircle2, AlertTriangle, Recycle, Clock, Globe, FileCode, Plus, Minus, Compass } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent } from '@/components/ui/card';
@@ -45,7 +44,7 @@ const FaqItem = ({ question, answer }: { question: string; answer: React.ReactNo
   const [isOpen, setIsOpen] = useState(false);
   
   return (
-    <div className="mb-6 pb-6 last:border-0 last:pb-0">
+    <div className="mb-4 pb-4 last:border-0 last:pb-0">
       <Collapsible open={isOpen} onOpenChange={setIsOpen} className="w-full">
         <CollapsibleTrigger className="flex justify-between items-center w-full text-left">
           <div className="flex items-center w-full">
@@ -636,7 +635,7 @@ const DPPPage: React.FC = () => {
             <div className="mb-16">
               <div className="flex items-center mb-6">
                 <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center mr-3">
-                  <Globe className="h-4 w-4 text-primary" />
+                  <Compass className="h-4 w-4 text-primary" />
                 </div>
                 <h2 className="text-2xl md:text-3xl font-semibold">Conclusion: The Future of Product Information</h2>
               </div>

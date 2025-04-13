@@ -1,6 +1,7 @@
 
 import React from 'react';
-import { Mail } from 'lucide-react';
+import { Mail, FileText } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Footer: React.FC = () => {
   return (
@@ -48,6 +49,12 @@ const Footer: React.FC = () => {
                 <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                   FAQ
                 </a>
+              </li>
+              <li>
+                <Link to="/summary" className="text-sm text-muted-foreground hover:text-primary transition-colors flex items-center">
+                  <FileText className="h-4 w-4 mr-1" />
+                  Summary
+                </Link>
               </li>
             </ul>
           </div>
@@ -113,10 +120,12 @@ const Footer: React.FC = () => {
             
             <div className="mt-6">
               <a
-                href="#"
+                href="https://app.hoolala.app"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center justify-center px-5 py-2 rounded-full text-sm font-medium bg-primary text-white hover:bg-primary/90 transition-colors"
               >
-                Get Started
+                Login
               </a>
             </div>
           </div>

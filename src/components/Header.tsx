@@ -54,30 +54,17 @@ const Header: React.FC = () => {
             <a href="#pricing" className="text-sm font-medium hover:text-primary transition-colors">
               Pricing
             </a>
-            <Link 
-              to="/summary" 
-              className="text-sm font-medium hover:text-primary transition-colors flex items-center"
-            >
-              <FileText className="h-4 w-4 mr-1" />
-              Summary
-            </Link>
-            <a 
-              href="https://app.hoolala.app" 
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-sm font-medium hover:text-primary transition-colors flex items-center"
-            >
-              <ExternalLink className="h-4 w-4 mr-1" />
-              Login
-            </a>
           </nav>
           
           <div className="hidden md:flex">
             <a 
-              href="#"
-              className="px-5 py-2 rounded-full text-sm font-medium bg-primary text-white hover:bg-primary/90 transition-colors"
+              href="https://app.hoolala.app" 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-5 py-2 rounded-full text-sm font-medium bg-primary text-white hover:bg-primary/90 transition-colors flex items-center"
             >
-              Get Started
+              <ExternalLink className="h-4 w-4 mr-1" />
+              Login
             </a>
           </div>
           
@@ -103,7 +90,7 @@ const Header: React.FC = () => {
             : "translate-x-full opacity-0 pointer-events-none"
         )}
       >
-        <div className="flex flex-col h-full bg-white/95 backdrop-blur-md shadow-xl p-6">
+        <div className="flex flex-col h-full bg-white shadow-xl p-6">
           <nav className="flex flex-col space-y-6 mt-8">
             <a 
               href="#features" 
@@ -133,32 +120,18 @@ const Header: React.FC = () => {
             >
               Pricing
             </a>
-            <Link 
-              to="/summary" 
-              onClick={() => setIsMenuOpen(false)}
-              className="text-lg font-medium hover:text-primary transition-colors flex items-center"
-            >
-              <FileText className="h-5 w-5 mr-2" />
-              Summary
-            </Link>
+          </nav>
+          
+          <div className="mt-auto mb-8">
             <a 
               href="https://app.hoolala.app" 
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setIsMenuOpen(false)}
-              className="text-lg font-medium hover:text-primary transition-colors flex items-center"
+              className="block w-full text-center px-5 py-3 rounded-full text-base font-medium bg-primary text-white hover:bg-primary/90 transition-colors flex items-center justify-center"
             >
               <ExternalLink className="h-5 w-5 mr-2" />
               Login
-            </a>
-          </nav>
-          
-          <div className="mt-auto mb-8">
-            <a 
-              href="#"
-              className="block w-full text-center px-5 py-3 rounded-full text-base font-medium bg-primary text-white hover:bg-primary/90 transition-colors"
-            >
-              Get Started
             </a>
           </div>
         </div>

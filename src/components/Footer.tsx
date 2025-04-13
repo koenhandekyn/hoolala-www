@@ -2,6 +2,7 @@
 import React from 'react';
 import { Mail, FileText } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import LanguageSwitcher from './LanguageSwitcher';
 
 const Footer: React.FC = () => {
   return (
@@ -116,6 +117,9 @@ const Footer: React.FC = () => {
                 <Mail className="h-4 w-4" />
                 <span>info@hoolala.app</span>
               </a>
+            </div>
+            <div className="mt-4">
+              <LanguageSwitcher />
             </div>
           </div>
         </div>

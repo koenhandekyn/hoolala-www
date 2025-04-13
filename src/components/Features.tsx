@@ -1,6 +1,5 @@
-
 import React from 'react';
-import { Scan, Files, Clock, ShieldCheck, Smartphone, Archive, Zap, CheckCircle2, FileText, Recycle, Globe, Link, Users, Refresh } from 'lucide-react';
+import { Scan, Files, Clock, ShieldCheck, Smartphone, Archive, Zap, CheckCircle2, FileText, Recycle, Globe, Link, Users, RefreshCw } from 'lucide-react';
 
 interface FeatureProps {
   icon: React.ReactNode;
@@ -63,7 +62,7 @@ const Features: React.FC = () => {
       description: "Gain insights into product lifecycles, improving planning, maintenance, and customer satisfaction."
     },
     {
-      icon: <Refresh className="h-6 w-6 text-primary" />,
+      icon: <RefreshCw className="h-6 w-6 text-primary" />,
       title: "Full Lifecycle Support",
       description: "Track and manage your product through its entire lifecycle, from manufacturing to end-of-life recycling or refurbishment, boosting sustainability efforts."
     },

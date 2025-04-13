@@ -1,6 +1,5 @@
-
 import React from 'react';
-import { Scan, Files, Clock, ShieldCheck, Smartphone, Archive, Zap, CheckCircle2 } from 'lucide-react';
+import { Scan, Files, Clock, ShieldCheck, Smartphone, Archive, Zap, CheckCircle2, FileText, Recycle, Globe } from 'lucide-react';
 
 interface FeatureProps {
   icon: React.ReactNode;
@@ -61,6 +60,21 @@ const Features: React.FC = () => {
       icon: <CheckCircle2 className="h-6 w-6 text-primary" />,
       title: "Smarter Asset Management",
       description: "Gain insights into product lifecycles, improving planning, maintenance, and customer satisfaction."
+    },
+    {
+      icon: <Globe className="h-6 w-6 text-primary" />,
+      title: "EU Digital Product Passport Ready",
+      description: "Stay ahead of regulatory requirements with comprehensive product data tracking, supporting transparent reporting on composition, origin, and environmental impact."
+    },
+    {
+      icon: <Recycle className="h-6 w-6 text-primary" />,
+      title: "Circularity & Sustainability Tracking",
+      description: "Document your product's entire lifecycle, supporting circular economy initiatives and providing verifiable data on sustainability efforts."
+    },
+    {
+      icon: <FileText className="h-6 w-6 text-primary" />,
+      title: "Comprehensive Compliance Documentation",
+      description: "Centralize and secure all product-related documentation, ensuring easy access and verification for regulatory compliance."
     }
   ];
 
@@ -69,16 +83,16 @@ const Features: React.FC = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center mb-16 animate-fade-in">
           <div className="inline-flex items-center px-3 py-1 rounded-full bg-primary/10 text-primary mb-6">
-            <span className="text-xs font-medium">Key Benefits</span>
+            <span className="text-xs font-medium">Compliance & Innovation</span>
           </div>
           
           <h2 className="mb-6">
-            Beyond Basic Tracking:
-            <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent"> Smart Product Lifecycle Management</span>
+            Future-Proof Your 
+            <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent"> Product Ecosystem</span>
           </h2>
           
           <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Hoolala creates digital twins for every item, connecting physical assets to essential data for more intelligent service and lifecycle management.
+            Hoolala helps businesses prepare for upcoming regulations like the EU Digital Product Passport, enabling transparent, sustainable product lifecycle management.
           </p>
         </div>
         

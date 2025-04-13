@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -42,9 +41,13 @@ const BenefitCard = ({ icon, title, items }: { icon: React.ReactNode; title: str
 );
 
 const FaqItem = ({ question, answer }: { question: string; answer: React.ReactNode }) => (
-  <div className="mb-8 border-b border-border/50 pb-7 last:border-0">
-    <h4 className="text-lg font-medium mb-3 text-primary-foreground">{question}</h4>
-    <div className="text-muted-foreground space-y-3">{answer}</div>
+  <div className="mb-8 border-b border-border/30 pb-6 last:border-0">
+    <h4 className="text-xl font-bold mb-3 text-primary tracking-tight bg-soft-purple/20 px-4 py-2 rounded-lg">
+      {question}
+    </h4>
+    <div className="text-muted-foreground bg-soft-gray/50 p-4 rounded-lg leading-relaxed">
+      {answer}
+    </div>
   </div>
 );
 
@@ -452,7 +455,7 @@ const DPPPage: React.FC = () => {
                 <h2 className="text-2xl md:text-3xl font-semibold">Frequently Asked Questions</h2>
               </div>
               
-              <div className="bg-muted/20 rounded-xl p-6 md:p-8 space-y-0 divide-y divide-border/40">
+              <div className="space-y-6">
                 <FaqItem 
                   question="What is the EU Digital Product Passport?"
                   answer={

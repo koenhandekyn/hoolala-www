@@ -1,3 +1,4 @@
+
 import React from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -6,7 +7,7 @@ import { Link } from 'react-router-dom';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent } from '@/components/ui/card';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
+import { Collapsible, CollapsibleContent, CollapsibleTrigger } from '@/components/ui/collapsible';
 
 const TimelineItem = ({ date, title, icon, color }: { date: string; title: string; icon: React.ReactNode; color: string }) => (
   <div className="flex mb-8 relative">
@@ -38,6 +39,13 @@ const BenefitCard = ({ icon, title, items }: { icon: React.ReactNode; title: str
       </ul>
     </CardContent>
   </Card>
+);
+
+const FaqItem = ({ question, answer }: { question: string; answer: React.ReactNode }) => (
+  <div className="mb-8 border-b border-border/50 pb-7 last:border-0">
+    <h4 className="text-lg font-medium mb-3 text-primary-foreground">{question}</h4>
+    <div className="text-muted-foreground space-y-3">{answer}</div>
+  </div>
 );
 
 const DPPPage: React.FC = () => {
@@ -434,80 +442,6 @@ const DPPPage: React.FC = () => {
                   </div>
                 </div>
               </div>
-              
-              <div className="bg-gradient-to-br from-secondary/5 to-primary/5 rounded-xl p-8 border border-secondary/10">
-                <h3 className="text-xl font-medium mb-5">Implementation Roadmap</h3>
-                <div className="space-y-6">
-                  <div className="flex">
-                    <div className="w-10 h-10 rounded-full bg-secondary/20 flex items-center justify-center mr-4 flex-shrink-0">
-                      <Clock className="h-5 w-5 text-secondary" />
-                    </div>
-                    <div>
-                      <h4 className="font-medium mb-1">Short-term (Next 6 Months)</h4>
-                      <ul className="space-y-2">
-                        <li className="flex items-start">
-                          <CheckCircle2 className="h-4 w-4 text-secondary mt-1 mr-2 flex-shrink-0" />
-                          <span className="text-sm">Form a cross-functional team to manage DPP implementation</span>
-                        </li>
-                        <li className="flex items-start">
-                          <CheckCircle2 className="h-4 w-4 text-secondary mt-1 mr-2 flex-shrink-0" />
-                          <span className="text-sm">Conduct a gap analysis of current product data management</span>
-                        </li>
-                        <li className="flex items-start">
-                          <CheckCircle2 className="h-4 w-4 text-secondary mt-1 mr-2 flex-shrink-0" />
-                          <span className="text-sm">Begin conversations with key suppliers about data requirements</span>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  
-                  <div className="flex">
-                    <div className="w-10 h-10 rounded-full bg-secondary/20 flex items-center justify-center mr-4 flex-shrink-0">
-                      <Clock className="h-5 w-5 text-secondary" />
-                    </div>
-                    <div>
-                      <h4 className="font-medium mb-1">Medium-term (6-18 Months)</h4>
-                      <ul className="space-y-2">
-                        <li className="flex items-start">
-                          <CheckCircle2 className="h-4 w-4 text-secondary mt-1 mr-2 flex-shrink-0" />
-                          <span className="text-sm">Develop or acquire necessary technological infrastructure</span>
-                        </li>
-                        <li className="flex items-start">
-                          <CheckCircle2 className="h-4 w-4 text-secondary mt-1 mr-2 flex-shrink-0" />
-                          <span className="text-sm">Establish data collection processes with suppliers</span>
-                        </li>
-                        <li className="flex items-start">
-                          <CheckCircle2 className="h-4 w-4 text-secondary mt-1 mr-2 flex-shrink-0" />
-                          <span className="text-sm">Begin pilot implementation for priority product categories</span>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  
-                  <div className="flex">
-                    <div className="w-10 h-10 rounded-full bg-secondary/20 flex items-center justify-center mr-4 flex-shrink-0">
-                      <Clock className="h-5 w-5 text-secondary" />
-                    </div>
-                    <div>
-                      <h4 className="font-medium mb-1">Long-term (18+ Months)</h4>
-                      <ul className="space-y-2">
-                        <li className="flex items-start">
-                          <CheckCircle2 className="h-4 w-4 text-secondary mt-1 mr-2 flex-shrink-0" />
-                          <span className="text-sm">Scale implementation across all applicable product categories</span>
-                        </li>
-                        <li className="flex items-start">
-                          <CheckCircle2 className="h-4 w-4 text-secondary mt-1 mr-2 flex-shrink-0" />
-                          <span className="text-sm">Integrate DPP data into business intelligence and decision-making processes</span>
-                        </li>
-                        <li className="flex items-start">
-                          <CheckCircle2 className="h-4 w-4 text-secondary mt-1 mr-2 flex-shrink-0" />
-                          <span className="text-sm">Leverage DPP data for product innovation and sustainability improvements</span>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
             
             <div className="mb-16">
@@ -518,27 +452,23 @@ const DPPPage: React.FC = () => {
                 <h2 className="text-2xl md:text-3xl font-semibold">Frequently Asked Questions</h2>
               </div>
               
-              <div className="bg-card rounded-xl border p-1">
-                <Accordion type="single" collapsible className="w-full">
-                  <AccordionItem value="item-1">
-                    <AccordionTrigger className="px-4 hover:no-underline">
-                      <span className="text-left font-medium">What is the EU Digital Product Passport?</span>
-                    </AccordionTrigger>
-                    <AccordionContent className="px-4 pb-4 text-muted-foreground">
-                      <p>
-                        The EU Digital Product Passport (DPP) is a digital record containing comprehensive information about 
-                        a product's components, materials, chemical properties, repair and dismantling information, and 
-                        environmental footprint. It's a key initiative within the European Green Deal and Circular Economy 
-                        Action Plan, designed to enable circular business models through increased transparency across supply chains.
-                      </p>
-                    </AccordionContent>
-                  </AccordionItem>
-                  
-                  <AccordionItem value="item-2">
-                    <AccordionTrigger className="px-4 hover:no-underline">
-                      <span className="text-left font-medium">When will the Digital Product Passport be implemented?</span>
-                    </AccordionTrigger>
-                    <AccordionContent className="px-4 pb-4 text-muted-foreground">
+              <div className="bg-muted/20 rounded-xl p-6 md:p-8 space-y-0 divide-y divide-border/40">
+                <FaqItem 
+                  question="What is the EU Digital Product Passport?"
+                  answer={
+                    <p>
+                      The EU Digital Product Passport (DPP) is a digital record containing comprehensive information about 
+                      a product's components, materials, chemical properties, repair and dismantling information, and 
+                      environmental footprint. It's a key initiative within the European Green Deal and Circular Economy 
+                      Action Plan, designed to enable circular business models through increased transparency across supply chains.
+                    </p>
+                  }
+                />
+                
+                <FaqItem 
+                  question="When will the Digital Product Passport be implemented?"
+                  answer={
+                    <>
                       <p>
                         The implementation timeline varies by product category, with a phased approach:
                       </p>
@@ -548,14 +478,14 @@ const DPPPage: React.FC = () => {
                         <li>Furniture and Construction Products: From 2028</li>
                         <li>Additional product categories will follow after 2028</li>
                       </ul>
-                    </AccordionContent>
-                  </AccordionItem>
-                  
-                  <AccordionItem value="item-3">
-                    <AccordionTrigger className="px-4 hover:no-underline">
-                      <span className="text-left font-medium">Which products will require a Digital Product Passport?</span>
-                    </AccordionTrigger>
-                    <AccordionContent className="px-4 pb-4 text-muted-foreground">
+                    </>
+                  }
+                />
+                
+                <FaqItem 
+                  question="Which products will require a Digital Product Passport?"
+                  answer={
+                    <>
                       <p>
                         The DPP will initially apply to the following priority product categories:
                       </p>
@@ -572,14 +502,14 @@ const DPPPage: React.FC = () => {
                       <p className="mt-2">
                         Additional product categories will be added progressively as the implementation advances.
                       </p>
-                    </AccordionContent>
-                  </AccordionItem>
-                  
-                  <AccordionItem value="item-4">
-                    <AccordionTrigger className="px-4 hover:no-underline">
-                      <span className="text-left font-medium">What information will be included in the Digital Product Passport?</span>
-                    </AccordionTrigger>
-                    <AccordionContent className="px-4 pb-4 text-muted-foreground">
+                    </>
+                  }
+                />
+                
+                <FaqItem 
+                  question="What information will be included in the Digital Product Passport?"
+                  answer={
+                    <>
                       <p>
                         The DPP will contain comprehensive information about products, including:
                       </p>
@@ -597,14 +527,14 @@ const DPPPage: React.FC = () => {
                       <p className="mt-2">
                         The specific information required will vary by product category and will be detailed in delegated acts.
                       </p>
-                    </AccordionContent>
-                  </AccordionItem>
-                  
-                  <AccordionItem value="item-5">
-                    <AccordionTrigger className="px-4 hover:no-underline">
-                      <span className="text-left font-medium">Who will have access to the information in the Digital Product Passport?</span>
-                    </AccordionTrigger>
-                    <AccordionContent className="px-4 pb-4 text-muted-foreground">
+                    </>
+                  }
+                />
+                
+                <FaqItem 
+                  question="Who will have access to the information in the Digital Product Passport?"
+                  answer={
+                    <>
                       <p>
                         Access to DPP information will be role-based and tailored to different stakeholders:
                       </p>
@@ -617,14 +547,14 @@ const DPPPage: React.FC = () => {
                       <p className="mt-2">
                         Some commercially sensitive information may have restricted access to protect intellectual property rights while still providing necessary transparency.
                       </p>
-                    </AccordionContent>
-                  </AccordionItem>
-                  
-                  <AccordionItem value="item-6">
-                    <AccordionTrigger className="px-4 hover:no-underline">
-                      <span className="text-left font-medium">How will the Digital Product Passport be implemented technically?</span>
-                    </AccordionTrigger>
-                    <AccordionContent className="px-4 pb-4 text-muted-foreground">
+                    </>
+                  }
+                />
+                
+                <FaqItem 
+                  question="How will the Digital Product Passport be implemented technically?"
+                  answer={
+                    <>
                       <p>
                         The technical implementation will likely involve:
                       </p>
@@ -639,14 +569,14 @@ const DPPPage: React.FC = () => {
                         The European Commission is working with stakeholders to develop technical specifications and standards to ensure 
                         a harmonized approach across different sectors.
                       </p>
-                    </AccordionContent>
-                  </AccordionItem>
-                  
-                  <AccordionItem value="item-7">
-                    <AccordionTrigger className="px-4 hover:no-underline">
-                      <span className="text-left font-medium">Which companies must comply with the Digital Product Passport requirements?</span>
-                    </AccordionTrigger>
-                    <AccordionContent className="px-4 pb-4 text-muted-foreground">
+                    </>
+                  }
+                />
+                
+                <FaqItem 
+                  question="Which companies must comply with the Digital Product Passport requirements?"
+                  answer={
+                    <>
                       <p>
                         The DPP requirements will apply to all economic operators placing products from the regulated 
                         categories on the EU market, including:
@@ -661,14 +591,14 @@ const DPPPage: React.FC = () => {
                         The requirements will apply to both large corporations and SMEs, although there may be simplified obligations 
                         or transition periods for smaller businesses in some cases.
                       </p>
-                    </AccordionContent>
-                  </AccordionItem>
-                  
-                  <AccordionItem value="item-8">
-                    <AccordionTrigger className="px-4 hover:no-underline">
-                      <span className="text-left font-medium">What are the benefits of implementing the Digital Product Passport?</span>
-                    </AccordionTrigger>
-                    <AccordionContent className="px-4 pb-4 text-muted-foreground">
+                    </>
+                  }
+                />
+                
+                <FaqItem 
+                  question="What are the benefits of implementing the Digital Product Passport?"
+                  answer={
+                    <>
                       <p>
                         The DPP offers numerous benefits across the value chain:
                       </p>
@@ -678,9 +608,9 @@ const DPPPage: React.FC = () => {
                         <li><span className="font-medium">For recyclers:</span> Detailed information about product composition enables more efficient recycling processes and increased recovery of valuable materials.</li>
                         <li><span className="font-medium">For the environment:</span> Promotes circular economy principles, extends product lifespan through better maintenance, and reduces waste through improved recyclability.</li>
                       </ul>
-                    </AccordionContent>
-                  </AccordionItem>
-                </Accordion>
+                    </>
+                  }
+                />
               </div>
             </div>
             

@@ -1,6 +1,5 @@
-
 import React, { useState, useEffect } from 'react';
-import { Menu, X, FileText } from 'lucide-react';
+import { Menu, X, FileText, LogIn } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { Link } from 'react-router-dom';
 
@@ -61,6 +60,13 @@ const Header: React.FC = () => {
               <FileText className="h-4 w-4 mr-1" />
               Summary
             </Link>
+            <Link 
+              to="/login" 
+              className="text-sm font-medium hover:text-primary transition-colors flex items-center"
+            >
+              <LogIn className="h-4 w-4 mr-1" />
+              Login
+            </Link>
           </nav>
           
           <div className="hidden md:flex">
@@ -86,7 +92,6 @@ const Header: React.FC = () => {
         </div>
       </div>
       
-      {/* Mobile menu */}
       <div 
         className={cn(
           "fixed inset-0 top-[61px] z-40 transform transition-all duration-300 ease-in-out md:hidden",
@@ -132,6 +137,14 @@ const Header: React.FC = () => {
             >
               <FileText className="h-5 w-5 mr-2" />
               Summary
+            </Link>
+            <Link 
+              to="/login" 
+              onClick={() => setIsMenuOpen(false)}
+              className="text-lg font-medium hover:text-primary transition-colors flex items-center"
+            >
+              <LogIn className="h-5 w-5 mr-2" />
+              Login
             </Link>
           </nav>
           

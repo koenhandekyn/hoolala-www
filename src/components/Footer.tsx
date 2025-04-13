@@ -18,7 +18,7 @@ const Footer: React.FC = () => {
                   Tag your products and installations with QR codes or RFID to simplify tracking, documentation, and service requests.
                 </p>
               </div>
-              
+
               <div className="mt-auto pt-8">
                 <p className="text-xs text-muted-foreground">
                   &copy; {new Date().getFullYear()} Hoolala. All rights reserved.
@@ -26,7 +26,7 @@ const Footer: React.FC = () => {
               </div>
             </div>
           </div>
-          
+
           <div className="md:col-span-2">
             <h4 className="text-sm font-semibold mb-4">Product</h4>
             <ul className="space-y-3">
@@ -63,7 +63,7 @@ const Footer: React.FC = () => {
               </li>
             </ul>
           </div>
-          
+
           <div className="md:col-span-2">
             <h4 className="text-sm font-semibold mb-4">Company</h4>
             <ul className="space-y-3">
@@ -79,17 +79,12 @@ const Footer: React.FC = () => {
               </li>
               <li>
                 <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                  Careers
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                   Contact
                 </a>
               </li>
             </ul>
           </div>
-          
+
           <div className="md:col-span-2">
             <h4 className="text-sm font-semibold mb-4">Legal</h4>
             <ul className="space-y-3">
@@ -110,7 +105,7 @@ const Footer: React.FC = () => {
               </li>
             </ul>
           </div>
-          
+
           <div className="md:col-span-2">
             <h4 className="text-sm font-semibold mb-4">Connect</h4>
             <div className="flex items-center space-x-2 mb-4">
@@ -120,17 +115,6 @@ const Footer: React.FC = () => {
               >
                 <Mail className="h-4 w-4" />
                 <span>info@hoolala.app</span>
-              </a>
-            </div>
-            
-            <div className="mt-6">
-              <a
-                href="https://app.hoolala.app"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center px-5 py-2 rounded-full text-sm font-medium bg-primary text-white hover:bg-primary/90 transition-colors"
-              >
-                Login
               </a>
             </div>
           </div>

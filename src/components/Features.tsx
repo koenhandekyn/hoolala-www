@@ -20,7 +20,7 @@ const Feature: React.FC<FeatureProps> = ({ icon, title, description, hasMoreInfo
       </div>
       <h3 className="text-lg font-medium mb-2">{title}</h3>
       <p className="text-sm text-muted-foreground">{description}</p>
-      
+
       {hasMoreInfo && moreInfoLink && (
         <div className="mt-4 pt-3 border-t border-border">
           <RouterLink to={moreInfoLink} className="text-sm text-primary font-medium inline-flex items-center hover:underline">
@@ -119,17 +119,17 @@ const Features: React.FC = () => {
               </div>
             </HoverCardContent>
           </HoverCard>
-          
+
           <h2 className="mb-6">
             Connect Your Entire
             <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent"> Product Ecosystem</span>
           </h2>
-          
+
           <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
             Hoolala connects all stakeholders across the value chain, supporting the complete product lifecycle from creation to recycling while ensuring regulatory compliance.
           </p>
         </div>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {features.map((feature, index) => (
             <Feature

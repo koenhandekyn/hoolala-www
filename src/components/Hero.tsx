@@ -1,7 +1,8 @@
 
 import React from 'react';
-import { ChevronRight, FileText } from 'lucide-react';
+import { ChevronRight, FileText, ExternalLink } from 'lucide-react';
 import { HoverCard, HoverCardContent, HoverCardTrigger } from '@/components/ui/hover-card';
+import { Link } from 'react-router-dom';
 
 const Hero: React.FC = () => {
   return (
@@ -25,6 +26,12 @@ const Hero: React.FC = () => {
                   <p className="text-xs text-muted-foreground mt-2">
                     By centralizing data in one platform, the Digital Product Passport promotes a circular economy, encourages more responsible manufacturing, and reduces waste. The goal is to provide transparency in supply chains, enable better product stewardship, and help organizations meet sustainability regulations while empowering consumers to make more informed purchasing decisions.
                   </p>
+                  <div className="mt-3 pt-2 border-t border-border">
+                    <Link to="/dpp" className="text-xs text-primary font-medium inline-flex items-center hover:underline">
+                      More info
+                      <ExternalLink className="ml-1 h-3 w-3" />
+                    </Link>
+                  </div>
                 </div>
               </HoverCardContent>
             </HoverCard>

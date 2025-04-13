@@ -19,6 +19,7 @@ const languages: Language[] = [
   { code: 'ar', name: 'Arabic' },
   { code: 'zh-CN', name: 'Chinese (Simplified)' },
   { code: 'zh-TW', name: 'Chinese (Traditional)' },
+  { code: 'nl', name: 'Dutch' }, // Added Dutch language
   { code: 'en', name: 'English' },
   { code: 'fr', name: 'French' },
   { code: 'de', name: 'German' },

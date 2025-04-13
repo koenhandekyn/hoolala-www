@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { ChevronRight } from 'lucide-react';
+import { ChevronRight, FileText } from 'lucide-react';
 
 const Hero: React.FC = () => {
   return (
@@ -9,7 +9,8 @@ const Hero: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="animate-fade-in">
             <div className="inline-flex items-center px-3 py-1 rounded-full bg-primary/10 text-primary mb-6">
-              <span className="text-xs font-medium">Digital Product Lifecycle Management</span>
+              <FileText className="mr-2 h-4 w-4" />
+              <span className="text-xs font-medium">EU Digital Product Passport Ready</span>
             </div>
             
             <h1 className="mb-6 leading-tight">
@@ -18,7 +19,8 @@ const Hero: React.FC = () => {
             </h1>
             
             <p className="text-lg md:text-xl text-muted-foreground mb-8">
-              Effortless tracking for smarter asset management. Create digital twins of your products for simplified service, documentation, and lifecycle tracking.
+              Effortless tracking for smarter asset management. Create digital twins of your products for simplified service, documentation, and lifecycle tracking. 
+              Prepare for EU Digital Product Passport regulations with comprehensive, transparent product data management.
             </p>
             
             <div className="flex flex-col sm:flex-row items-start gap-4">

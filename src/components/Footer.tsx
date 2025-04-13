@@ -1,6 +1,5 @@
-
 import React from 'react';
-import { Mail, FileText } from 'lucide-react';
+import { Mail, Globe } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import LanguageSwitcher from './LanguageSwitcher';
 
@@ -20,10 +19,14 @@ const Footer: React.FC = () => {
                 </p>
               </div>
 
-              <div className="mt-auto pt-8">
+              <div className="mt-auto pt-8 flex items-center justify-between">
                 <p className="text-xs text-muted-foreground">
                   &copy; {new Date().getFullYear()} Hoolala. All rights reserved.
                 </p>
+                <div className="flex items-center">
+                  <Globe className="h-4 w-4 mr-2 text-muted-foreground" />
+                  <LanguageSwitcher />
+                </div>
               </div>
             </div>
           </div>
@@ -117,9 +120,6 @@ const Footer: React.FC = () => {
                 <Mail className="h-4 w-4" />
                 <span>info@hoolala.app</span>
               </a>
-            </div>
-            <div className="mt-4">
-              <LanguageSwitcher />
             </div>
           </div>
         </div>

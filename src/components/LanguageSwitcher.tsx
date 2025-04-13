@@ -1,6 +1,5 @@
 
-import React, { useState } from 'react';
-import { Globe } from 'lucide-react';
+import React from 'react';
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -19,7 +18,7 @@ const languages: Language[] = [
   { code: 'ar', name: 'Arabic' },
   { code: 'zh-CN', name: 'Chinese (Simplified)' },
   { code: 'zh-TW', name: 'Chinese (Traditional)' },
-  { code: 'nl', name: 'Dutch' }, // Added Dutch language
+  { code: 'nl', name: 'Dutch' },
   { code: 'en', name: 'English' },
   { code: 'fr', name: 'French' },
   { code: 'de', name: 'German' },
@@ -34,30 +33,24 @@ const languages: Language[] = [
 
 const LanguageSwitcher = () => {
   const handleLanguageChange = (languageCode: string) => {
-    // Get the current URL
     const currentUrl = window.location.href;
-    
-    // Construct the Google Translate URL
     const googleTranslateUrl = `https://translate.google.com/translate?sl=auto&tl=${languageCode}&u=${encodeURIComponent(currentUrl)}`;
-    
-    // Open in a new tab
     window.open(googleTranslateUrl, '_blank');
   };
 
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="ghost" size="sm" className="flex items-center text-muted-foreground hover:text-primary">
-          <Globe className="h-4 w-4 mr-2" />
-          <span>Translate</span>
+        <Button variant="ghost" size="sm" className="text-xs text-muted-foreground hover:text-primary">
+          Translate
         </Button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent align="end" className="w-[200px] max-h-[300px] overflow-y-auto">
+      <DropdownMenuContent align="end" className="w-[180px] max-h-[300px] overflow-y-auto">
         {languages.map((language) => (
           <DropdownMenuItem 
             key={language.code}
             onClick={() => handleLanguageChange(language.code)}
-            className="cursor-pointer"
+            className="text-xs cursor-pointer"
           >
             {language.name}
           </DropdownMenuItem>

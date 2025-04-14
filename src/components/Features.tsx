@@ -72,13 +72,8 @@ const Features: React.FC = () => {
     },
     {
       icon: <CheckCircle2 className="h-6 w-6 text-primary" />,
-      title: "Smarter Asset Management",
-      description: "Gain insights into product lifecycles, improving planning, maintenance, and customer satisfaction."
-    },
-    {
-      icon: <RefreshCw className="h-6 w-6 text-primary" />,
-      title: "Full Lifecycle Support",
-      description: "Track and manage your product through its entire lifecycle, from manufacturing to end-of-life recycling or refurbishment, boosting sustainability efforts."
+      title: "Asset Management & Lifecycle Support",
+      description: "Track and manage products throughout their entire lifecycle, from manufacturing to end-of-life, gaining insights for better planning and maintenance."
     },
     {
       icon: <Recycle className="h-6 w-6 text-primary" />,
@@ -91,11 +86,6 @@ const Features: React.FC = () => {
       description: "Prepare for upcoming regulations with transparent reporting on composition, origin, and environmental impact of your products.",
       hasMoreInfo: true,
       moreInfoLink: "/dpp"
-    },
-    {
-      icon: <FileText className="h-6 w-6 text-primary" />,
-      title: "Comprehensive Compliance",
-      description: "Centralize and secure all product-related documentation, ensuring easy access and verification for regulatory compliance."
     }
   ];
 
@@ -130,7 +120,7 @@ const Features: React.FC = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {features.map((feature, index) => (
             <Feature
               key={index}

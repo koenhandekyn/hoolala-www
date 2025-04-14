@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import { ArrowLeft, FileText, CheckCircle2, AlertTriangle, Recycle, Clock, Globe, FileCode, Plus, Minus, Compass } from 'lucide-react';
+import { ArrowLeft, FileText, CheckCircle2, AlertTriangle, Recycle, Clock, Globe, FileCode, Plus, Minus, Compass, Info } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent } from '@/components/ui/card';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from '@/components/ui/collapsible';
+import { HoverCard, HoverCardContent, HoverCardTrigger } from '@/components/ui/hover-card';
 
 const TimelineItem = ({ date, title, icon, color }: { date: string; title: string; icon: React.ReactNode; color: string }) => (
   <div className="flex mb-8 relative">
@@ -81,8 +82,7 @@ const DPPPage: React.FC = () => {
               
               <div className="flex flex-wrap items-center gap-3 mt-8 mb-6">
                 <Badge variant="outline" className="bg-primary/5 text-primary">Regulatory</Badge>
-                <Badge variant="outline" className="bg-secondary/5 text-secondary">EU Initiative</Badge>
-                <Badge variant="outline" className="bg-accent/5 text-accent">Sustainability</Badge>
+                <Badge variant="outline" className="bg-secondary/5 text-secondary">Sustainability</Badge>
               </div>
               
               <h1 className="text-4xl md:text-5xl font-bold mb-8 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
@@ -635,7 +635,7 @@ const DPPPage: React.FC = () => {
             <div className="mb-16">
               <div className="flex items-center mb-6">
                 <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center mr-3">
-                  <Compass className="h-4 w-4 text-primary" />
+                  <Info className="h-4 w-4 text-primary" />
                 </div>
                 <h2 className="text-2xl md:text-3xl font-semibold">Conclusion: The Future of Product Information</h2>
               </div>

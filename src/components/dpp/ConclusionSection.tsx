@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Info } from 'lucide-react';
+import { Info, ArrowLeft } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const ConclusionSection: React.FC = () => {

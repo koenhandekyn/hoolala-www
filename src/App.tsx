@@ -1,4 +1,3 @@
-
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -9,6 +8,7 @@ import NotFound from "./pages/NotFound";
 import Summary from "./pages/Summary";
 import UseCasesPage from "./pages/UseCasesPage";
 import DPPPage from "./pages/DPPPage";
+import RedirectToSubdomain from "./components/RedirectToSubdomain";
 
 const queryClient = new QueryClient();
 
@@ -23,6 +23,7 @@ const App = () => (
           <Route path="/summary" element={<Summary />} />
           <Route path="/use-cases" element={<UseCasesPage />} />
           <Route path="/dpp" element={<DPPPage />} />
+          <Route path="/p/*" element={<RedirectToSubdomain />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

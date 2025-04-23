@@ -94,12 +94,12 @@ const Features: React.FC = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center mb-16 animate-fade-in">
           <HoverCard>
-            <HoverCardTrigger asChild>
+            {/* <HoverCardTrigger asChild>
               <div className="inline-flex items-center px-3 py-1 rounded-full bg-primary/10 text-primary mb-6 cursor-help">
                 <FileText className="mr-2 h-4 w-4" />
                 <span className="text-xs font-medium">EU Digital Product Passport Compliance</span>
               </div>
-            </HoverCardTrigger>
+            </HoverCardTrigger> */}
             <HoverCardContent className="w-80 md:w-96 p-4">
               <div className="space-y-2">
                 <h4 className="font-medium text-sm">EU Digital Product Passport</h4>

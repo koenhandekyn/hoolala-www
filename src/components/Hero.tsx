@@ -26,26 +26,26 @@ const Hero: React.FC = () => {
                 </div>
               </HoverCardContent>
             </HoverCard>
-            
+
             <h1 className="mb-6 leading-tight">
-              Connect Your Products, 
+              Connect Your Products,
               <span className="block bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Simplify Your Service</span>
             </h1>
-            
+
             <p className="text-lg md:text-xl text-muted-foreground mb-8">
-              Effortless tracking for smarter asset management. Create digital twins of your products for simplified service, documentation, and lifecycle tracking. 
+              Effortless tracking for smarter asset management. Create digital twins of your products for simplified service, documentation, and lifecycle tracking.
               Prepare for EU Digital Product Passport regulations with comprehensive, transparent product data management.
             </p>
-            
+
             <div className="flex flex-col sm:flex-row items-start gap-4">
               <a
-                href="#"
+                href="https://app.hoolala.app"
                 className="w-full sm:w-auto inline-flex items-center justify-center px-6 py-3 rounded-full bg-primary text-white hover:bg-primary/90 transition-all shadow-lg hover:shadow-primary/25"
               >
                 Start Simplifying Today
                 <ChevronRight className="ml-2 h-4 w-4" />
               </a>
-              
+
               <a
                 href="#how-it-works"
                 className="w-full sm:w-auto inline-flex items-center justify-center px-6 py-3 rounded-full bg-background border border-border hover:bg-muted/50 transition-all"
@@ -54,12 +54,12 @@ const Hero: React.FC = () => {
               </a>
             </div>
           </div>
-          
+
           <div className="relative animate-fade-in">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl transform lg:translate-x-4 hover:translate-y-[-5px] transition-all duration-500">
-              <img 
-                src="/lovable-uploads/c0ab0a08-2c02-468d-978d-ce9776521950.png" 
-                alt="Technician scanning QR code for service information" 
+              <img
+                src="/lovable-uploads/c0ab0a08-2c02-468d-978d-ce9776521950.png"
+                alt="Technician scanning QR code for service information"
                 className="w-full h-auto"
               />
               <div className="absolute inset-0 rounded-2xl border border-primary/10"></div>

@@ -12,7 +12,7 @@ const Footer: React.FC = () => {
             <div className="flex flex-col h-full">
               <div>
                 <a href="#" className="text-2xl font-bold tracking-tighter text-primary">
-                  Hoolala
+                  Wazzat
                 </a>
                 <p className="mt-4 text-sm text-muted-foreground max-w-xs">
                   Tag your products and installations with QR codes or RFID to simplify tracking, documentation, and service requests.
@@ -21,7 +21,7 @@ const Footer: React.FC = () => {
 
               <div className="mt-auto pt-8">
                 <p className="text-xs text-muted-foreground">
-                  &copy; {new Date().getFullYear()} Hoolala. All rights reserved.
+                  &copy; {new Date().getFullYear()} Wazzat. All rights reserved.
                 </p>
               </div>
             </div>
@@ -110,11 +110,11 @@ const Footer: React.FC = () => {
             <h4 className="text-sm font-semibold mb-4">Connect</h4>
             <div className="flex items-center space-x-2 mb-4">
               <a
-                href="mailto:info@hoolala.app"
+                href="mailto:info@wazzat.app"
                 className="inline-flex items-center space-x-2 text-sm text-muted-foreground hover:text-primary transition-colors"
               >
                 <Mail className="h-4 w-4" />
-                <span>info@hoolala.app</span>
+                <span>info@wazzat.app</span>
               </a>
             </div>
           </div>

@@ -10,7 +10,7 @@ const Summary: React.FC = () => {
       <div className="container mx-auto py-8 px-4 max-w-[210mm] print:max-w-full print:w-[210mm] print:p-[12mm] print:m-0 print:shadow-none">
         {/* Header */}
         <div className="border-b border-border pb-6 mb-8 flex justify-between items-center">
-          <h1 className="text-4xl font-bold">Hoolala</h1>
+          <h1 className="text-4xl font-bold">Wazzat</h1>
           <div className="text-sm text-muted-foreground">
             Product Summary
           </div>
@@ -20,11 +20,11 @@ const Summary: React.FC = () => {
         <div className="mb-10">
           <h2 className="text-2xl font-semibold mb-4">Product Overview</h2>
           <p className="text-muted-foreground mb-4">
-            Hoolala enables tracking, documentation, and service requests with QR codes or RFID tags.
+            Wazzat enables tracking, documentation, and service requests with QR codes or RFID tags.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-6 print:grid-cols-2">
             <div>
-              <p className="font-medium mb-2">What is Hoolala?</p>
+              <p className="font-medium mb-2">What is Wazzat?</p>
               <p className="text-sm text-muted-foreground mb-4">
                 A comprehensive solution that simplifies tracking, documentation, and service
                 management through smart tagging technology.
@@ -188,8 +188,8 @@ const Summary: React.FC = () => {
 
         {/* Footer - positioned at bottom of second page */}
         <div className="mt-auto pt-6 border-t border-border text-center text-sm text-muted-foreground print:fixed print:bottom-[12mm] print:left-[12mm] print:right-[12mm] print:w-[calc(210mm-18mm)]">
-          <p>For more information, visit https://www.hoolala.com or contact us at info@hoolala.com.</p>
-          <p className="mt-1">© 2025 Hoolala. All rights reserved.</p>
+          <p>For more information, visit https://www.wazzat.com or contact us at info@wazzat.com.</p>
+          <p className="mt-1">© 2025 Wazzat. All rights reserved.</p>
         </div>
       </div>
     </div>

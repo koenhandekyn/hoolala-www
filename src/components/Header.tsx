@@ -31,20 +31,20 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header 
+    <header
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-in-out",
-        scrolled || isMenuOpen 
-          ? "bg-white/90 backdrop-blur-md shadow-sm" 
+        scrolled || isMenuOpen
+          ? "bg-white/90 backdrop-blur-md shadow-sm"
           : "bg-transparent"
       )}
     >
       <div className="container mx-auto py-4 px-6">
         <div className="flex items-center justify-between">
           <Link to="/" className="text-xl font-bold tracking-tighter text-primary">
-            Hoolala
+            Wazzat
           </Link>
-          
+
           <nav className="hidden md:flex items-center space-x-8">
             <a href="#features" className="text-sm font-medium hover:text-primary transition-colors">
               Features
@@ -59,11 +59,11 @@ const Header: React.FC = () => {
               Pricing
             </a>
           </nav>
-          
+
           <div className="hidden md:flex items-center space-x-2">
             <LanguageSwitcher />
-            <a 
-              href="https://app.hoolala.app" 
+            <a
+              href="https://app.wazzat.app"
               target="_blank"
               rel="noopener noreferrer"
               className="px-5 py-2 rounded-full text-sm font-medium bg-primary text-white hover:bg-primary/90 transition-colors flex items-center"
@@ -72,11 +72,11 @@ const Header: React.FC = () => {
               Login
             </a>
           </div>
-          
+
           {isMobile ? (
             <Sheet>
               <SheetTrigger asChild>
-                <button 
+                <button
                   className="flex md:hidden focus:outline-none"
                   aria-label="Toggle menu"
                 >
@@ -86,8 +86,8 @@ const Header: React.FC = () => {
               <SheetContent side="right" className="p-0 pt-16 w-full">
                 <div className="flex flex-col h-full bg-white p-6">
                   <nav className="flex flex-col space-y-6">
-                    <a 
-                      href="#features" 
+                    <a
+                      href="#features"
                       className="text-lg font-medium hover:text-primary transition-colors"
                       onClick={() => {
                         document.getElementById('features')?.scrollIntoView({ behavior: 'smooth' });
@@ -95,8 +95,8 @@ const Header: React.FC = () => {
                     >
                       Features
                     </a>
-                    <a 
-                      href="#how-it-works" 
+                    <a
+                      href="#how-it-works"
                       className="text-lg font-medium hover:text-primary transition-colors"
                       onClick={() => {
                         document.getElementById('how-it-works')?.scrollIntoView({ behavior: 'smooth' });
@@ -104,14 +104,14 @@ const Header: React.FC = () => {
                     >
                       How It Works
                     </a>
-                    <Link 
-                      to="/use-cases" 
+                    <Link
+                      to="/use-cases"
                       className="text-lg font-medium hover:text-primary transition-colors"
                     >
                       Use Cases
                     </Link>
-                    <a 
-                      href="#pricing" 
+                    <a
+                      href="#pricing"
                       className="text-lg font-medium hover:text-primary transition-colors"
                       onClick={() => {
                         document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' });
@@ -120,13 +120,13 @@ const Header: React.FC = () => {
                       Pricing
                     </a>
                   </nav>
-                  
+
                   <div className="mt-auto mb-8 flex flex-col space-y-4">
                     <div className="flex justify-center">
                       <LanguageSwitcher />
                     </div>
-                    <a 
-                      href="https://app.hoolala.app" 
+                    <a
+                      href="https://app.wazzat.app"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="block w-full text-center px-5 py-3 rounded-full text-base font-medium bg-primary text-white hover:bg-primary/90 transition-colors flex items-center justify-center"
@@ -139,7 +139,7 @@ const Header: React.FC = () => {
               </SheetContent>
             </Sheet>
           ) : (
-            <button 
+            <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="flex md:hidden focus:outline-none"
               aria-label="Toggle menu"
@@ -153,9 +153,9 @@ const Header: React.FC = () => {
           )}
         </div>
       </div>
-      
+
       {!isMobile && (
-        <div 
+        <div
           className={cn(
             "fixed inset-0 top-[61px] z-40 transform transition-all duration-300 ease-in-out md:hidden",
             isMenuOpen
@@ -165,42 +165,42 @@ const Header: React.FC = () => {
         >
           <div className="flex flex-col h-full bg-white/95 backdrop-blur-lg shadow-xl p-6 text-foreground">
             <nav className="flex flex-col space-y-6 mt-8">
-              <a 
-                href="#features" 
+              <a
+                href="#features"
                 onClick={(e) => scrollToSection(e, 'features')}
                 className="text-lg font-medium hover:text-primary transition-colors"
               >
                 Features
               </a>
-              <a 
-                href="#how-it-works" 
+              <a
+                href="#how-it-works"
                 onClick={(e) => scrollToSection(e, 'how-it-works')}
                 className="text-lg font-medium hover:text-primary transition-colors"
               >
                 How It Works
               </a>
-              <Link 
-                to="/use-cases" 
+              <Link
+                to="/use-cases"
                 onClick={() => setIsMenuOpen(false)}
                 className="text-lg font-medium hover:text-primary transition-colors"
               >
                 Use Cases
               </Link>
-              <a 
-                href="#pricing" 
+              <a
+                href="#pricing"
                 onClick={(e) => scrollToSection(e, 'pricing')}
                 className="text-lg font-medium hover:text-primary transition-colors"
               >
                 Pricing
               </a>
             </nav>
-            
+
             <div className="mt-auto mb-8 flex flex-col space-y-4">
               <div className="flex justify-center">
                 <LanguageSwitcher />
               </div>
-              <a 
-                href="https://app.hoolala.app" 
+              <a
+                href="https://app.wazzat.app"
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => setIsMenuOpen(false)}

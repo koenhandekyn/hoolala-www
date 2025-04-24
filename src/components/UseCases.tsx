@@ -14,7 +14,7 @@ const UseCase: React.FC<UseCaseProps> = ({ icon, title, description, benefits })
   return (
     <div className="p-6 rounded-2xl bg-white border border-border hover:shadow-lg transition-all duration-300">
       <div className="w-16 h-16 mb-4 mx-auto">
-        <ArtworkImage 
+        <ArtworkImage
           src={icon}
           alt={title}
           iconMode={true}
@@ -23,7 +23,7 @@ const UseCase: React.FC<UseCaseProps> = ({ icon, title, description, benefits })
       </div>
       <h3 className="text-lg font-medium mb-2 text-center">{title}</h3>
       <p className="text-sm text-muted-foreground mb-4 text-center">{description}</p>
-      
+
       <ul className="space-y-2">
         {benefits.map((benefit, index) => (
           <li key={index} className="flex items-start">
@@ -107,17 +107,17 @@ const UseCases: React.FC = () => {
           <div className="inline-flex items-center px-3 py-1 rounded-full bg-primary/10 text-primary mb-6">
             <span className="text-xs font-medium">Use Cases</span>
           </div>
-          
+
           <h2 className="mb-6">
-            Perfect for Every 
+            Perfect for Every
             <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent"> Industry & Need</span>
           </h2>
-          
+
           <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Hoolala adapts to diverse industries and use cases, providing tailored solutions for various tracking and service needs.
+            Wazzat adapts to diverse industries and use cases, providing tailored solutions for various tracking and service needs.
           </p>
         </div>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {useCases.map((useCase, index) => (
             <UseCase

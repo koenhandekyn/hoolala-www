@@ -39,7 +39,7 @@ const Hero: React.FC = () => {
 
             <div className="flex flex-col sm:flex-row items-start gap-4">
               <a
-                href="https://app.hoolala.app"
+                href="https://app.wazzat.app"
                 className="w-full sm:w-auto inline-flex items-center justify-center px-6 py-3 rounded-full bg-primary text-white hover:bg-primary/90 transition-all shadow-lg hover:shadow-primary/25"
               >
                 Start Simplifying Today

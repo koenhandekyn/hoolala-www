@@ -116,7 +116,7 @@ const Features: React.FC = () => {
           </h2>
 
           <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Hoolala connects all stakeholders across the value chain, supporting the complete product lifecycle from creation to recycling while ensuring regulatory compliance.
+            Wazzat connects all stakeholders across the value chain, supporting the complete product lifecycle from creation to recycling while ensuring regulatory compliance.
           </p>
         </div>
 

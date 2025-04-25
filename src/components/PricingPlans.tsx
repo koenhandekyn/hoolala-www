@@ -117,7 +117,7 @@ const PricingPlans: React.FC = () => {
       },
       {
         title: "Enterprise",
-        price: "€0.25/tag",
+        price: "€0.50/tag",
         description: "For high-volume manufacturers",
         limit: "1,000+ tags",
         features: [

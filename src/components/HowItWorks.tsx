@@ -47,7 +47,7 @@ const HowItWorks: React.FC = () => {
           </h2>
 
           <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Wazzat makes tracking and documentation effortless with a streamlined workflow that anyone can follow.
+            <i>Wazzat?</i> makes tracking and documentation effortless with a streamlined workflow that anyone can follow.
           </p>
         </div>
 

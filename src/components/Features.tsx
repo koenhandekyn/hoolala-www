@@ -37,7 +37,7 @@ const Features: React.FC = () => {
   const features = [
     {
       icon: <Scan className="h-6 w-6 text-primary" />,
-      title: "Digital Fingerprints",
+      title: "Digital Passport",
       description: "Create unique digital twins for each product, linking physical assets to essential data and service history."
     },
     {
@@ -50,26 +50,21 @@ const Features: React.FC = () => {
       title: "Complete Documentation",
       description: "Keep manuals, warranties, and service records in one place, accessible to both customers and service teams."
     },
-    {
-      icon: <Users className="h-6 w-6 text-primary" />,
-      title: "Value Chain Connectivity",
-      description: "Connect all stakeholders from manufacturers to recyclers, enabling seamless communication and data sharing across the entire product ecosystem."
-    },
+    // {
+    //   icon: <Users className="h-6 w-6 text-primary" />,
+    //   title: "Value Chain Connectivity",
+    //   description: "Connect all stakeholders from manufacturers to recyclers, enabling seamless communication and data sharing across the entire product ecosystem."
+    // },
     {
       icon: <Zap className="h-6 w-6 text-primary" />,
       title: "Streamlined Service",
-      description: "Empower customers to submit service requests in seconds, reducing support costs and wait times."
+      description: "Empower customers to submit service requests in seconds, reducing support costs and wait times. Service teams gain immediate access to product history, reducing troubleshooting time."
     },
-    {
-      icon: <Clock className="h-6 w-6 text-primary" />,
-      title: "Efficient Follow-ups",
-      description: "Service teams gain immediate access to product history, reducing troubleshooting time."
-    },
-    {
-      icon: <ShieldCheck className="h-6 w-6 text-primary" />,
-      title: "Secure & Reliable",
-      description: "Enterprise-grade security ensures your product data is protected while remaining accessible to authorized users."
-    },
+    // {
+    //   icon: <ShieldCheck className="h-6 w-6 text-primary" />,
+    //   title: "Secure & Reliable",
+    //   description: "Enterprise-grade security ensures your product data is protected while remaining accessible to authorized users."
+    // },
     {
       icon: <CheckCircle2 className="h-6 w-6 text-primary" />,
       title: "Asset Management & Lifecycle Support",
@@ -79,20 +74,20 @@ const Features: React.FC = () => {
       icon: <Recycle className="h-6 w-6 text-primary" />,
       title: "Circularity & Sustainability",
       description: "Support repair, refurbishment, and recycling initiatives with comprehensive product data, meeting Extended Producer Responsibility requirements."
-    },
-    {
-      icon: <Archive className="h-6 w-6 text-primary" />,
-      title: "Digital Product Passport Ready",
-      description: "Prepare for upcoming regulations with transparent reporting on composition, origin, and environmental impact of your products.",
-      hasMoreInfo: true,
-      moreInfoLink: "/dpp"
     }
+    // {
+    //   icon: <Archive className="h-6 w-6 text-primary" />,
+    //   title: "Digital Product Passport Ready",
+    //   description: "Prepare for upcoming regulations with transparent reporting on composition, origin, and environmental impact of your products.",
+    //   hasMoreInfo: true,
+    //   moreInfoLink: "/dpp"
+    // }
   ];
 
   return (
     <section id="features" className="py-20 bg-background overflow-hidden">
       <div className="container mx-auto px-4">
-        <div className="max-w-3xl mx-auto text-center mb-16 animate-fade-in">
+        <div className="max-w-3xl mx-auto text-center">
           <HoverCard>
             {/* <HoverCardTrigger asChild>
               <div className="inline-flex items-center px-3 py-1 rounded-full bg-primary/10 text-primary mb-6 cursor-help">
@@ -110,14 +105,16 @@ const Features: React.FC = () => {
             </HoverCardContent>
           </HoverCard>
 
-          <h2 className="mb-6">
-            Connect Your Entire
-            <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent"> Product Ecosystem</span>
-          </h2>
+          {/* <h2 className="mb-6">
+            Connect Your Entire&nbsp;
+            <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+              Product Ecosystem
+            </span>
+          </h2> */}
 
-          <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Wazzat connects all stakeholders across the value chain, supporting the complete product lifecycle from creation to recycling while ensuring regulatory compliance.
-          </p>
+          {/* <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
+            <i>Wazzat?</i> connects stakeholders supporting the complete lifecycle from creation to recycling.
+          </p> */}
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

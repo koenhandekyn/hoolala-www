@@ -42,7 +42,7 @@ const Header: React.FC = () => {
       <div className="container mx-auto py-4 px-6">
         <div className="flex items-center justify-between">
           <Link to="/" className="text-xl font-bold tracking-tighter text-primary">
-            Wazzat
+            <i>Wazzat?</i>
           </Link>
 
           <nav className="hidden md:flex items-center space-x-8">

@@ -114,7 +114,7 @@ const UseCases: React.FC = () => {
           </h2>
 
           <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Wazzat adapts to diverse industries and use cases, providing tailored solutions for various tracking and service needs.
+            <i>Wazzat?</i> adapts to diverse industries and use cases, providing tailored solutions for various tracking and service needs.
           </p>
         </div>
 

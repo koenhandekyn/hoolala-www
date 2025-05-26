@@ -3,22 +3,6 @@ import React, { useState } from 'react';
 import { Check, HelpCircle } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
-interface PricingFeaturesProps {
-  features: string[];
-}
-
-const PricingFeatures: React.FC<PricingFeaturesProps> = ({ features }) => {
-  return (
-    <ul className="space-y-3 mt-6">
-      {features.map((feature, index) => (
-        <li key={index} className="flex items-start">
-          <Check className="h-5 w-5 text-primary mr-2 mt-0.5 flex-shrink-0" />
-          <span className="text-sm">{feature}</span>
-        </li>
-      ))}
-    </ul>
-  );
-};
 
 interface PricingCardProps {
   title: string;
@@ -35,9 +19,7 @@ const PricingCard: React.FC<PricingCardProps> = ({
   price,
   description,
   limit,
-  recommended = false,
-  features,
-  isMonthly
+  recommended = false
 }) => {
   return (
     <div
@@ -52,6 +34,12 @@ const PricingCard: React.FC<PricingCardProps> = ({
         "h-full rounded-2xl p-6 lg:p-8 bg-white/90",
         recommended && "bg-primary/[0.02]"
       )}>
+
+        <div className="p-3 rounded-lg bg-muted/100 flex items-center">
+          {/* <HelpCircle className="h-4 w-4 text-muted-foreground mr-2" /> */}
+          <span className="text-xs">{limit}</span>
+        </div>
+
         {recommended && (
           <div className="inline-flex items-center px-3 py-1 rounded-full bg-primary/10 text-primary mb-4">
             <span className="text-xs font-medium">Recommended</span>
@@ -66,13 +54,6 @@ const PricingCard: React.FC<PricingCardProps> = ({
 
         <p className="mt-2 text-sm text-muted-foreground">{description}</p>
 
-        <div className="mt-4 p-3 rounded-lg bg-muted/30 flex items-center">
-          <HelpCircle className="h-4 w-4 text-muted-foreground mr-2" />
-          <span className="text-xs">{limit}</span>
-        </div>
-
-        <PricingFeatures features={features} />
-
       </div>
     </div>
   );
@@ -83,47 +64,29 @@ const PricingPlans: React.FC = () => {
   const pricingPlans = {
     prepaid: [
       {
-        title: "Free",
-        price: "",
+        title: "1-Year ",
+        price: "Free Trial",
         description: "For personal projects and experiments",
-        limit: "First 10 tags",
-        features: [
-          "Basic QR code generation",
-          "Simple product information",
-          "Photo & document storage",
-        ]
+        limit: "First 3 tags"
       },
       {
         title: "Starter",
-        price: "€2.5/tag",
+        price: "€5 per tag",
         description: "For small businesses or contractors",
-        limit: "First 10 - 100 tags",
-        recommended: true,
-        features: [
-          "Custom QR code designs",
-          "Detailed product information",
-          "Service request handling",
-        ]
+        limit: "4th - 100th tag",
+        recommended: true
       },
       {
         title: "Scale-Up",
-        price: "€1/tag",
+        price: "€1 per tag",
         description: "For mid-sized manufacturers",
-        limit: "Next 100 - 1,000 tags",
-        features: [
-          "Everything in Starter",
-          "Activates API access",
-        ]
+        limit: "101st - 1,000th tag"
       },
       {
         title: "Enterprise",
-        price: "€0.50/tag",
+        price: "€0.50 per tag",
         description: "For high-volume manufacturers",
-        limit: "1,000+ tags",
-        features: [
-          "Everything in Scale-Up",
-          "Activates full white-labeling",
-        ]
+        limit: "1,001th+ tag"
       }
     ]
   };
@@ -152,7 +115,6 @@ const PricingPlans: React.FC = () => {
               price={plan.price}
               description={plan.description}
               limit={plan.limit}
-              features={plan.features}
             />
           ))}
         </div>

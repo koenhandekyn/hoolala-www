@@ -2,7 +2,6 @@
 import React from 'react';
 import { ChevronRight, FileText, ExternalLink } from 'lucide-react';
 import { HoverCard, HoverCardContent, HoverCardTrigger } from '@/components/ui/hover-card';
-import { Link } from 'react-router-dom';
 
 const Hero: React.FC = () => {
   return (

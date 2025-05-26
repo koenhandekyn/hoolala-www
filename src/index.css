@@ -90,7 +90,7 @@
   body {
     @apply bg-background text-foreground antialiased;
     font-feature-settings: "ss01" on, "ss02" on, "cv01" on, "cv03" on;
-    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: 'Victor Mono Nerd Font', 'IBM Plex Sans', sans-serif;
   }
 
   /* Typography */

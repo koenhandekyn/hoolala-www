@@ -10,8 +10,8 @@ const Summary: React.FC = () => {
       <div className="container mx-auto py-8 px-4 max-w-[210mm] print:max-w-full print:w-[210mm] print:p-[12mm] print:m-0 print:shadow-none">
         {/* Header */}
         <div className="border-b border-border pb-6 mb-8 flex justify-between items-center">
-          <h1 className="text-4xl font-bold">Wazzat</h1>
-          <div className="text-sm text-muted-foreground">
+          <h1 className="text-4xl font-bold italic">Wazzat?</h1>
+          <div className="text-sm text-muted-foreground italic">
             Product Summary
           </div>
         </div>
@@ -20,7 +20,7 @@ const Summary: React.FC = () => {
         <div className="mb-10">
           <h2 className="text-2xl font-semibold mb-4">Product Overview</h2>
           <p className="text-muted-foreground mb-4">
-            Wazzat enables tracking, documentation, and service requests with QR codes or RFID tags.
+            <i>Wazzat?</i> enables tracking, documentation, and service requests with QR codes or RFID tags.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-6 print:grid-cols-2">
             <div>

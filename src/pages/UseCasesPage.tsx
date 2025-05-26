@@ -16,7 +16,7 @@ const UseCasesPage = () => {
               <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent"> Industry Solutions</span>
             </h1>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              See how Wazzat adapts to diverse industries, providing customers and service teams with instant access to crucial information, reducing support costs, and boosting satisfaction across various sectors.
+              See how <i>Wazzat?</i> adapts to diverse industries, providing customers and service teams with instant access to crucial information, reducing support costs, and boosting satisfaction across various sectors.
             </p>
           </div>
         </div>

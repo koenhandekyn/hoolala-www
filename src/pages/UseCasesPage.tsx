@@ -8,8 +8,8 @@ const UseCasesPage = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
-      <main className="flex-grow pt-20">
-        <div className="container mx-auto px-4 py-12">
+      <main className="flex-grow pt-20" id="use-cases" >
+        {/* <div className="container mx-auto px-4 py-12">
           <div className="max-w-3xl mx-auto text-center mb-16">
             <h1 className="text-4xl font-bold mb-6">
               Empower Your
@@ -19,7 +19,7 @@ const UseCasesPage = () => {
               See how <i>Wazzat?</i> adapts to diverse industries, providing customers and service teams with instant access to crucial information, reducing support costs, and boosting satisfaction across various sectors.
             </p>
           </div>
-        </div>
+        </div> */}
         <UseCases />
       </main>
       <Footer />

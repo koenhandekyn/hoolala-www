@@ -101,12 +101,9 @@ const UseCases: React.FC = () => {
   ];
 
   return (
-    <section id="use-cases" className="py-20 bg-muted/30 overflow-hidden">
+    <section className="py-20 bg-muted/30 overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center mb-16 animate-fade-in">
-          <div className="inline-flex items-center px-3 py-1 rounded-full bg-primary/10 text-primary mb-6">
-            <span className="text-xs font-medium">Use Cases</span>
-          </div>
 
           <h2 className="mb-6">
             Perfect for Every

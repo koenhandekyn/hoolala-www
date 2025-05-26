@@ -1,8 +1,7 @@
-
 import React, { useState, useEffect } from 'react';
 import { Menu, X, ExternalLink } from 'lucide-react';
 import { cn } from '@/lib/utils';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { useIsMobile } from '@/hooks/use-mobile';
 import LanguageSwitcher from './LanguageSwitcher';
@@ -11,6 +10,8 @@ const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const isMobile = useIsMobile();
+  const location = useLocation();
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -23,10 +24,22 @@ const Header: React.FC = () => {
 
   const scrollToSection = (e: React.MouseEvent<HTMLAnchorElement>, sectionId: string) => {
     e.preventDefault();
-    const section = document.getElementById(sectionId);
-    if (section) {
-      section.scrollIntoView({ behavior: 'smooth' });
-      setIsMenuOpen(false);
+    if (location.pathname !== '/') {
+      navigate('/');
+      // Wait for navigation to complete before scrolling
+      setTimeout(() => {
+        const section = document.getElementById(sectionId);
+        if (section) {
+          section.scrollIntoView({ behavior: 'smooth' });
+        }
+        setIsMenuOpen(false);
+      }, 100);
+    } else {
+      const section = document.getElementById(sectionId);
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+        setIsMenuOpen(false);
+      }
     }
   };
 
@@ -46,16 +59,16 @@ const Header: React.FC = () => {
           </Link>
 
           <nav className="hidden md:flex items-center space-x-8">
-            <a href="#features" className="text-sm font-medium hover:text-primary transition-colors">
+            <a href="/#features" onClick={(e) => scrollToSection(e, 'features')} className="text-sm font-medium hover:text-primary transition-colors">
               Features
             </a>
-            <a href="#how-it-works" className="text-sm font-medium hover:text-primary transition-colors">
+            <a href="/#how-it-works" onClick={(e) => scrollToSection(e, 'how-it-works')} className="text-sm font-medium hover:text-primary transition-colors">
               How It Works
             </a>
             <Link to="/use-cases" className="text-sm font-medium hover:text-primary transition-colors">
               Use Cases
             </Link>
-            <a href="#pricing" className="text-sm font-medium hover:text-primary transition-colors">
+            <a href="/#pricing" onClick={(e) => scrollToSection(e, 'pricing')} className="text-sm font-medium hover:text-primary transition-colors">
               Pricing
             </a>
           </nav>

@@ -1,9 +1,30 @@
-
 import React from 'react';
 import { Mail, FileText } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 
 const Footer: React.FC = () => {
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  const scrollToSection = (e: React.MouseEvent<HTMLAnchorElement>, sectionId: string) => {
+    e.preventDefault();
+    if (location.pathname !== '/') {
+      navigate('/');
+      // Wait for navigation to complete before scrolling
+      setTimeout(() => {
+        const section = document.getElementById(sectionId);
+        if (section) {
+          section.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100);
+    } else {
+      const section = document.getElementById(sectionId);
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  };
+
   return (
     <footer className="py-16 bg-muted/30 border-t border-border">
       <div className="container mx-auto px-4">
@@ -31,12 +52,12 @@ const Footer: React.FC = () => {
             <h4 className="text-sm font-semibold mb-4">Product</h4>
             <ul className="space-y-3">
               <li>
-                <a href="#features" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                <a href="/#features" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                   Features
                 </a>
               </li>
               <li>
-                <a href="#how-it-works" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                <a href="/#how-it-works" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                   How It Works
                 </a>
               </li>
@@ -46,12 +67,16 @@ const Footer: React.FC = () => {
                 </Link>
               </li>
               <li>
-                <a href="#pricing" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                <a
+                  href="/#pricing"
+                  onClick={(e) => scrollToSection(e, 'pricing')}
+                  className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                >
                   Pricing
                 </a>
               </li>
               <li>
-                <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                <a href="/faq" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                   FAQ
                 </a>
               </li>

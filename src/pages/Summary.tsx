@@ -11,25 +11,25 @@ const Summary: React.FC = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="min-h-screen pt-2 print:pt-0">
-      <div className="bg-white px-8 mt-8 container mx-auto py-8 px-4 max-w-[210mm] print:max-w-full print:w-[210mm] print:p-[12mm] print:m-0 print:shadow-none">
-        {/* Header */}
-        <div className="border-b border-border pb-6 mb-8 flex justify-between items-center print:hidden" >
-          <div className="flex items-center gap-4">
-            <Link to="/" onClick={() => window.scrollTo(0, 0)} className="text-4xl font-bold text-primary hover:text-primary/90 transition-colors">
-              <i>Wazzat?</i>
-            </Link>
+    <div className="">
+      <div className="container mx-auto py-8 max-w-[210mm] border-b border-border pb-6 mb-8 flex justify-between items-center print:hidden" >
+        <div className="flex items-center gap-4">
+          <Link to="/" onClick={() => window.scrollTo(0, 0)} className="text-4xl font-bold text-primary hover:text-primary/90 transition-colors">
+            <i>Wazzat?</i>
+          </Link>
 
-          </div>
-          <div className="print:hidden">
-            <LanguageSwitcher />
-          </div>
         </div>
+        <div className="print:hidden">
+          <LanguageSwitcher />
+        </div>
+      </div>
 
+      <div className="bg-white px-8 mt-8 container mx-auto py-8 px-4 max-w-[210mm] print:max-w-full print:w-[210mm] print:pt-[12mm] print:pr-[12mm] print:pb-[12mm] print:pl-[12mm] print:m-0">
+        {/* Header */}
         {/* Introduction */}
-        <div className="mb-10">
-          <div className="flex flex-col md:flex-row items-start gap-8 mt-6 print:grid print:grid-cols-12 print:gap-8">
-            <div className="flex-1 print:col-span-8">
+        <div className="mb-4">
+          <div className="flex flex-row items-start gap-4 mt-2 justify-between pt-0">
+            <div className="flex-1">
               <p className="text-muted-foreground mb-4">
                 <HtmlContent>{t('summary.overview.description')}</HtmlContent>
               </p>
@@ -37,7 +37,7 @@ const Summary: React.FC = () => {
                 {t('summary.overview.what.description')}
               </p>
             </div>
-            <div className="shrink-0 print:col-span-4 print:justify-self-end">
+            <div className="shrink-0">
               <ArtworkImage
                 src="/lovable-uploads/c0ab0a08-2c02-468d-978d-ce9776521950.png"
                 alt="Technician scanning QR code"
@@ -48,9 +48,9 @@ const Summary: React.FC = () => {
         </div>
 
         {/* How It Works */}
-        <div className="mb-10">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 print:grid-cols-3">
-            <Card className="border border-border rounded-lg p-4 print:shadow-none">
+        <div className="mb-6">
+          <div className="grid grid-cols-1 grid-cols-3 gap-6 ">
+            <Card className="border border-border rounded-lg p-4 bg-primary/10">
               <CardContent className="p-2">
                 <div className="font-medium mb-2">
                   {t('summary.howItWorks.steps.tag.title')}
@@ -60,7 +60,7 @@ const Summary: React.FC = () => {
                 </p>
               </CardContent>
             </Card>
-            <Card className="border border-border rounded-lg p-4 print:shadow-none">
+            <Card className="border border-border rounded-lg p-4 bg-primary/10">
               <CardContent className="p-2">
                 <div className="font-medium mb-2">
                   {t('summary.howItWorks.steps.enrich.title')}
@@ -70,7 +70,7 @@ const Summary: React.FC = () => {
                 </p>
               </CardContent>
             </Card>
-            <Card className="border border-border rounded-lg p-4 print:shadow-none">
+            <Card className="border border-border rounded-lg p-4 bg-primary/10">
               <CardContent className="p-2">
                 <div className="font-medium mb-2">
                   {t('summary.howItWorks.steps.share.title')}
@@ -84,18 +84,18 @@ const Summary: React.FC = () => {
         </div>
 
         {/* Key Features */}
-        <div className="mb-10">
+        <div className="mb-6">
           {/* <h2 className="text-2xl font-semibold mb-4">
             <HtmlContent>{t('summary.features.title')}</HtmlContent>
           </h2> */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-4 print:grid-cols-2 print:gap-y-3 print:gap-x-8">
+          <div className="grid grid-cols-1 grid-cols-2 gap-x-12 gap-y-4">
             {(() => {
               const items = t('summary.features.items');
               console.log('Features items:', items);
               if (!Array.isArray(items)) return null;
               return items.map((feature, index) => (
                 <div key={index} className="flex items-start">
-                  <div className="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center mr-3 mt-0.5 print:bg-muted">
+                  <div className="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center mr-3 mt-0.5 border border-border">
                     <span className="text-xs font-medium text-primary">{index + 1}</span>
                   </div>
                   <div>
@@ -114,16 +114,13 @@ const Summary: React.FC = () => {
 
 
         {/* Use Cases */}
-        <div className="mb-8 print:mb-0">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 print:grid-cols-3 print:gap-4">
-            <Card className="border border-border rounded-lg p-4 print:shadow-none">
+        <div className="mb-6">
+          <div className="grid grid-cols-1 grid-cols-3 gap-6">
+            <Card className="border border-border rounded-lg p-4 bg-primary/10">
               <CardContent className="p-2">
                 <h5 className="font-medium mb-2">
                   {t('summary.useCases.manufacturers.title')}
                 </h5>
-                {/* <p className="text-sm text-muted-foreground mb-2">
-                  <HtmlContent>{t('summary.useCases.manufacturers.description')}</HtmlContent>
-                </p> */}
                 <ul className="text-sm list-disc pl-5 text-muted-foreground">
                   {(t('summary.useCases.manufacturers.benefits') as string[]).map((benefit, index) => (
                     <li key={index}>{benefit}</li>
@@ -131,7 +128,7 @@ const Summary: React.FC = () => {
                 </ul>
               </CardContent>
             </Card>
-            <Card className="border border-border rounded-lg p-4 print:shadow-none">
+            <Card className="border border-border rounded-lg p-4 bg-primary/10">
               <CardContent className="p-2">
                 <h5 className="font-medium mb-2">
                   {t('summary.useCases.contractors.title')}
@@ -143,7 +140,7 @@ const Summary: React.FC = () => {
                 </ul>
               </CardContent>
             </Card>
-            <Card className="border border-border rounded-lg p-4 print:shadow-none">
+            <Card className="border border-border rounded-lg p-4 bg-primary/10">
               <CardContent className="p-2">
                 <h5 className="font-medium mb-2">
                   {t('summary.useCases.serviceTeams.title')}
@@ -159,7 +156,7 @@ const Summary: React.FC = () => {
         </div>
 
         {/* Footer - positioned at bottom of second page */}
-        <div className="pt-1 border-t border-border text-center text-sm text-muted-foreground leading-tight print:fixed print:bottom-[12mm] print:left-[12mm] print:right-[12mm] print:w-[calc(210mm-24mm)]">
+        <div className="pt-4 border-t border-border text-center text-sm text-muted-foreground leading-tight">
           <p className="leading-tight m-0 font-mono text-xs">
             {t('summary.footer.visit')} https://www.wazzat.com {t('summary.footer.contact')} info@wazzat.com.
           </p>

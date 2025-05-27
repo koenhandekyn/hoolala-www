@@ -196,3 +196,8 @@ i {
   color: hsl(var(--primary)) !important;
   font-size: 150%;
 }
+
+i.brand {
+  font-size: 175%;
+  /* display: block; */
+}

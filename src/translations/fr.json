@@ -3,10 +3,10 @@
     "title": "Résumé du Produit",
     "overview": {
       "title": "Aperçu du Produit",
-      "description": "Wazzat? permet le suivi, la documentation et les demandes de service avec des codes QR ou des étiquettes RFID.",
+      "description": "<i class='brand'>Wazzat?</i> simplifie le service.",
       "what": {
         "title": "Qu'est-ce que Wazzat?",
-        "description": "Une solution complète qui simplifie le suivi, la documentation et la gestion des services grâce à la technologie de marquage intelligent."
+        "description": "Connectez chaque produit à son identité numérique en toute simplicité. Wazzat simplifie la gestion des actifs, la documentation et le service après-vente—les informations sont instantanément accessibles pour les fabricants, les entrepreneurs et les équipes de service. Plus de manuels ou d'historiques perdus : il suffit de scanner."
       }
     },
     "howItWorks": {

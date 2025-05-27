@@ -3,10 +3,10 @@
     "title": "Product Samenvatting",
     "overview": {
       "title": "Product Overzicht",
-      "description": "Wazzat? maakt het mogelijk om producten te volgen, documenteren en serviceverzoeken te doen met QR-codes of NFC-tags.",
+      "description": "<i class='brand'>Wazzat?</i> vereenvoudigt dienstverlening.",
       "what": {
         "title": "Wat is Wazzat?",
-        "description": "Een complete oplossing die het volgen, documenteren en servicebeheer vereenvoudigt door middel van slimme tagging-technologie."
+        "description": "Verbind elk product moeiteloos met zijn digitale identiteit. Wazzat vereenvoudigt activabeheer, documentatie en aftersales—informatie is direct toegankelijk voor fabrikanten, aannemers en serviceteams. Nooit meer verloren handleidingen of servicegeschiedenis: gewoon scannen en klaar."
       }
     },
     "howItWorks": {

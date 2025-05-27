@@ -3,10 +3,10 @@
     "title": "Product Summary",
     "overview": {
       "title": "Product Overview",
-      "description": "<i>Wazzat?</i> enables tracking, documentation, and service requests with QR codes or RFID tags.",
+      "description": "<i class='brand'>Wazzat?</i> simplify service delivery.",
       "what": {
         "title": "What is Wazzat?",
-        "description": "A comprehensive solution that simplifies tracking, documentation, and service management through smart tagging technology."
+        "description": "Effortlessly connect every product to its digital identity. Wazzat simplifies asset tracking, documentation, and after-sales service—making information instantly accessible for manufacturers, contractors, and service teams. No more lost manuals or service history: just scan and go."
       }
     },
     "howItWorks": {

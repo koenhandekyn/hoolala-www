@@ -88,7 +88,7 @@ const Footer: React.FC = () => {
               </li>
               <li>
                 <Link to="/summary" className="text-sm text-muted-foreground hover:text-primary transition-colors flex items-center">
-                  Summary
+                  One-pager
                 </Link>
               </li>
             </ul>

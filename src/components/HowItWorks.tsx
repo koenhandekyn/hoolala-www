@@ -42,7 +42,7 @@ const HowItWorks: React.FC = () => {
           </div>
 
           <h2 className="mb-6">
-            Three Simple Steps to
+            Three Simple Steps to <br />
             <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent"> Streamline Your Process</span>
           </h2>
 

@@ -1,0 +1,100 @@
+{
+  "summary": {
+    "title": "Résumé du Produit",
+    "overview": {
+      "title": "Aperçu du Produit",
+      "description": "Wazzat? permet le suivi, la documentation et les demandes de service avec des codes QR ou des étiquettes RFID.",
+      "what": {
+        "title": "Qu'est-ce que Wazzat?",
+        "description": "Une solution complète qui simplifie le suivi, la documentation et la gestion des services grâce à la technologie de marquage intelligent."
+      }
+    },
+    "howItWorks": {
+      "title": "Comment Ça Marche",
+      "steps": {
+        "tag": {
+          "title": "1. Étiquetez",
+          "description": "Utilisez des codes QR (visibles) ou NFC/RFID (invisibles) pour étiqueter vos produits pour une identification facile."
+        },
+        "enrich": {
+          "title": "2. Enrichissez",
+          "description": "Ajoutez des photos, des notes, des documents et des métadonnées internes pour créer un historique de service complet."
+        },
+        "share": {
+          "title": "3. Partagez",
+          "description": "Les clients et les techniciens peuvent scanner un code QR ou toucher une étiquette NFC pour accéder aux informations ou demander un service."
+        }
+      }
+    },
+    "features": {
+      "title": "Fonctionnalités Clés",
+      "items": [
+        {
+          "title": "Accès Instantané",
+          "description": "Scannez un code QR pour obtenir tous les détails et la documentation du produit instantanément."
+        },
+        {
+          "title": "Plus de Perte d'Information",
+          "description": "Conservez les documents et l'historique des services en un seul endroit, toujours accessible."
+        },
+        {
+          "title": "Archivage 10+ Ans",
+          "description": "Conservez les enregistrements disponibles à long terme pour la conformité et la tranquillité d'esprit."
+        },
+        {
+          "title": "Traitement Rapide des Services",
+          "description": "Les clients peuvent soumettre des demandes en un seul scan, simplifiant le processus."
+        },
+        {
+          "title": "Sécurisé & Fiable",
+          "description": "Vos données sont stockées en toute sécurité et accessibles uniquement aux bonnes personnes."
+        },
+        {
+          "title": "Fonctionne sur Tout Téléphone Moderne",
+          "description": "Pas besoin d'application, il suffit de scanner avec n'importe quel appareil photo de smartphone."
+        }
+      ]
+    },
+    "useCases": {
+      "title": "Cas d'Utilisation",
+      "manufacturers": {
+        "title": "Fabricants",
+        "description": "Passeports numériques pour vos produits",
+        "benefits": [
+          "Partagez la documentation avec les clients",
+          "Photos d'installation",
+          "Accès instantané aux spécifications d'origine",
+          "Historique complet des services",
+          "Réclamations de garantie simplifiées"
+        ]
+      },
+      "contractors": {
+        "title": "Entrepreneurs",
+        "description": "Simplifiez le support",
+        "benefits": [
+          "Documentez correctement les installations",
+          "Fournissez un accès facile aux manuels",
+          "Suivez l'historique des services",
+          "Réduisez les appels de support",
+          "Renforcez la fidélité des clients"
+        ]
+      },
+      "serviceTeams": {
+        "title": "Équipes de Service",
+        "description": "Support professionnel",
+        "benefits": [
+          "Mieux préparez les interventions",
+          "Réduisez le temps de diagnostic",
+          "Accédez à l'historique complet des services",
+          "Améliorez la satisfaction client",
+          "Permettez la maintenance proactive"
+        ]
+      }
+    },
+    "footer": {
+      "visit": "Pour plus d'informations, visitez",
+      "contact": "ou contactez-nous à",
+      "copyright": "© 2025 Wazzat. Tous droits réservés."
+    }
+  }
+}

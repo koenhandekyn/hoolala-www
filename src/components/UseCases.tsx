@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Check } from 'lucide-react';
 import ArtworkImage from './ArtworkImage';
@@ -22,7 +21,7 @@ const UseCase: React.FC<UseCaseProps> = ({ icon, title, description, benefits })
         />
       </div>
       <h3 className="text-lg font-medium mb-2 text-center">{title}</h3>
-      <p className="text-sm text-muted-foreground mb-4 text-center">{description}</p>
+      <p className="text-base font-medium text-muted-foreground mb-4 text-center bg-muted/50 py-2 px-3 rounded-lg">{description}</p>
 
       <ul className="space-y-2">
         {benefits.map((benefit, index) => (
@@ -40,68 +39,73 @@ const UseCases: React.FC = () => {
   const useCases = [
     {
       icon: "/lovable-uploads/054c0ab9-924f-4a90-b5b4-41250e17ad26.png", // Factory icon
-      title: "Manufacturers",
-      description: "Track service history for your custom products with ease.",
+      title: "Manufacturers (Make To Order)",
+      description: "Digital passports for your products",
       benefits: [
+        "Share documentation with customers",
+        "Document installation pictures",
         "Instant access to original specs",
-        "Complete installation notes",
+        "Full service history",
         "Streamlined warranty claims"
       ]
     },
     {
       icon: "/lovable-uploads/9ba2c5c3-0920-410e-abaa-16e8d0f204eb.png", // Buildings/Bench icon
       title: "Contractors",
-      description: "Simplify post-installation support with smart tagging.",
+      description: "Simplify post-installation support",
       benefits: [
-        "Document installations properly",
-        "Reduce support call time",
-        "Build customer loyalty"
+        "Document installations properly with photos",
+        "Provide customers with easy access to manuals and warranties",
+        "Track service history for each installation",
+        "Reduce support calls with instant access to information",
+        "Improve customer satisfaction & build customer loyalty"
       ]
     },
     {
       icon: "/lovable-uploads/1cf5264e-3223-446b-86b4-35fd700b25ea.png", // Tools/service icon
       title: "Service Teams",
-      description: "Provide fast, reliable support with instant access.",
+      description: "More professional support and follow-up",
       benefits: [
-        "Prepare for service calls better",
-        "Reduce diagnostic time",
-        "Access complete service history"
-      ]
-    },
-    {
-      icon: "/lovable-uploads/9e5500f1-50bc-4b10-b37b-3d2709a57ea0.png", // New homeowner icon
-      title: "Homeowners",
-      description: "Keep appliance manuals, warranties, and service history accessible.",
-      benefits: [
-        "Find documentation quickly",
-        "Request service effortlessly",
-        "Track maintenance history"
-      ]
-    },
-    {
-      icon: "/lovable-uploads/07fca938-7aed-4923-b293-6606867840ce.png", // Washing machine icon
-      title: "Rent & Lease",
-      description: "Track maintenance for rental properties and equipment.",
-      benefits: [
-        "Simplify tenant issue reporting",
-        "Document maintenance properly",
-        "Extend equipment lifespan"
-      ]
-    },
-    {
-      icon: "/lovable-uploads/1dc7fcb1-0524-4a33-9c30-0eb497688ea0.png", // Coffee cup/public space icon
-      title: "Public Asset Management",
-      description: "Enable issue reporting for public assets like parks and buildings.",
-      benefits: [
-        "Streamline citizen reporting",
-        "Track maintenance efficiently",
-        "Improve response times"
+        "Prepare for service calls better and reduce diagnostic time with instant access to manuals and specs",
+        "Enhance team collaboration with shared data with access to the complete service history",
+        "Improve customer satisfaction & build customer loyalty",
+        "Enable proactive maintenance scheduling"
       ]
     }
+    // {
+    //   icon: "/lovable-uploads/9e5500f1-50bc-4b10-b37b-3d2709a57ea0.png", // New homeowner icon
+    //   title: "Homeowners",
+    //   description: "Keep appliance manuals, warranties, and service history accessible.",
+    //   benefits: [
+    //     "Find documentation quickly",
+    //     "Request service effortlessly",
+    //     "Track maintenance history"
+    //   ]
+    // },
+    // {
+    //   icon: "/lovable-uploads/07fca938-7aed-4923-b293-6606867840ce.png", // Washing machine icon
+    //   title: "Rent & Lease",
+    //   description: "Track maintenance for rental properties and equipment.",
+    //   benefits: [
+    //     "Simplify tenant issue reporting",
+    //     "Document maintenance properly",
+    //     "Extend equipment lifespan"
+    //   ]
+    // },
+    // {
+    //   icon: "/lovable-uploads/1dc7fcb1-0524-4a33-9c30-0eb497688ea0.png", // Coffee cup/public space icon
+    //   title: "Public Asset Management",
+    //   description: "Enable issue reporting for public assets like parks and buildings.",
+    //   benefits: [
+    //     "Streamline citizen reporting",
+    //     "Track maintenance efficiently",
+    //     "Improve response times"
+    //   ]
+    // }
   ];
 
   return (
-    <section className="py-20 bg-muted/30 overflow-hidden">
+    <section id="use-cases" className="py-20 bg-muted/30 overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center mb-16 animate-fade-in">
 

@@ -1,4 +1,3 @@
-
 import React from 'react';
 import {
   DropdownMenu,
@@ -8,35 +7,24 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { Button } from "@/components/ui/button";
 import { Globe } from "lucide-react";
+import { useLanguage } from '@/lib/language-context';
 
 type Language = {
-  code: string;
+  code: 'en' | 'fr' | 'nl';
   name: string;
 };
 
 const languages: Language[] = [
-  { code: 'af', name: 'Afrikaans' },
-  { code: 'ar', name: 'Arabic' },
-  { code: 'zh-CN', name: 'Chinese (Simplified)' },
-  { code: 'zh-TW', name: 'Chinese (Traditional)' },
-  { code: 'nl', name: 'Dutch' },
   { code: 'en', name: 'English' },
-  { code: 'fr', name: 'French' },
-  { code: 'de', name: 'German' },
-  { code: 'hi', name: 'Hindi' },
-  { code: 'it', name: 'Italian' },
-  { code: 'ja', name: 'Japanese' },
-  { code: 'ko', name: 'Korean' },
-  { code: 'pt', name: 'Portuguese' },
-  { code: 'ru', name: 'Russian' },
-  { code: 'es', name: 'Spanish' },
+  { code: 'fr', name: 'Français' },
+  { code: 'nl', name: 'Nederlands' },
 ];
 
 const LanguageSwitcher = () => {
-  const handleLanguageChange = (languageCode: string) => {
-    const currentUrl = window.location.href;
-    const googleTranslateUrl = `https://translate.google.com/translate?sl=auto&tl=${languageCode}&u=${encodeURIComponent(currentUrl)}`;
-    window.open(googleTranslateUrl, '_blank');
+  const { language, setLanguage } = useLanguage();
+
+  const handleLanguageChange = (languageCode: 'en' | 'fr' | 'nl') => {
+    setLanguage(languageCode);
   };
 
   return (
@@ -46,14 +34,14 @@ const LanguageSwitcher = () => {
           <Globe className="h-[1.2rem] w-[1.2rem]" />
         </Button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent align="end" className="w-[180px] max-h-[300px] overflow-y-auto">
-        {languages.map((language) => (
-          <DropdownMenuItem 
-            key={language.code}
-            onClick={() => handleLanguageChange(language.code)}
-            className="text-xs cursor-pointer"
+      <DropdownMenuContent align="end" className="w-[180px]">
+        {languages.map((lang) => (
+          <DropdownMenuItem
+            key={lang.code}
+            onClick={() => handleLanguageChange(lang.code)}
+            className={`text-xs cursor-pointer ${language === lang.code ? 'bg-muted' : ''}`}
           >
-            {language.name}
+            {lang.name}
           </DropdownMenuItem>
         ))}
       </DropdownMenuContent>

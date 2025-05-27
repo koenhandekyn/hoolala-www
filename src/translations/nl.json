@@ -1,0 +1,100 @@
+{
+  "summary": {
+    "title": "Product Samenvatting",
+    "overview": {
+      "title": "Product Overzicht",
+      "description": "Wazzat? maakt het mogelijk om producten te volgen, documenteren en serviceverzoeken te doen met QR-codes of NFC-tags.",
+      "what": {
+        "title": "Wat is Wazzat?",
+        "description": "Een complete oplossing die het volgen, documenteren en servicebeheer vereenvoudigt door middel van slimme tagging-technologie."
+      }
+    },
+    "howItWorks": {
+      "title": "Hoe werkt het ?",
+      "steps": {
+        "tag": {
+          "title": "1. Label",
+          "description": "Gebruik QR-codes (zichtbaar) of NFC-tags (onzichtbaar) om uw producten te labelen voor eenvoudige identificatie."
+        },
+        "enrich": {
+          "title": "2. Verrijk",
+          "description": "Voeg foto's, notities, documenten en interne metadata toe om een complete servicegeschiedenis te creëren."
+        },
+        "share": {
+          "title": "3. Deel",
+          "description": "Klanten & technici kunnen een QR-code scannen of op een NFC-tag tikken om informatie te bekijken of service aan te vragen."
+        }
+      }
+    },
+    "features": {
+      "title": "Kenmerken?",
+      "items": [
+        {
+          "title": "Directe Toegang",
+          "description": "Scan een QR-code om direct alle productdetails en documentatie te bekijken."
+        },
+        {
+          "title": "Geen Verloren Informatie Meer",
+          "description": "Bewaar documenten & servicegeschiedenis op één plek, altijd toegankelijk."
+        },
+        {
+          "title": "10+ Jaar Archief",
+          "description": "Houd gegevens langdurig beschikbaar voor compliance en gemoedsrust."
+        },
+        {
+          "title": "Snelle Serviceafhandeling",
+          "description": "Klanten kunnen verzoeken indienen met één scan, wat het proces vereenvoudigt."
+        },
+        {
+          "title": "Veilig & Betrouwbaar",
+          "description": "Uw gegevens worden veilig opgeslagen en zijn alleen toegankelijk voor de juiste personen."
+        },
+        {
+          "title": "Werkt op Elke Moderne Telefoon",
+          "description": "Geen app nodig, gewoon scannen en gaan met elke smartphone-camera."
+        }
+      ]
+    },
+    "useCases": {
+      "title": "Voor wie?",
+      "manufacturers": {
+        "title": "Fabrikanten",
+        "description": "Digitale paspoorten voor uw producten",
+        "benefits": [
+          "Deel documentatie met klanten",
+          "Installatiefoto's",
+          "Direct toegang tot originele specificaties",
+          "Volledige servicegeschiedenis",
+          "Gestroomlijnde garantieclaims"
+        ]
+      },
+      "contractors": {
+        "title": "Aannemers",
+        "description": "Vereenvoudig ondersteuning",
+        "benefits": [
+          "Documenteer installaties correct",
+          "Bied eenvoudige toegang tot handleidingen",
+          "Volg servicegeschiedenis",
+          "Verminder supportgesprekken",
+          "Bouw klantloyaliteit op"
+        ]
+      },
+      "serviceTeams": {
+        "title": "Service Teams",
+        "description": "Professionele ondersteuning",
+        "benefits": [
+          "Bereid servicebezoeken beter voor",
+          "Verminder diagnostische tijd",
+          "Toegang tot complete servicegeschiedenis",
+          "Verbeter klanttevredenheid",
+          "Maak proactief onderhoud mogelijk"
+        ]
+      }
+    },
+    "footer": {
+      "visit": "Voor meer informatie, bezoek",
+      "contact": "of neem contact op via",
+      "copyright": "© 2025 Wazzat. Alle rechten voorbehouden."
+    }
+  }
+}

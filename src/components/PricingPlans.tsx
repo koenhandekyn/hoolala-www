@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Check, HelpCircle } from 'lucide-react';
 import { cn } from '@/lib/utils';
@@ -9,9 +8,7 @@ interface PricingCardProps {
   price: string;
   description: string;
   limit: string;
-  recommended?: boolean;
-  features: string[];
-  isMonthly: boolean;
+  history: string;
 }
 
 const PricingCard: React.FC<PricingCardProps> = ({
@@ -19,32 +16,14 @@ const PricingCard: React.FC<PricingCardProps> = ({
   price,
   description,
   limit,
-  recommended = false
+  history
 }) => {
   return (
-    <div
-      className={cn(
-        "rounded-2xl p-px",
-        recommended
-          ? "bg-gradient-to-b from-primary/50 to-primary/10"
-          : "bg-border/50"
-      )}
-    >
-      <div className={cn(
-        "h-full rounded-2xl p-6 lg:p-8 bg-white/90",
-        recommended && "bg-primary/[0.02]"
-      )}>
-
-        <div className="p-3 rounded-lg bg-muted/100 flex items-center">
-          {/* <HelpCircle className="h-4 w-4 text-muted-foreground mr-2" /> */}
-          <span className="text-xs">{limit}</span>
+    <div className="rounded-2xl p-px bg-border/50">
+      <div className="h-full rounded-2xl p-6 lg:p-8 bg-white/90">
+        <div className="p-3 rounded-lg bg-muted/100 flex items-center justify-center">
+          <span className="text-sm">{limit}</span>
         </div>
-
-        {recommended && (
-          <div className="inline-flex items-center px-3 py-1 rounded-full bg-primary/10 text-primary mb-4">
-            <span className="text-xs font-medium">Recommended</span>
-          </div>
-        )}
 
         <div className="mt-4 flex items-baseline">
           <span className="text-3xl font-bold">{price}&nbsp;</span>
@@ -52,8 +31,8 @@ const PricingCard: React.FC<PricingCardProps> = ({
 
         <h3 className="text-xl font-medium">{title}</h3>
 
-        <p className="mt-2 text-sm text-muted-foreground">{description}</p>
-
+        <p className="mt-2 text-sm text-muted-foreground">History: {history}</p>
+        {/* <p className="mt-2 text-sm text-muted-foreground">{description}</p> */}
       </div>
     </div>
   );
@@ -64,29 +43,32 @@ const PricingPlans: React.FC = () => {
   const pricingPlans = {
     prepaid: [
       {
-        title: "1-Year ",
+        title: "Hobby",
         price: "Free Trial",
         description: "For personal projects and experiments",
-        limit: "First 3 tags"
+        limit: "First 3 points",
+        history: "1 year"
       },
       {
         title: "Starter",
-        price: "€5 per tag",
+        price: "€5 per point",
         description: "For small businesses or contractors",
-        limit: "4th - 100th tag",
-        recommended: true
+        limit: "4th - 100th point",
+        history: "10 years"
       },
       {
         title: "Scale-Up",
-        price: "€1 per tag",
+        price: "€1 per point",
         description: "For mid-sized manufacturers",
-        limit: "101st - 1,000th tag"
+        limit: "101st - 1,000th point",
+        history: "10 years"
       },
       {
         title: "Enterprise",
-        price: "€0.50 per tag",
+        price: "€0.50 per point",
         description: "For high-volume manufacturers",
-        limit: "1,001th+ tag"
+        limit: "1,001th+ point",
+        history: "10 years"
       }
     ]
   };
@@ -98,12 +80,12 @@ const PricingPlans: React.FC = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center mb-16 animate-fade-in">
           <h2 className="mb-6">
-            Simple, Transparent
-            <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent"> Pricing</span>
+            One-Time Pricing,
+            <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent"> No Subscriptions</span>
           </h2>
 
           <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
-            A pricing plan that fits your business needs, adjusting to all sizes.
+            Pay once, own forever. The more points you add, the less you pay per point. Physical tags sold separately and can be custom branded.
           </p>
         </div>
 
@@ -115,8 +97,15 @@ const PricingPlans: React.FC = () => {
               price={plan.price}
               description={plan.description}
               limit={plan.limit}
+              history={plan.history}
             />
           ))}
+        </div>
+        <div className="max-w-3xl mx-auto text-center mb-16 animate-fade-in">
+          <p className="text-muted-foreground mt-8 max-w-2xl mx-auto italic text-sm">
+            Physical custom branded tags sold separately. <br></br>
+            Contact us for more information.
+          </p>
         </div>
       </div>
     </section>

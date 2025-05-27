@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Scan, Files, Clock, ShieldCheck, Smartphone, Archive, Zap, CheckCircle2, FileText, Recycle, Globe, Link, Users, RefreshCw, Info, ExternalLink } from 'lucide-react';
 import { HoverCard, HoverCardContent, HoverCardTrigger } from '@/components/ui/hover-card';
@@ -37,51 +36,19 @@ const Features: React.FC = () => {
   const features = [
     {
       icon: <Scan className="h-6 w-6 text-primary" />,
-      title: "Digital Passport",
-      description: "Create unique digital twins for each product, linking physical assets to essential data and service history."
-    },
-    {
-      icon: <Smartphone className="h-6 w-6 text-primary" />,
-      title: "Universal Access",
-      description: "Works on any modern device without requiring app downloads - just scan or tap for instant information."
+      title: "Smart Product Identity",
+      description: "Transform products into smart assets with instant access - just scan and go, no app needed."
     },
     {
       icon: <Files className="h-6 w-6 text-primary" />,
-      title: "Complete Documentation",
-      description: "Keep manuals, warranties, and service records in one place, accessible to both customers and service teams."
+      title: "Complete Product History",
+      description: "Track and access complete product history - from manuals to service records."
     },
-    // {
-    //   icon: <Users className="h-6 w-6 text-primary" />,
-    //   title: "Value Chain Connectivity",
-    //   description: "Connect all stakeholders from manufacturers to recyclers, enabling seamless communication and data sharing across the entire product ecosystem."
-    // },
     {
       icon: <Zap className="h-6 w-6 text-primary" />,
-      title: "Streamlined Service",
-      description: "Empower customers to submit service requests in seconds, reducing support costs and wait times. Service teams gain immediate access to product history, reducing troubleshooting time."
-    },
-    // {
-    //   icon: <ShieldCheck className="h-6 w-6 text-primary" />,
-    //   title: "Secure & Reliable",
-    //   description: "Enterprise-grade security ensures your product data is protected while remaining accessible to authorized users."
-    // },
-    {
-      icon: <CheckCircle2 className="h-6 w-6 text-primary" />,
-      title: "Asset Management & Lifecycle Support",
-      description: "Track and manage products throughout their entire lifecycle, from manufacturing to end-of-life, gaining insights for better planning and maintenance."
-    },
-    {
-      icon: <Recycle className="h-6 w-6 text-primary" />,
-      title: "Circularity & Sustainability",
-      description: "Support repair, refurbishment, and recycling initiatives with comprehensive product data, meeting Extended Producer Responsibility requirements."
+      title: "Streamlined Service & Sustainability",
+      description: "Enable efficient service and sustainable practices with complete product data."
     }
-    // {
-    //   icon: <Archive className="h-6 w-6 text-primary" />,
-    //   title: "Digital Product Passport Ready",
-    //   description: "Prepare for upcoming regulations with transparent reporting on composition, origin, and environmental impact of your products.",
-    //   hasMoreInfo: true,
-    //   moreInfoLink: "/dpp"
-    // }
   ];
 
   return (
@@ -89,12 +56,6 @@ const Features: React.FC = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center">
           <HoverCard>
-            {/* <HoverCardTrigger asChild>
-              <div className="inline-flex items-center px-3 py-1 rounded-full bg-primary/10 text-primary mb-6 cursor-help">
-                <FileText className="mr-2 h-4 w-4" />
-                <span className="text-xs font-medium">EU Digital Product Passport Compliance</span>
-              </div>
-            </HoverCardTrigger> */}
             <HoverCardContent className="w-80 md:w-96 p-4">
               <div className="space-y-2">
                 <h4 className="font-medium text-sm">EU Digital Product Passport</h4>
@@ -104,20 +65,9 @@ const Features: React.FC = () => {
               </div>
             </HoverCardContent>
           </HoverCard>
-
-          {/* <h2 className="mb-6">
-            Connect Your Entire&nbsp;
-            <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-              Product Ecosystem
-            </span>
-          </h2> */}
-
-          {/* <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
-            <i>Wazzat?</i> connects stakeholders supporting the complete lifecycle from creation to recycling.
-          </p> */}
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {features.map((feature, index) => (
             <Feature
               key={index}

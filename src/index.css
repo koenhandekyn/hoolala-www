@@ -1,9 +1,10 @@
-
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Victor+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 
 @layer base {
   :root {
@@ -186,4 +187,12 @@
 
 ::-webkit-scrollbar-thumb:hover {
   @apply bg-muted-foreground/50;
+}
+
+i {
+  font-style: italic;
+  font-weight: 700;
+  font-family: 'Victor Mono';
+  color: hsl(var(--primary)) !important;
+  font-size: 150%;
 }

@@ -51,7 +51,7 @@ const Footer: React.FC = () => {
           <div className="md:col-span-2">
             <h4 className="text-sm font-semibold mb-4">Product</h4>
             <ul className="space-y-3">
-              <li>
+              {/* <li>
                 <a href="/#features" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                   Features
                 </a>
@@ -74,11 +74,17 @@ const Footer: React.FC = () => {
                 >
                   Pricing
                 </a>
-              </li>
-              <li>
+              </li> */}
+              {/* <li>
                 <a href="/faq" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                   FAQ
                 </a>
+              </li> */}
+              <li>
+                {/* link to main page top as name overview */}
+                <Link to="/" onClick={() => window.scrollTo(0, 0)} className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                  Overview
+                </Link>
               </li>
               <li>
                 <Link to="/summary" className="text-sm text-muted-foreground hover:text-primary transition-colors flex items-center">
@@ -92,41 +98,41 @@ const Footer: React.FC = () => {
             <h4 className="text-sm font-semibold mb-4">Legal</h4>
             <ul className="space-y-3">
               <li>
-                <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                <Link to="/privacy-policy" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                   Privacy Policy
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                <Link to="/terms-of-service" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                   Terms of Service
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                <Link to="/cookie-policy" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                   Cookie Policy
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
 
           <div className="md:col-span-2">
-            <h4 className="text-sm font-semibold mb-4">Company</h4>
+            <h4 className="text-sm font-semibold mb-4">Contact</h4>
             <ul className="space-y-3">
-              <li>
+              {/* <li>
                 <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                   About
                 </a>
-              </li>
+              </li> */}
               {/* <li>
                 <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                   Blog
                 </a>
               </li> */}
-              <li>
+              {/* <li>
                 <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                   Contact
                 </a>
-              </li>
+              </li> */}
               <li>
                 <a
                   href="mailto:info@wazzat.app"

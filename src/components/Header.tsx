@@ -54,7 +54,7 @@ const Header: React.FC = () => {
     >
       <div className="container mx-auto py-4 px-6">
         <div className="flex items-center justify-between">
-          <Link to="/" className="text-xl font-bold tracking-tighter text-primary">
+          <Link to="/" onClick={() => window.scrollTo(0, 0)} className="text-xl font-bold tracking-tighter text-primary">
             <i>Wazzat?</i>
           </Link>
 
@@ -65,9 +65,9 @@ const Header: React.FC = () => {
             <a href="/#how-it-works" onClick={(e) => scrollToSection(e, 'how-it-works')} className="text-sm font-medium hover:text-primary transition-colors">
               How It Works
             </a>
-            <Link to="/use-cases" className="text-sm font-medium hover:text-primary transition-colors">
+            <a href="/#use-cases" onClick={(e) => scrollToSection(e, 'use-cases')} className="text-sm font-medium hover:text-primary transition-colors">
               Use Cases
-            </Link>
+            </a>
             <a href="/#pricing" onClick={(e) => scrollToSection(e, 'pricing')} className="text-sm font-medium hover:text-primary transition-colors">
               Pricing
             </a>

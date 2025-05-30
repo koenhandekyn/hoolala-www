@@ -55,22 +55,22 @@ const HowItWorks: React.FC = () => {
           <Step
             number={1}
             icon={<div className="flex items-center gap-1"><QrCode className="h-6 w-6 text-primary" /><Nfc className="h-6 w-6 text-primary" /></div>}
-            title="Tag It"
-            description="Use QR codes (visible) or NFC/RFID (invisible) to label your products for easy identification."
+            title="Tag"
+            description="Use QR codes (visible) or NFC/RFID (invisible) to give your product a digital identity during the production or installation process."
           />
 
           <Step
             number={2}
             icon={<FileText className="h-8 w-8 text-primary" />}
-            title="Enrich It"
-            description="Add photos, notes, documents, and internal metadata to create a complete service history."
+            title="Link"
+            description="Link the tag to a (or a predefined) product or project and location. Products and projects can be imported from your ERP, CRM or existing backoffice."
           />
 
           <Step
             number={3}
             icon={<Share2 className="h-8 w-8 text-primary" />}
-            title="Share It"
-            description="Customers & technicians can scan a QR code or tap an NFC tag to access info or request service."
+            title="Track"
+            description="Add photos, notes, documents, more ... to create a complete digital passport with a full service history."
           />
         </div>
 

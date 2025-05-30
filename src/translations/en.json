@@ -13,16 +13,16 @@
       "title": "How It Works",
       "steps": {
         "tag": {
-          "title": "1. Tag It",
+          "title": "1. Tag",
           "description": "Use QR codes (visible) or NFC/RFID (invisible) to label your products for easy identification."
         },
         "enrich": {
-          "title": "2. Enrich It",
-          "description": "Add photos, notes, documents, and internal metadata to create a complete service history."
+          "title": "2. Link",
+          "description": "Link the tag to a product or project."
         },
         "share": {
-          "title": "3. Share It",
-          "description": "Customers & technicians can scan a QR code or tap an NFC tag to access info or request service."
+          "title": "3. Track ",
+          "description": "Add photos, notes, documents, and internal metadata to create a complete service history."
         }
       }
     },

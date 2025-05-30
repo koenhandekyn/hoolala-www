@@ -1,79 +1,17 @@
-import React, { useState } from 'react';
-import { Check, HelpCircle } from 'lucide-react';
-import { cn } from '@/lib/utils';
+import React from 'react';
+import { Check } from 'lucide-react';
 
-
-interface PricingCardProps {
-  title: string;
-  price: string;
-  description: string;
-  limit: string;
-  history: string;
-}
-
-const PricingCard: React.FC<PricingCardProps> = ({
-  title,
-  price,
-  description,
-  limit,
-  history
-}) => {
-  return (
-    <div className="rounded-2xl p-px bg-border/50">
-      <div className="h-full rounded-2xl p-6 lg:p-8 bg-white/90">
-        <div className="p-3 rounded-lg bg-muted/100 flex items-center justify-center">
-          <span className="text-sm">{limit}</span>
-        </div>
-
-        <div className="mt-4 flex items-baseline">
-          <span className="text-3xl font-bold">{price}&nbsp;</span>
-        </div>
-
-        <h3 className="text-xl font-medium">{title}</h3>
-
-        <p className="mt-2 text-sm text-muted-foreground">History: {history}</p>
-        {/* <p className="mt-2 text-sm text-muted-foreground">{description}</p> */}
-      </div>
-    </div>
-  );
-};
-
-const PricingPlans: React.FC = () => {
-
-  const pricingPlans = {
-    prepaid: [
-      {
-        title: "Hobby",
-        price: "Free Trial",
-        description: "For personal projects and experiments",
-        limit: "First 3 points",
-        history: "1 year"
-      },
-      {
-        title: "Starter",
-        price: "€5 per point",
-        description: "For small businesses or contractors",
-        limit: "4th - 100th point",
-        history: "10 years"
-      },
-      {
-        title: "Scale-Up",
-        price: "€1 per point",
-        description: "For mid-sized manufacturers",
-        limit: "101st - 1,000th point",
-        history: "10 years"
-      },
-      {
-        title: "Enterprise",
-        price: "€0.50 per point",
-        description: "For high-volume manufacturers",
-        limit: "1,001th+ point",
-        history: "10 years"
-      }
-    ]
-  };
-
-  const activePlans = pricingPlans.prepaid;
+const PricingTable: React.FC = () => {
+  const pricingTiers = [
+    { range: "1-3", price: "Free Trial", history: "1 year" },
+    { range: "4-50", price: "€5", history: "10 years" },
+    { range: "51-100", price: "€4", history: "10 years" },
+    { range: "101-500", price: "€2", history: "10 years" },
+    { range: "501-1000", price: "€1", history: "10 years" },
+    { range: "1001-5000", price: "€0.75", history: "10 years" },
+    { range: "5001-10000", price: "€0.60", history: "10 years" },
+    { range: "10000+", price: "€0.50", history: "10 years" }
+  ];
 
   return (
     <section id="pricing" className="py-20 overflow-hidden">
@@ -85,25 +23,36 @@ const PricingPlans: React.FC = () => {
           </h2>
 
           <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Pay once, own forever. The more points you add, the less you pay per point. Physical tags sold separately and can be custom branded.
+            Pay once, own forever. The more points you add, the less you pay per point.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
-          {activePlans.map((plan, index) => (
-            <PricingCard
-              key={index}
-              title={plan.title}
-              price={plan.price}
-              description={plan.description}
-              limit={plan.limit}
-              history={plan.history}
-            />
-          ))}
+        <div className="max-w-4xl mx-auto">
+          <div className="overflow-x-auto">
+            <table className="w-full border-collapse">
+              <thead>
+                <tr className="border-b border-border">
+                  <th className="py-4 px-6 text-left">Number of Points</th>
+                  <th className="py-4 px-6 text-left">Price per Point</th>
+                  <th className="py-4 px-6 text-left">History</th>
+                </tr>
+              </thead>
+              <tbody>
+                {pricingTiers.map((tier, index) => (
+                  <tr key={index} className="border-b border-border hover:bg-muted/50">
+                    <td className="py-4 px-6">{tier.range}</td>
+                    <td className="py-4 px-6 font-medium">{tier.price}</td>
+                    <td className="py-4 px-6">{tier.history}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
         </div>
+
         <div className="max-w-3xl mx-auto text-center mb-16 animate-fade-in">
           <p className="text-muted-foreground mt-8 max-w-2xl mx-auto italic text-sm">
-            Physical custom branded tags sold separately. <br></br>
+            Physical custom branded tags sold separately. <br />
             Contact us for more information.
           </p>
         </div>
@@ -112,4 +61,4 @@ const PricingPlans: React.FC = () => {
   );
 };
 
-export default PricingPlans;
+export default PricingTable;

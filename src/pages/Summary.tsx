@@ -39,7 +39,7 @@ const Summary: React.FC = () => {
             </div>
             <div className="shrink-0">
               <ArtworkImage
-                src="/lovable-uploads/c0ab0a08-2c02-468d-978d-ce9776521950.png"
+                src="/lovable-uploads/hero.png"
                 alt="Technician scanning QR code"
                 className="w-48 h-auto print:w-48"
               />

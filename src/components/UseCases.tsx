@@ -12,14 +12,14 @@ interface UseCaseProps {
 const UseCase: React.FC<UseCaseProps> = ({ icon, title, description, benefits }) => {
   return (
     <div className="p-6 rounded-2xl bg-white border border-border hover:shadow-lg transition-all duration-300">
-      <div className="w-16 h-16 mb-4 mx-auto">
+      {/* <div className="w-16 h-16 mb-4 mx-auto">
         <ArtworkImage
           src={icon}
           alt={title}
           iconMode={true}
           className="w-full h-full"
         />
-      </div>
+      </div> */}
       <h3 className="text-lg font-medium mb-2 text-center">{title}</h3>
       <p className="text-base font-medium text-muted-foreground mb-4 text-center bg-muted/50 py-2 px-3 rounded-lg">{description}</p>
 
@@ -39,32 +39,31 @@ const UseCases: React.FC = () => {
   const useCases = [
     {
       icon: "/lovable-uploads/054c0ab9-924f-4a90-b5b4-41250e17ad26.png", // Factory icon
-      title: "Manufacturers (Make To Order)",
+      title: "Manufacturers",
       description: "Digital passports for your products",
       benefits: [
-        "Share documentation with customers",
-        "Document installation pictures",
+        "Easily share documentation with customers",
         "Instant access to original specs",
         "Full service history",
+        "Take control of service delivery",
         "Streamlined warranty claims"
       ]
     },
     {
       icon: "/lovable-uploads/9ba2c5c3-0920-410e-abaa-16e8d0f204eb.png", // Buildings/Bench icon
       title: "Contractors",
-      description: "Simplify post-installation support",
+      description: "Build loyalty",
       benefits: [
-        "Document installations properly with photos",
-        "Provide customers with easy access to manuals and warranties",
-        "Track service history for each installation",
-        "Reduce support calls with instant access to information",
+        "Document projects properly with photos",
+        "Track service history for each project",
+        "Make support calls more efficient with instant access to the right information",
         "Improve customer satisfaction & build customer loyalty"
       ]
     },
     {
-      icon: "/lovable-uploads/1cf5264e-3223-446b-86b4-35fd700b25ea.png", // Tools/service icon
+      icon: "/lovable-uploads/9e5500f1-50bc-4b10-b37b-3d2709a57ea0.png", // Tools/service icon
       title: "Service Teams",
-      description: "More professional support and follow-up",
+      description: "Improve customer satisfaction",
       benefits: [
         "Prepare for service calls better and reduce diagnostic time with instant access to manuals and specs",
         "Enhance team collaboration with shared data with access to the complete service history",

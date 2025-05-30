@@ -81,7 +81,7 @@ const HowItWorks: React.FC = () => {
                 <div className="flex flex-col items-center">
                   <div className="mb-6 w-full">
                     <ArtworkImage
-                      src="/lovable-uploads/1cf5264e-3223-446b-86b4-35fd700b25ea.png"
+                      src="/lovable-uploads/qr_code_heater.png"
                       alt="Water heater with QR code"
                       className="w-full max-w-[280px] aspect-square mx-auto rounded-xl"
                     />
@@ -108,7 +108,7 @@ const HowItWorks: React.FC = () => {
                 <div className="flex flex-col items-center">
                   <div className="mb-6 w-full">
                     <ArtworkImage
-                      src="/lovable-uploads/17db235b-2998-40fd-afe4-eb2e90b66bd9.png"
+                      src="/lovable-uploads/nfc_door.png"
                       alt="Water heater with NFC tag"
                       className="w-full max-w-[280px] aspect-square mx-auto"
                     />

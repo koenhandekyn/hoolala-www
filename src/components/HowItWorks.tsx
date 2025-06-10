@@ -92,12 +92,6 @@ const HowItWorks: React.FC = () => {
                     <p className="text-muted-foreground mb-6">
                       Scan QR codes on equipment like water heaters to instantly access service history, documentation, and support options. No app download required.
                     </p>
-                    <a
-                      href="#"
-                      className="inline-flex items-center justify-center px-6 py-3 rounded-full bg-primary text-white hover:bg-primary/90 transition-all"
-                    >
-                      Try QR Demo
-                    </a>
                   </div>
                 </div>
               </div>
@@ -119,12 +113,6 @@ const HowItWorks: React.FC = () => {
                     <p className="text-muted-foreground mb-6">
                       Simply tap your phone on equipment with invisible NFC/RFID tags to instantly access service history, documentation, and support options.
                     </p>
-                    <a
-                      href="#"
-                      className="inline-flex items-center justify-center px-6 py-3 rounded-full bg-primary text-white hover:bg-primary/90 transition-all"
-                    >
-                      Learn About NFC
-                    </a>
                   </div>
                 </div>
               </div>

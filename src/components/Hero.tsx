@@ -44,7 +44,7 @@ const Hero: React.FC = () => {
                 href="https://app.wazzat.app/account/new"
                 className="w-full sm:w-auto inline-flex items-center justify-center px-6 py-3 rounded-full bg-primary text-white hover:bg-primary/90 transition-all shadow-lg hover:shadow-primary/25"
               >
-                Create your first passport for free
+                Create a Free Account!
                 <ChevronRight className="ml-2 h-4 w-4" />
               </a>
 

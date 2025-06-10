@@ -68,9 +68,9 @@ const Header: React.FC = () => {
             <a href="/#use-cases" onClick={(e) => scrollToSection(e, 'use-cases')} className="text-sm font-medium hover:text-primary transition-colors">
               Use Cases
             </a>
-            <a href="/#pricing" onClick={(e) => scrollToSection(e, 'pricing')} className="text-sm font-medium hover:text-primary transition-colors">
+            {/* <a href="/#pricing" onClick={(e) => scrollToSection(e, 'pricing')} className="text-sm font-medium hover:text-primary transition-colors">
               Pricing
-            </a>
+            </a> */}
           </nav>
 
           <div className="hidden md:flex items-center space-x-2">

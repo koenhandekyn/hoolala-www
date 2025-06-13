@@ -4,7 +4,7 @@ import { HoverCard, HoverCardContent, HoverCardTrigger } from '@/components/ui/h
 import { useTranslation } from '@/hooks/use-translation';
 
 const Hero: React.FC = () => {
-  const { t } = useTranslation();
+  const { t, language } = useTranslation();
 
   return (
     <section className="pt-32 pb-20 overflow-hidden">
@@ -38,7 +38,7 @@ const Hero: React.FC = () => {
 
             <div className="flex flex-col sm:flex-row items-start gap-4">
               <a
-                href="https://app.wazzat.app/account/new"
+                href={`https://app.wazzat.app/account/new?locale=${language}`}
                 className="w-full sm:w-auto inline-flex items-center justify-center px-6 py-3 rounded-full bg-primary text-white hover:bg-primary/90 transition-all shadow-lg hover:shadow-primary/25"
               >
                 {t('hero.cta.createAccount')}

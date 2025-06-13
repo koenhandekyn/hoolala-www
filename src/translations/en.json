@@ -200,5 +200,21 @@
         ]
       }
     ]
+  },
+  "footer": {
+    "product": {
+      "title": "Product",
+      "overview": "Overview",
+      "onepager": "One-pager"
+    },
+    "legal": {
+      "title": "Legal",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service",
+      "cookies": "Cookie Policy"
+    },
+    "contact": {
+      "title": "Contact"
+    }
   }
 }

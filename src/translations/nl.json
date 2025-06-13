@@ -200,5 +200,21 @@
         ]
       }
     ]
+  },
+  "footer": {
+    "product": {
+      "title": "Product",
+      "overview": "Overzicht",
+      "onepager": "Eén-pager"
+    },
+    "legal": {
+      "title": "Juridisch",
+      "privacy": "Privacybeleid",
+      "terms": "Servicevoorwaarden",
+      "cookies": "Cookiebeleid"
+    },
+    "contact": {
+      "title": "Contact"
+    }
   }
 }

@@ -51,7 +51,7 @@ const Footer: React.FC = () => {
           </div>
 
           <div className="md:col-span-2">
-            <h4 className="text-sm font-semibold mb-4">Product</h4>
+            <h4 className="text-sm font-semibold mb-4">{t('footer.product.title')}</h4>
             <ul className="space-y-3">
               {/* <li>
                 <a href="/#features" className="text-sm text-muted-foreground hover:text-primary transition-colors">
@@ -85,40 +85,40 @@ const Footer: React.FC = () => {
               <li>
                 {/* link to main page top as name overview */}
                 <Link to="/" onClick={() => window.scrollTo(0, 0)} className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                  Overview
+                  {t('footer.product.overview')}
                 </Link>
               </li>
               <li>
                 <Link to="/summary" className="text-sm text-muted-foreground hover:text-primary transition-colors flex items-center">
-                  One-pager
+                  {t('footer.product.onepager')}
                 </Link>
               </li>
             </ul>
           </div>
 
           <div className="md:col-span-2">
-            <h4 className="text-sm font-semibold mb-4">Legal</h4>
+            <h4 className="text-sm font-semibold mb-4">{t('footer.legal.title')}</h4>
             <ul className="space-y-3">
               <li>
                 <Link to="/privacy-policy" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                  Privacy Policy
+                  {t('footer.legal.privacy')}
                 </Link>
               </li>
               <li>
                 <Link to="/terms-of-service" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                  Terms of Service
+                  {t('footer.legal.terms')}
                 </Link>
               </li>
               <li>
                 <Link to="/cookie-policy" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                  Cookie Policy
+                  {t('footer.legal.cookies')}
                 </Link>
               </li>
             </ul>
           </div>
 
           <div className="md:col-span-2">
-            <h4 className="text-sm font-semibold mb-4">Contact</h4>
+            <h4 className="text-sm font-semibold mb-4">{t('footer.contact.title')}</h4>
             <ul className="space-y-3">
               {/* <li>
                 <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">

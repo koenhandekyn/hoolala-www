@@ -96,5 +96,109 @@
       "contact": "ou contactez-nous à",
       "copyright": "© 2025 Wazzat. Tous droits réservés."
     }
+  },
+  "header": {
+    "features": "Fonctionnalités",
+    "howItWorks": "Comment Ça Marche",
+    "useCases": "Cas d'Utilisation",
+    "pricing": "Tarification",
+    "login": "Connexion"
+  },
+  "hero": {
+    "euBadge": {
+      "text": "Prêt pour le Passeport Numérique de Produit UE",
+      "title": "Passeport Numérique de Produit UE",
+      "description": "Le Passeport Numérique de Produit UE est un système numérique qui stocke et partage les informations sur les produits tout au long de la chaîne de valeur, rendant les données accessibles aux consommateurs et aux entreprises pour promouvoir la durabilité et les pratiques d'économie circulaire."
+    },
+    "title": "Passeports numériques intelligents",
+    "description": "Connectez facilement chaque produit ou projet à un passeport numérique. Wazzat simplifie le suivi des actifs, la documentation et le service tout au long du cycle de vie — rendant les informations critiques instantanément accessibles pour les fabricants, les entrepreneurs et les équipes de service. Les étiquettes peuvent être visibles (QR) ou invisibles (NFC/RFID), permettant un accès transparent avec n'importe quel téléphone (aucune application requise). Il suffit de scanner et c'est parti — plus de manuels ou d'historique de service perdus.",
+    "cta": {
+      "createAccount": "Créer un compte gratuit !",
+      "howItWorks": "Comment ça marche"
+    }
+  },
+  "features": {
+    "title": "Fonctionnalités",
+    "items": [
+      {
+        "title": "Identité Produit Intelligente",
+        "description": "Transformez les produits en actifs intelligents avec un accès instantané - il suffit de scanner et c'est parti, pas besoin d'application."
+      },
+      {
+        "title": "Historique Complet du Produit",
+        "description": "Suivez et accédez à l'historique complet du produit - des manuels aux dossiers de service."
+      },
+      {
+        "title": "Service & Durabilité Optimisés",
+        "description": "Permettez un service efficace et des pratiques durables avec des données produit complètes."
+      }
+    ],
+    "moreInfo": "Plus d'infos"
+  },
+  "howItWorks": {
+    "title": "Comment Ça Marche",
+    "subtitle": "Trois Étapes Simples pour Optimiser Votre Processus",
+    "description": "Wazzat? rend le suivi et la documentation sans effort avec un flux de travail optimisé que tout le monde peut suivre.",
+    "steps": {
+      "tag": {
+        "title": "Étiquetez",
+        "description": "Utilisez des codes QR (visibles) ou NFC/RFID (invisibles) pour donner à votre produit une identité numérique pendant la production ou l'installation."
+      },
+      "link": {
+        "title": "Liez",
+        "description": "Lieez l'étiquette à un produit ou projet (prédéfini) et à un emplacement. Les produits et projets peuvent être importés depuis votre ERP, CRM ou backoffice existant."
+      },
+      "track": {
+        "title": "Suivez",
+        "description": "Ajoutez des photos, des notes, des documents, etc. pour créer un passeport numérique complet avec un historique de service complet."
+      }
+    },
+    "tracking": {
+      "qr": {
+        "title": "Suivi par Code QR",
+        "description": "Scannez les codes QR sur les équipements comme les chauffe-eau pour accéder instantanément à l'historique de service, à la documentation et aux options de support. Pas besoin de télécharger d'application."
+      },
+      "nfc": {
+        "title": "Suivi NFC/RFID",
+        "description": "Touchez simplement votre téléphone sur les équipements avec des étiquettes NFC/RFID invisibles pour accéder instantanément à l'historique de service, à la documentation et aux options de support."
+      }
+    }
+  },
+  "useCases": {
+    "title": "Parfait pour Chaque Industrie & Besoin",
+    "description": "Wazzat? s'adapte à diverses industries et cas d'utilisation, fournissant des solutions sur mesure pour différents besoins de suivi et de service.",
+    "items": [
+      {
+        "title": "Fabricants",
+        "description": "Passeports numériques pour vos produits",
+        "benefits": [
+          "Partagez facilement la documentation avec les clients",
+          "Accès instantané aux spécifications d'origine",
+          "Historique complet des services",
+          "Prenez le contrôle de la prestation de service",
+          "Réclamations de garantie simplifiées"
+        ]
+      },
+      {
+        "title": "Entrepreneurs",
+        "description": "Renforcez la fidélité",
+        "benefits": [
+          "Documentez correctement les projets avec des photos",
+          "Suivez l'historique des services pour chaque projet",
+          "Rendez les appels de support plus efficaces avec un accès instantané aux bonnes informations",
+          "Améliorez la satisfaction client et renforcez la fidélité"
+        ]
+      },
+      {
+        "title": "Équipes de Service",
+        "description": "Améliorez la satisfaction client",
+        "benefits": [
+          "Préparez mieux les interventions et réduisez le temps de diagnostic avec un accès instantané aux manuels et spécifications",
+          "Améliorez la collaboration d'équipe avec des données partagées et accès à l'historique complet des services",
+          "Améliorez la satisfaction client et renforcez la fidélité",
+          "Permettez la planification proactive de la maintenance"
+        ]
+      }
+    ]
   }
 }

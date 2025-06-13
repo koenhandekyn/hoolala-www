@@ -1,6 +1,7 @@
 import React from 'react';
 import { QrCode, FileText, Share2, Nfc } from 'lucide-react';
 import ArtworkImage from './ArtworkImage';
+import { useTranslation } from '@/hooks/use-translation';
 
 interface StepProps {
   number: number;
@@ -33,21 +34,22 @@ const Step: React.FC<StepProps> = ({ number, icon, title, description }) => {
 };
 
 const HowItWorks: React.FC = () => {
+  const { t } = useTranslation();
+
   return (
     <section id="how-it-works" className="py-20 overflow-hidden bg-white">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center mb-16 animate-fade-in">
           <div className="inline-flex items-center px-3 py-1 rounded-full bg-primary/10 text-primary mb-6">
-            <span className="text-xs font-medium">How It Works</span>
+            <span className="text-xs font-medium">{t('howItWorks.title')}</span>
           </div>
 
           <h2 className="mb-6">
-            Three Simple Steps to <br />
-            <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent"> Streamline Your Process</span>
+            {t('howItWorks.subtitle')}
           </h2>
 
           <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
-            <i>Wazzat?</i> makes tracking and documentation effortless with a streamlined workflow that anyone can follow.
+            <i>Wazzat?</i> {t('howItWorks.description')}
           </p>
         </div>
 
@@ -55,22 +57,22 @@ const HowItWorks: React.FC = () => {
           <Step
             number={1}
             icon={<div className="flex items-center gap-1"><QrCode className="h-6 w-6 text-primary" /><Nfc className="h-6 w-6 text-primary" /></div>}
-            title="Tag"
-            description="Use QR codes (visible) or NFC/RFID (invisible) to give your product a digital identity during the production or installation process."
+            title={t('howItWorks.steps.tag.title')}
+            description={t('howItWorks.steps.tag.description')}
           />
 
           <Step
             number={2}
             icon={<FileText className="h-8 w-8 text-primary" />}
-            title="Link"
-            description="Link the tag to a (or a predefined) product or project and location. Products and projects can be imported from your ERP, CRM or existing backoffice."
+            title={t('howItWorks.steps.link.title')}
+            description={t('howItWorks.steps.link.description')}
           />
 
           <Step
             number={3}
             icon={<Share2 className="h-8 w-8 text-primary" />}
-            title="Track"
-            description="Add photos, notes, documents, more ... to create a complete digital passport with a full service history."
+            title={t('howItWorks.steps.track.title')}
+            description={t('howItWorks.steps.track.description')}
           />
         </div>
 
@@ -88,9 +90,9 @@ const HowItWorks: React.FC = () => {
                   </div>
 
                   <div className="w-full text-center">
-                    <h3 className="text-2xl font-medium mb-4">QR Code Tracking</h3>
+                    <h3 className="text-2xl font-medium mb-4">{t('howItWorks.tracking.qr.title')}</h3>
                     <p className="text-muted-foreground mb-6">
-                      Scan QR codes on equipment like water heaters to instantly access service history, documentation, and support options. No app download required.
+                      {t('howItWorks.tracking.qr.description')}
                     </p>
                   </div>
                 </div>
@@ -109,9 +111,9 @@ const HowItWorks: React.FC = () => {
                   </div>
 
                   <div className="w-full text-center">
-                    <h3 className="text-2xl font-medium mb-4">NFC/RFID Tracking</h3>
+                    <h3 className="text-2xl font-medium mb-4">{t('howItWorks.tracking.nfc.title')}</h3>
                     <p className="text-muted-foreground mb-6">
-                      Simply tap your phone on equipment with invisible NFC/RFID tags to instantly access service history, documentation, and support options.
+                      {t('howItWorks.tracking.nfc.description')}
                     </p>
                   </div>
                 </div>

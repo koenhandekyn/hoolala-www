@@ -96,5 +96,109 @@
       "contact": "of neem contact op via",
       "copyright": "© 2025 Wazzat. Alle rechten voorbehouden."
     }
+  },
+  "header": {
+    "features": "Kenmerken",
+    "howItWorks": "Hoe werkt het",
+    "useCases": "Voor wie",
+    "pricing": "Prijzen",
+    "login": "Inloggen"
+  },
+  "hero": {
+    "euBadge": {
+      "text": "EU Digitaal Productpaspoort Gereed",
+      "title": "EU Digitaal Productpaspoort",
+      "description": "Het EU Digitaal Productpaspoort is een digitaal systeem dat productinformatie opslaat en deelt in de waardeketen, waardoor gegevens toegankelijk zijn voor consumenten en bedrijven om duurzaamheid en circulaire economie te bevorderen."
+    },
+    "title": "Slimme digitale paspoorten",
+    "description": "Verbind moeiteloos elk product of project met een digitaal paspoort. Wazzat vereenvoudigt activabeheer, documentatie en levenscyclus service — waardoor kritieke informatie direct toegankelijk is voor fabrikanten, aannemers en serviceteams. Tags kunnen zichtbaar (QR) of onzichtbaar (NFC/RFID) zijn, wat naadloze toegang mogelijk maakt met elke telefoon (geen app nodig). Gewoon scannen en gaan — geen verloren handleidingen of servicegeschiedenis meer.",
+    "cta": {
+      "createAccount": "Maak een gratis account!",
+      "howItWorks": "Hoe werkt het"
+    }
+  },
+  "features": {
+    "title": "Kenmerken",
+    "items": [
+      {
+        "title": "Slimme Productidentiteit",
+        "description": "Transformeer producten in slimme activa met directe toegang - gewoon scannen en gaan, geen app nodig."
+      },
+      {
+        "title": "Volledige Productgeschiedenis",
+        "description": "Volg en toegang tot volledige productgeschiedenis - van handleidingen tot servicedossiers."
+      },
+      {
+        "title": "Gestroomlijnde Service & Duurzaamheid",
+        "description": "Maak efficiënte service en duurzame praktijken mogelijk met complete productgegevens."
+      }
+    ],
+    "moreInfo": "Meer info"
+  },
+  "howItWorks": {
+    "title": "Hoe werkt het",
+    "subtitle": "Drie Eenvoudige Stappen om Uw Proces te Stroomlijnen",
+    "description": "Wazzat? maakt tracking en documentatie moeiteloos met een gestroomlijnde workflow die iedereen kan volgen.",
+    "steps": {
+      "tag": {
+        "title": "Label",
+        "description": "Gebruik QR-codes (zichtbaar) of NFC/RFID (onzichtbaar) om uw product een digitale identiteit te geven tijdens het productie- of installatieproces."
+      },
+      "link": {
+        "title": "Koppel",
+        "description": "Koppel de tag aan een (of een vooraf gedefinieerd) product of project en locatie. Producten en projecten kunnen worden geïmporteerd uit uw ERP, CRM of bestaande backoffice."
+      },
+      "track": {
+        "title": "Volg",
+        "description": "Voeg foto's, notities, documenten, en meer toe om een compleet digitaal paspoort te creëren met een volledige servicegeschiedenis."
+      }
+    },
+    "tracking": {
+      "qr": {
+        "title": "QR-code Tracking",
+        "description": "Scan QR-codes op apparatuur zoals boilers om direct toegang te krijgen tot servicegeschiedenis, documentatie en ondersteuningsopties. Geen app-download nodig."
+      },
+      "nfc": {
+        "title": "NFC/RFID Tracking",
+        "description": "Tik eenvoudig uw telefoon op apparatuur met onzichtbare NFC/RFID-tags om direct toegang te krijgen tot servicegeschiedenis, documentatie en ondersteuningsopties."
+      }
+    }
+  },
+  "useCases": {
+    "title": "Perfect voor Elke Industrie & Behoefte",
+    "description": "Wazzat? past zich aan aan diverse industrieën en use cases, en biedt op maat gemaakte oplossingen voor verschillende tracking- en servicedoeleinden.",
+    "items": [
+      {
+        "title": "Fabrikanten",
+        "description": "Digitale paspoorten voor uw producten",
+        "benefits": [
+          "Deel eenvoudig documentatie met klanten",
+          "Direct toegang tot originele specificaties",
+          "Volledige servicegeschiedenis",
+          "Neem controle over serviceverlening",
+          "Gestroomlijnde garantieclaims"
+        ]
+      },
+      {
+        "title": "Aannemers",
+        "description": "Bouw loyaliteit op",
+        "benefits": [
+          "Documenteer projecten correct met foto's",
+          "Volg servicegeschiedenis per project",
+          "Maak supportgesprekken efficiënter met directe toegang tot de juiste informatie",
+          "Verbeter klanttevredenheid & bouw klantloyaliteit op"
+        ]
+      },
+      {
+        "title": "Service Teams",
+        "description": "Verbeter klanttevredenheid",
+        "benefits": [
+          "Bereid servicebezoeken beter voor en verminder diagnostische tijd met directe toegang tot handleidingen en specificaties",
+          "Verbeter teamcollaboratie met gedeelde gegevens en toegang tot de complete servicegeschiedenis",
+          "Verbeter klanttevredenheid & bouw klantloyaliteit op",
+          "Maak proactieve onderhoudsplanning mogelijk"
+        ]
+      }
+    ]
   }
 }

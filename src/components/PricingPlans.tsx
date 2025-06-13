@@ -1,7 +1,9 @@
 import React from 'react';
 import { Check } from 'lucide-react';
+import { useTranslation } from '@/hooks/use-translation';
 
 const PricingTable: React.FC = () => {
+  const { t } = useTranslation();
   const pricingTiers = [
     { range: "1-3", price: "Free Trial", history: "1 year" },
     { range: "4-50", price: "€5", history: "10 years" },
@@ -18,12 +20,11 @@ const PricingTable: React.FC = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center mb-16 animate-fade-in">
           <h2 className="mb-6">
-            One-Time Pricing,
-            <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent"> No Subscriptions</span>
+            {t('pricing.title')}
           </h2>
 
           <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Pay once, own forever. The more points you add, the less you pay per point.
+            {t('pricing.description')}
           </p>
         </div>
 
@@ -32,9 +33,9 @@ const PricingTable: React.FC = () => {
             <table className="w-full border-collapse">
               <thead>
                 <tr className="border-b border-border">
-                  <th className="py-4 px-6 text-left">Number of Points</th>
-                  <th className="py-4 px-6 text-left">Price per Point</th>
-                  <th className="py-4 px-6 text-left">History</th>
+                  <th className="py-4 px-6 text-left">{t('pricing.table.points')}</th>
+                  <th className="py-4 px-6 text-left">{t('pricing.table.price')}</th>
+                  <th className="py-4 px-6 text-left">{t('pricing.table.history')}</th>
                 </tr>
               </thead>
               <tbody>
@@ -52,8 +53,7 @@ const PricingTable: React.FC = () => {
 
         <div className="max-w-3xl mx-auto text-center mb-16 animate-fade-in">
           <p className="text-muted-foreground mt-8 max-w-2xl mx-auto italic text-sm">
-            Physical custom branded tags sold separately. <br />
-            Contact us for more information.
+            {t('pricing.footer')}
           </p>
         </div>
       </div>

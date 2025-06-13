@@ -1,10 +1,12 @@
 import React from 'react';
 import { Mail, FileText } from 'lucide-react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { useTranslation } from '@/hooks/use-translation';
 
 const Footer: React.FC = () => {
   const location = useLocation();
   const navigate = useNavigate();
+  const { t } = useTranslation();
 
   const scrollToSection = (e: React.MouseEvent<HTMLAnchorElement>, sectionId: string) => {
     e.preventDefault();
@@ -36,13 +38,13 @@ const Footer: React.FC = () => {
                   <i>Wazzat?</i>
                 </a>
                 <p className="mt-4 text-sm text-muted-foreground max-w-xs">
-                  Tag your products, installations, rooms, appliances, and more with QR codes or NFC tags to simplify tracking, documentation, and service requests.
+                  {t('summary.overview.what.description')}
                 </p>
               </div>
 
               <div className="mt-auto pt-8">
                 <p className="text-xs text-muted-foreground">
-                  &copy; {new Date().getFullYear()} Wazzat. All rights reserved.
+                  {t('summary.footer.copyright')}
                 </p>
               </div>
             </div>

@@ -96,5 +96,109 @@
       "contact": "or contact us at",
       "copyright": "© 2025 Wazzat. All rights reserved."
     }
+  },
+  "header": {
+    "features": "Features",
+    "howItWorks": "How It Works",
+    "useCases": "Use Cases",
+    "pricing": "Pricing",
+    "login": "Login"
+  },
+  "hero": {
+    "euBadge": {
+      "text": "EU Digital Product Passport Ready",
+      "title": "EU Digital Product Passport",
+      "description": "The EU Digital Product Passport is a digital system that stores and shares product information across the value chain, making data accessible to consumers and businesses to promote sustainability and circular economy practices."
+    },
+    "title": "Smart digital passports",
+    "description": "Effortlessly connect every product or project to a digital passport. Wazzat simplifies asset tracking, documentation, and full lifecycle service — making critical info instantly accessible for manufacturers, contractors, and service teams. Tags can be visible (QR) or invisible (NFC/RFID), enabling seamless access with any phone (no app required). Just scan and go—no more lost manuals or service history.",
+    "cta": {
+      "createAccount": "Create a Free Account!",
+      "howItWorks": "How It Works"
+    }
+  },
+  "features": {
+    "title": "Features",
+    "items": [
+      {
+        "title": "Smart Product Identity",
+        "description": "Transform products into smart assets with instant access - just scan and go, no app needed."
+      },
+      {
+        "title": "Complete Product History",
+        "description": "Track and access complete product history - from manuals to service records."
+      },
+      {
+        "title": "Streamlined Service & Sustainability",
+        "description": "Enable efficient service and sustainable practices with complete product data."
+      }
+    ],
+    "moreInfo": "More info"
+  },
+  "howItWorks": {
+    "title": "How It Works",
+    "subtitle": "Three Simple Steps to Streamline Your Process",
+    "description": "Wazzat? makes tracking and documentation effortless with a streamlined workflow that anyone can follow.",
+    "steps": {
+      "tag": {
+        "title": "Tag",
+        "description": "Use QR codes (visible) or NFC/RFID (invisible) to give your product a digital identity during the production or installation process."
+      },
+      "link": {
+        "title": "Link",
+        "description": "Link the tag to a (or a predefined) product or project and location. Products and projects can be imported from your ERP, CRM or existing backoffice."
+      },
+      "track": {
+        "title": "Track",
+        "description": "Add photos, notes, documents, more ... to create a complete digital passport with a full service history."
+      }
+    },
+    "tracking": {
+      "qr": {
+        "title": "QR Code Tracking",
+        "description": "Scan QR codes on equipment like water heaters to instantly access service history, documentation, and support options. No app download required."
+      },
+      "nfc": {
+        "title": "NFC/RFID Tracking",
+        "description": "Simply tap your phone on equipment with invisible NFC/RFID tags to instantly access service history, documentation, and support options."
+      }
+    }
+  },
+  "useCases": {
+    "title": "Perfect for Every Industry & Need",
+    "description": "Wazzat? adapts to diverse industries and use cases, providing tailored solutions for various tracking and service needs.",
+    "items": [
+      {
+        "title": "Manufacturers",
+        "description": "Digital passports for your products",
+        "benefits": [
+          "Easily share documentation with customers",
+          "Instant access to original specs",
+          "Full service history",
+          "Take control of service delivery",
+          "Streamlined warranty claims"
+        ]
+      },
+      {
+        "title": "Contractors",
+        "description": "Build loyalty",
+        "benefits": [
+          "Document projects properly with photos",
+          "Track service history for each project",
+          "Make support calls more efficient with instant access to the right information",
+          "Improve customer satisfaction & build customer loyalty"
+        ]
+      },
+      {
+        "title": "Service Teams",
+        "description": "Improve customer satisfaction",
+        "benefits": [
+          "Prepare for service calls better and reduce diagnostic time with instant access to manuals and specs",
+          "Enhance team collaboration with shared data with access to the complete service history",
+          "Improve customer satisfaction & build customer loyalty",
+          "Enable proactive maintenance scheduling"
+        ]
+      }
+    ]
   }
 }

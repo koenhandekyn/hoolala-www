@@ -5,6 +5,7 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { useIsMobile } from '@/hooks/use-mobile';
 import LanguageSwitcher from './LanguageSwitcher';
+import { useTranslation } from '@/hooks/use-translation';
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -12,6 +13,7 @@ const Header: React.FC = () => {
   const isMobile = useIsMobile();
   const location = useLocation();
   const navigate = useNavigate();
+  const { t } = useTranslation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -60,13 +62,13 @@ const Header: React.FC = () => {
 
           <nav className="hidden md:flex items-center space-x-8">
             <a href="/#features" onClick={(e) => scrollToSection(e, 'features')} className="text-sm font-medium hover:text-primary transition-colors">
-              Features
+              {t('header.features')}
             </a>
             <a href="/#how-it-works" onClick={(e) => scrollToSection(e, 'how-it-works')} className="text-sm font-medium hover:text-primary transition-colors">
-              How It Works
+              {t('header.howItWorks')}
             </a>
             <a href="/#use-cases" onClick={(e) => scrollToSection(e, 'use-cases')} className="text-sm font-medium hover:text-primary transition-colors">
-              Use Cases
+              {t('header.useCases')}
             </a>
             {/* <a href="/#pricing" onClick={(e) => scrollToSection(e, 'pricing')} className="text-sm font-medium hover:text-primary transition-colors">
               Pricing
@@ -82,7 +84,7 @@ const Header: React.FC = () => {
               className="px-5 py-2 rounded-full text-sm font-medium bg-primary text-white hover:bg-primary/90 transition-colors flex items-center"
             >
               <ExternalLink className="h-4 w-4 mr-1" />
-              Login
+              {t('header.login')}
             </a>
           </div>
 
@@ -106,7 +108,7 @@ const Header: React.FC = () => {
                         document.getElementById('features')?.scrollIntoView({ behavior: 'smooth' });
                       }}
                     >
-                      Features
+                      {t('header.features')}
                     </a>
                     <a
                       href="#how-it-works"
@@ -115,13 +117,13 @@ const Header: React.FC = () => {
                         document.getElementById('how-it-works')?.scrollIntoView({ behavior: 'smooth' });
                       }}
                     >
-                      How It Works
+                      {t('header.howItWorks')}
                     </a>
                     <Link
                       to="/use-cases"
                       className="text-lg font-medium hover:text-primary transition-colors"
                     >
-                      Use Cases
+                      {t('header.useCases')}
                     </Link>
                     <a
                       href="#pricing"
@@ -145,7 +147,7 @@ const Header: React.FC = () => {
                       className="block w-full text-center px-5 py-3 rounded-full text-base font-medium bg-primary text-white hover:bg-primary/90 transition-colors flex items-center justify-center"
                     >
                       <ExternalLink className="h-5 w-5 mr-2" />
-                      Login
+                      {t('header.login')}
                     </a>
                   </div>
                 </div>
@@ -183,21 +185,21 @@ const Header: React.FC = () => {
                 onClick={(e) => scrollToSection(e, 'features')}
                 className="text-lg font-medium hover:text-primary transition-colors"
               >
-                Features
+                {t('header.features')}
               </a>
               <a
                 href="#how-it-works"
                 onClick={(e) => scrollToSection(e, 'how-it-works')}
                 className="text-lg font-medium hover:text-primary transition-colors"
               >
-                How It Works
+                {t('header.howItWorks')}
               </a>
               <Link
                 to="/use-cases"
                 onClick={() => setIsMenuOpen(false)}
                 className="text-lg font-medium hover:text-primary transition-colors"
               >
-                Use Cases
+                {t('header.useCases')}
               </Link>
               <a
                 href="#pricing"
@@ -220,7 +222,7 @@ const Header: React.FC = () => {
                 className="block w-full text-center px-5 py-3 rounded-full text-base font-medium bg-primary text-white hover:bg-primary/90 transition-colors flex items-center justify-center"
               >
                 <ExternalLink className="h-5 w-5 mr-2" />
-                Login
+                {t('header.login')}
               </a>
             </div>
           </div>

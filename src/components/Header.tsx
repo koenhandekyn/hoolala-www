@@ -13,7 +13,7 @@ const Header: React.FC = () => {
   const isMobile = useIsMobile();
   const location = useLocation();
   const navigate = useNavigate();
-  const { t } = useTranslation();
+  const { t, language } = useTranslation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -78,7 +78,7 @@ const Header: React.FC = () => {
           <div className="hidden md:flex items-center space-x-2">
             <LanguageSwitcher />
             <a
-              href="https://app.wazzat.app"
+              href={`https://app.wazzat.app?locale=${language}`}
               target="_blank"
               rel="noopener noreferrer"
               className="px-5 py-2 rounded-full text-sm font-medium bg-primary text-white hover:bg-primary/90 transition-colors flex items-center"
@@ -141,7 +141,7 @@ const Header: React.FC = () => {
                       <LanguageSwitcher />
                     </div>
                     <a
-                      href="https://app.wazzat.app"
+                      href={`https://app.wazzat.app?locale=${language}`}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="block w-full text-center px-5 py-3 rounded-full text-base font-medium bg-primary text-white hover:bg-primary/90 transition-colors flex items-center justify-center"
@@ -215,7 +215,7 @@ const Header: React.FC = () => {
                 <LanguageSwitcher />
               </div>
               <a
-                href="https://app.wazzat.app"
+                href={`https://app.wazzat.app?locale=${language}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => setIsMenuOpen(false)}

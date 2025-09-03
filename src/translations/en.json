@@ -1,28 +1,28 @@
 {
   "summary": {
-    "title": "Product Summary",
+    "title": "Summary",
     "overview": {
-      "title": "Product Overview",
-      "description": "<i class='brand'>Wazzat?</i> simplify service delivery.",
+      "title": "Overview",
+      "description": "Wazzat makes your work easier and faster.",
       "what": {
         "title": "What is Wazzat?",
-        "description": "Effortlessly connect every product to its digital identity. Wazzat simplifies asset tracking, documentation, and after-sales service—making information instantly accessible for manufacturers, contractors, and service teams. No more lost manuals or service history: just scan and go."
+        "description": "With Wazzat, you give every project or product a digital passport. Document what you install with photos and notes, save documents and find everything quickly. Less administration, more time for your craft."
       }
     },
     "howItWorks": {
       "title": "How It Works",
       "steps": {
         "tag": {
-          "title": "1. Tag",
-          "description": "Use QR codes (visible) or NFC/RFID (invisible) to label your products for easy identification."
+          "title": "1. Stick",
+          "description": "Stick a QR code or invisible NFC tag on your product so you can easily recognize it."
         },
         "enrich": {
-          "title": "2. Link",
-          "description": "Link the tag to a product or project."
+          "title": "2. Click",
+          "description": "Take a photo, add notes and save important documents – so you have everything at hand."
         },
         "share": {
-          "title": "3. Track ",
-          "description": "Add photos, notes, documents, and internal metadata to create a complete service history."
+          "title": "3. Forget until you need it",
+          "description": "Scan the code or tap the tag when you need info or service, quickly and without hassle."
         }
       }
     },
@@ -30,70 +30,70 @@
       "title": "Key Features",
       "items": [
         {
-          "title": "Instant Access",
-          "description": "Scan a QR code to get all product details and documentation instantly."
+          "title": "Save Time",
+          "description": "With one scan you immediately have all the info, no more endless searching."
         },
         {
-          "title": "No More Lost Info",
-          "description": "Keep documents & service history in one place, always accessible."
+          "title": "Always Overview",
+          "description": "Keep photos, documents and notes neatly together, ready for later."
         },
         {
-          "title": "10+ Years Archiving",
-          "description": "Keep records available long-term for compliance and peace of mind."
+          "title": "Long-term Storage",
+          "description": "Your work and service data stays preserved for years, handy for warranty and administration."
         },
         {
-          "title": "Fast Service Handling",
-          "description": "Customers can submit requests with one scan, simplifying the process."
+          "title": "Easy Service",
+          "description": "Customers can easily make a service request with one scan."
         },
         {
-          "title": "Secure & Reliable",
-          "description": "Your data is stored safely and accessible only to the right people."
+          "title": "Safe & Trusted",
+          "description": "Your data is safe and only accessible to who you want."
         },
         {
-          "title": "Works on Any Modern Phone",
-          "description": "No app needed, just scan and go with any smartphone camera."
+          "title": "Works on Every Phone",
+          "description": "No app needed, just scan with your smartphone."
         }
       ]
     },
     "useCases": {
       "title": "Use Cases",
       "manufacturers": {
-        "title": "For Manufacturers",
-        "description": "Digital passports for your products",
+        "title": "Craftsmen",
+        "description": "Digital passports for your work",
         "benefits": [
-          "Share documentation with customers",
-          "Installation photos",
-          "Instant access to original specs",
-          "Full service history",
-          "Streamlined warranty claims"
+          "Easily share manuals and photos with customers",
+          "Document your work with photos and notes",
+          "Always access to original specifications",
+          "Keep service and warranty organized",
+          "Make invoicing faster and simpler"
         ]
       },
       "contractors": {
-        "title": "For Contractors",
-        "description": "Simplify support",
+        "title": "Contractors",
+        "description": "Work smarter together",
         "benefits": [
-          "Document installations properly",
-          "Provide easy access to manuals",
-          "Track service history",
-          "Reduce support calls",
-          "Build customer loyalty"
+          "Document projects quickly and clearly",
+          "Easily share manuals and agreements",
+          "Keep overview of service and maintenance",
+          "Fewer questions and misunderstandings with customers",
+          "Build trust with clear communication"
         ]
       },
       "serviceTeams": {
-        "title": "For Service Teams",
-        "description": "Professional support",
+        "title": "Service Teams",
+        "description": "Fast and clear service",
         "benefits": [
-          "Prepare for service calls better",
-          "Reduce diagnostic time",
-          "Access complete service history",
-          "Improve customer satisfaction",
-          "Enable proactive maintenance"
+          "Prepare your visit well with all info at hand",
+          "Less search time, solve faster",
+          "Always full service history available",
+          "Satisfied customers through fast and clear service",
+          "Prevent unexpected problems with proactive maintenance"
         ]
       }
     },
     "footer": {
-      "visit": "For more information, visit",
-      "contact": "or contact us at",
+      "visit": "Want to know more? Visit",
+      "contact": "or contact us via",
       "copyright": "© 2025 Wazzat. All rights reserved."
     }
   },

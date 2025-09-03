@@ -30,7 +30,7 @@ const Summary: React.FC = () => {
         <div className="mb-4">
           <div className="flex flex-row items-start gap-4 mt-2 justify-between pt-0">
             <div className="flex-1">
-              <p className="text-muted-foreground mb-4">
+              <p className="text-xl font-semibold text-foreground mb-4 leading-tight">
                 <HtmlContent>{t('summary.overview.description')}</HtmlContent>
               </p>
               <p className="text-sm text-muted-foreground mb-4">

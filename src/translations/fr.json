@@ -3,10 +3,10 @@
     "title": "Résumé",
     "overview": {
       "title": "Aperçu",
-      "description": "Wazzat rend votre travail plus facile et plus rapide.",
+      "description": "La salle de bain de Sophie. La lucarne de Luc. Wazzat s'en souvient pour vous.",
       "what": {
         "title": "Qu'est-ce que Wazzat?",
-        "description": "Avec Wazzat, vous donnez à chaque projet ou produit un passeport numérique. Documentez ce que vous installez avec des photos et des notes, sauvegardez les documents et trouvez tout rapidement. Moins d'administration, plus de temps pour votre métier."
+        "description": "Donnez un passeport numérique à chaque projet. Documentez avec photos et notes, sauvegardez tout et trouvez rapidement. Moins d'admin, plus de temps pour votre métier."
       }
     },
     "howItWorks": {
@@ -14,15 +14,15 @@
       "steps": {
         "tag": {
           "title": "1. Collez",
-          "description": "Collez un code QR ou une étiquette NFC invisible sur votre produit pour le reconnaître facilement."
+          "description": "Collez un QR ou NFC sur votre produit pour le reconnaître."
         },
         "enrich": {
           "title": "2. Cliquez",
-          "description": "Prenez une photo, ajoutez des notes et sauvegardez les documents importants – ainsi vous avez tout à portée de main."
+          "description": "Photo, notes et documents – tout à portée de main."
         },
         "share": {
           "title": "3. Oubliez jusqu'à ce que vous en ayez besoin",
-          "description": "Scannez le code ou touchez l'étiquette quand vous avez besoin d'infos ou de service, rapidement et sans tracas."
+          "description": "Scannez ou touchez quand vous avez besoin d'infos, rapidement."
         }
       }
     },
@@ -31,27 +31,27 @@
       "items": [
         {
           "title": "Gagnez du Temps",
-          "description": "Avec un scan vous avez immédiatement toutes les infos, plus de recherche interminable."
+          "description": "Un scan = toutes les infos, plus de recherche."
         },
         {
           "title": "Toujours un Aperçu",
-          "description": "Gardez photos, documents et notes bien organisés ensemble, prêts pour plus tard."
+          "description": "Photos, docs et notes organisés, prêts pour plus tard."
         },
         {
           "title": "Stockage à Long Terme",
-          "description": "Votre travail et vos données de service restent conservés pendant des années, pratique pour la garantie et l'administration."
+          "description": "Vos données conservées des années, pratique pour garantie et admin."
         },
         {
           "title": "Service Facile",
-          "description": "Les clients peuvent facilement faire une demande de service avec un scan."
+          "description": "Service facile pour clients avec un scan."
         },
         {
           "title": "Sûr & Fiable",
-          "description": "Vos données sont sûres et accessibles uniquement à qui vous voulez."
+          "description": "Données sûres, accessibles uniquement à qui vous voulez."
         },
         {
           "title": "Fonctionne sur Tous les Téléphones",
-          "description": "Pas besoin d'application, il suffit de scanner avec votre smartphone."
+          "description": "Pas d'app, scannez avec votre smartphone."
         }
       ]
     },
@@ -72,11 +72,11 @@
         "title": "Entrepreneurs",
         "description": "Travaillez plus intelligemment ensemble",
         "benefits": [
-          "Documentez les projets rapidement et clairement",
-          "Partagez facilement manuels et accords",
-          "Gardez un aperçu du service et de la maintenance",
-          "Moins de questions et malentendus avec les clients",
-          "Construisez la confiance avec une communication claire"
+          "Documentez projets rapidement",
+          "Partagez manuels facilement",
+          "Aperçu service et maintenance",
+          "Moins de questions clients",
+          "Confiance par communication claire"
         ]
       },
       "serviceTeams": {
@@ -86,8 +86,7 @@
           "Préparez bien votre visite avec toutes les infos à portée de main",
           "Moins de temps de recherche, résolution plus rapide",
           "Historique complet des services toujours disponible",
-          "Clients satisfaits grâce à un service rapide et clair",
-          "Prévenez les problèmes inattendus avec une maintenance proactive"
+          "Clients satisfaits grâce à un service rapide et clair"
         ]
       }
     },

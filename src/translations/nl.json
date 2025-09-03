@@ -1,12 +1,12 @@
 {
   "summary": {
-    "title": "Product Samenvatting",
+    "title": "Samenvatting",
     "overview": {
-      "title": "Product Overzicht",
-      "description": "<i class='brand'>Wazzat?</i> maakt je werk makkelijker.",
+      "title": "Overzicht",
+      "description": "Sophie's badkamer. Luc's dakraam. Wazzat onthoudt het voor jou.",
       "what": {
         "title": "Wat is Wazzat?",
-        "description": "Verbind elk product snel met een digitaal paspoort. Wazzat helpt je werk vastleggen, documenten bewaren en service regelen – alles overzichtelijk en makkelijk terug te vinden. Geen gedoe meer met zoekgeraakte handleidingen of onduidelijke afspraken."
+        "description": "Met Wazzat geef je elk project of product een digitaal paspoort. Documenteer wat je installeert met foto's en notities, bewaar documenten en vind alles snel terug. Minder administratie, meer tijd voor je vak."
       }
     },
     "howItWorks": {
@@ -86,8 +86,7 @@
           "Bereid je bezoek goed voor met alle info bij de hand",
           "Minder zoektijd, sneller oplossen",
           "Altijd volledige servicegeschiedenis beschikbaar",
-          "Tevreden klanten door snelle en duidelijke service",
-          "Voorkom onverwachte problemen met proactief onderhoud"
+          "Tevreden klanten door snelle en duidelijke service"
         ]
       }
     },

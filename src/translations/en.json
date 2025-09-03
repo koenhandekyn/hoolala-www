@@ -98,9 +98,9 @@
     }
   },
   "header": {
-    "features": "Features",
-    "howItWorks": "How It Works",
-    "useCases": "Use Cases",
+    "features": "What?",
+    "howItWorks": "How?",
+    "useCases": "Where?",
     "pricing": "Pricing",
     "login": "Login"
   },
@@ -136,62 +136,62 @@
     "title": "Features",
     "items": [
       {
-        "title": "Smart Product Identity",
-        "description": "Transform products into smart assets with instant access - just scan and go, no app needed."
+        "title": "Fast and Simple",
+        "description": "Document your work with one scan, no hassle or apps."
       },
       {
-        "title": "Complete Product History",
-        "description": "Track and access complete product history - from manuals to service records."
+        "title": "Always Everything at Hand",
+        "description": "Photos, documents and notes neatly together, ready to share."
       },
       {
-        "title": "Streamlined Service & Sustainability",
-        "description": "Enable efficient service and sustainable practices with complete product data."
+        "title": "Professional and Reliable",
+        "description": "Make an impression with clear administration and fast service."
       }
     ],
     "moreInfo": "More info"
   },
   "howItWorks": {
-    "title": "How It Works",
-    "subtitle": "Three Simple Steps to Streamline Your Process",
-    "description": "Wazzat? makes tracking and documentation effortless with a streamlined workflow that anyone can follow.",
+    "title": "How?",
+    "subtitle": "Three simple steps to make your work easier",
+    "description": "With Wazzat you document your work quickly and clearly, so you can easily find and share it later.",
     "steps": {
       "tag": {
-        "title": "Tag",
-        "description": "Use QR codes (visible) or NFC/RFID (invisible) to give your product a digital identity during the production or installation process."
+        "title": "Stick",
+        "description": "Stick a QR code or invisible NFC tag on your product or project."
       },
       "link": {
-        "title": "Link",
-        "description": "Link the tag to a (or a predefined) product or project and location. Products and projects can be imported from your ERP, CRM or existing backoffice."
+        "title": "Click",
+        "description": "Take a photo, add notes and save everything together."
       },
       "track": {
-        "title": "Track",
-        "description": "Add photos, notes, documents, more ... to create a complete digital passport with a full service history."
+        "title": "Forget until you need it",
+        "description": "Scan the code or tap the tag when you need info or want to request service."
       }
     },
     "tracking": {
       "qr": {
         "title": "QR Code Tracking",
-        "description": "Scan QR codes on equipment like water heaters to instantly access service history, documentation, and support options. No app download required."
+        "description": "Scan a QR code with your phone for quick access to all info, no app needed."
       },
       "nfc": {
         "title": "NFC/RFID Tracking",
-        "description": "Simply tap your phone on equipment with invisible NFC/RFID tags to instantly access service history, documentation, and support options."
+        "description": "Tap your phone on an invisible NFC tag for direct access to data."
       }
     }
   },
   "useCases": {
-    "title": "Perfect for Every Industry & Need",
-    "description": "Wazzat? adapts to diverse industries and use cases, providing tailored solutions for various tracking and service needs.",
+    "title": "Perfect for Craftsmen, Contractors and Service Teams",
+    "description": "Wazzat? adapts to your work, with simple solutions for documenting, sharing and service.",
     "items": [
       {
-        "title": "Manufacturers",
-        "description": "Digital passports for your products",
+        "title": "Craftsmen",
+        "description": "Document your work and share it easily with customers",
         "benefits": [
-          "Easily share documentation with customers",
-          "Instant access to original specs",
-          "Full service history",
-          "Take control of service delivery",
-          "Streamlined warranty claims"
+          "Add photos and notes quickly",
+          "Always access to manuals and specifications",
+          "Keep service and warranty organized",
+          "Invoice faster and clearer",
+          "Build trust with customers"
         ]
       },
       {
@@ -244,7 +244,7 @@
     "product": {
       "title": "Product",
       "overview": "Overview",
-      "onepager": "One-pager"
+      "onepager": "Flyer"
     },
     "legal": {
       "title": "Legal",

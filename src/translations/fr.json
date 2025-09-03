@@ -1,28 +1,28 @@
 {
   "summary": {
-    "title": "Résumé du Produit",
+    "title": "Résumé",
     "overview": {
-      "title": "Aperçu du Produit",
-      "description": "<i class='brand'>Wazzat?</i> simplifie le service.",
+      "title": "Aperçu",
+      "description": "Wazzat rend votre travail plus facile et plus rapide.",
       "what": {
         "title": "Qu'est-ce que Wazzat?",
-        "description": "Connectez chaque produit à son identité numérique en toute simplicité. Wazzat simplifie la gestion des actifs, la documentation et le service après-vente—les informations sont instantanément accessibles pour les fabricants, les entrepreneurs et les équipes de service. Plus de manuels ou d'historiques perdus : il suffit de scanner."
+        "description": "Avec Wazzat, vous donnez à chaque projet ou produit un passeport numérique. Documentez ce que vous installez avec des photos et des notes, sauvegardez les documents et trouvez tout rapidement. Moins d'administration, plus de temps pour votre métier."
       }
     },
     "howItWorks": {
       "title": "Comment Ça Marche",
       "steps": {
         "tag": {
-          "title": "1. Étiquetez",
-          "description": "Utilisez des codes QR (visibles) ou NFC/RFID (invisibles) pour étiqueter vos produits pour une identification facile."
+          "title": "1. Collez",
+          "description": "Collez un code QR ou une étiquette NFC invisible sur votre produit pour le reconnaître facilement."
         },
         "enrich": {
-          "title": "2. Enrichissez",
-          "description": "Ajoutez des photos, des notes, des documents et des métadonnées internes pour créer un historique de service complet."
+          "title": "2. Cliquez",
+          "description": "Prenez une photo, ajoutez des notes et sauvegardez les documents importants – ainsi vous avez tout à portée de main."
         },
         "share": {
-          "title": "3. Partagez",
-          "description": "Les clients et les techniciens peuvent scanner un code QR ou toucher une étiquette NFC pour accéder aux informations ou demander un service."
+          "title": "3. Oubliez jusqu'à ce que vous en ayez besoin",
+          "description": "Scannez le code ou touchez l'étiquette quand vous avez besoin d'infos ou de service, rapidement et sans tracas."
         }
       }
     },
@@ -30,70 +30,70 @@
       "title": "Fonctionnalités Clés",
       "items": [
         {
-          "title": "Accès Instantané",
-          "description": "Scannez un code QR pour obtenir tous les détails et la documentation du produit instantanément."
+          "title": "Gagnez du Temps",
+          "description": "Avec un scan vous avez immédiatement toutes les infos, plus de recherche interminable."
         },
         {
-          "title": "Plus de Perte d'Information",
-          "description": "Conservez les documents et l'historique des services en un seul endroit, toujours accessible."
+          "title": "Toujours un Aperçu",
+          "description": "Gardez photos, documents et notes bien organisés ensemble, prêts pour plus tard."
         },
         {
-          "title": "Archivage 10+ Ans",
-          "description": "Conservez les enregistrements disponibles à long terme pour la conformité et la tranquillité d'esprit."
+          "title": "Stockage à Long Terme",
+          "description": "Votre travail et vos données de service restent conservés pendant des années, pratique pour la garantie et l'administration."
         },
         {
-          "title": "Traitement Rapide des Services",
-          "description": "Les clients peuvent soumettre des demandes en un seul scan, simplifiant le processus."
+          "title": "Service Facile",
+          "description": "Les clients peuvent facilement faire une demande de service avec un scan."
         },
         {
-          "title": "Sécurisé & Fiable",
-          "description": "Vos données sont stockées en toute sécurité et accessibles uniquement aux bonnes personnes."
+          "title": "Sûr & Fiable",
+          "description": "Vos données sont sûres et accessibles uniquement à qui vous voulez."
         },
         {
-          "title": "Fonctionne sur Tout Téléphone Moderne",
-          "description": "Pas besoin d'application, il suffit de scanner avec n'importe quel appareil photo de smartphone."
+          "title": "Fonctionne sur Tous les Téléphones",
+          "description": "Pas besoin d'application, il suffit de scanner avec votre smartphone."
         }
       ]
     },
     "useCases": {
       "title": "Cas d'Utilisation",
       "manufacturers": {
-        "title": "Fabricants",
-        "description": "Passeports numériques pour vos produits",
+        "title": "Artisans",
+        "description": "Passeports numériques pour votre travail",
         "benefits": [
-          "Partagez la documentation avec les clients",
-          "Photos d'installation",
-          "Accès instantané aux spécifications d'origine",
-          "Historique complet des services",
-          "Réclamations de garantie simplifiées"
+          "Partagez facilement manuels et photos avec les clients",
+          "Documentez votre travail avec photos et notes",
+          "Accès permanent aux spécifications d'origine",
+          "Gardez service et garantie organisés",
+          "Rendez la facturation plus rapide et simple"
         ]
       },
       "contractors": {
         "title": "Entrepreneurs",
-        "description": "Simplifiez le support",
+        "description": "Travaillez plus intelligemment ensemble",
         "benefits": [
-          "Documentez correctement les installations",
-          "Fournissez un accès facile aux manuels",
-          "Suivez l'historique des services",
-          "Réduisez les appels de support",
-          "Renforcez la fidélité des clients"
+          "Documentez les projets rapidement et clairement",
+          "Partagez facilement manuels et accords",
+          "Gardez un aperçu du service et de la maintenance",
+          "Moins de questions et malentendus avec les clients",
+          "Construisez la confiance avec une communication claire"
         ]
       },
       "serviceTeams": {
         "title": "Équipes de Service",
-        "description": "Support professionnel",
+        "description": "Service rapide et clair",
         "benefits": [
-          "Mieux préparez les interventions",
-          "Réduisez le temps de diagnostic",
-          "Accédez à l'historique complet des services",
-          "Améliorez la satisfaction client",
-          "Permettez la maintenance proactive"
+          "Préparez bien votre visite avec toutes les infos à portée de main",
+          "Moins de temps de recherche, résolution plus rapide",
+          "Historique complet des services toujours disponible",
+          "Clients satisfaits grâce à un service rapide et clair",
+          "Prévenez les problèmes inattendus avec une maintenance proactive"
         ]
       }
     },
     "footer": {
-      "visit": "Pour plus d'informations, visitez",
-      "contact": "ou contactez-nous à",
+      "visit": "En savoir plus ? Visitez",
+      "contact": "ou contactez-nous via",
       "copyright": "© 2025 Wazzat. Tous droits réservés."
     }
   },

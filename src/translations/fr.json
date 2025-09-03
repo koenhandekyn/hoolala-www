@@ -107,49 +107,49 @@
     "euBadge": {
       "text": "Prêt pour le Passeport Numérique de Produit UE",
       "title": "Passeport Numérique de Produit UE",
-      "description": "Le Passeport Numérique de Produit UE est un système numérique qui stocke et partage les informations sur les produits tout au long de la chaîne de valeur, rendant les données accessibles aux consommateurs et aux entreprises pour promouvoir la durabilité et les pratiques d'économie circulaire."
+      "description": "Le Passeport Numérique de Produit UE stocke et partage les infos produits facilement, pour que vous et vos clients sachiez toujours ce qui se passe – pratique pour durabilité et aperçu."
     },
-    "title": "Passeports numériques intelligents",
-    "description": "Connectez facilement chaque produit ou projet à un passeport numérique. Wazzat simplifie le suivi des actifs, la documentation et le service tout au long du cycle de vie — rendant les informations critiques instantanément accessibles pour les fabricants, les entrepreneurs et les équipes de service. Les étiquettes peuvent être visibles (QR) ou invisibles (NFC/RFID), permettant un accès transparent avec n'importe quel téléphone (aucune application requise). Il suffit de scanner et c'est parti — plus de manuels ou d'historique de service perdus.",
+    "title": "La salle de bain de Sophie. La lucarne de Luc. Wazzat s'en souvient pour vous.",
+    "description": "Documentez votre travail rapidement avec photo et notes, collez un QR ou NFC, et retrouvez tout facilement quand vous en avez besoin. Pas de tracas, pas de recherche. Gardez du temps pour ce qui compte vraiment.",
     "cta": {
-      "createAccount": "Créer un compte gratuit !",
-      "howItWorks": "Comment ça marche"
+      "createAccount": "Essayez Wazzat gratuitement",
+      "howItWorks": "Voir comment ça marche"
     }
   },
   "features": {
     "title": "Fonctionnalités",
     "items": [
       {
-        "title": "Identité Produit Intelligente",
-        "description": "Transformez les produits en actifs intelligents avec un accès instantané - il suffit de scanner et c'est parti, pas besoin d'application."
+        "title": "Rapide et Simple",
+        "description": "Documentez votre travail avec un scan, sans tracas ni apps."
       },
       {
-        "title": "Historique Complet du Produit",
-        "description": "Suivez et accédez à l'historique complet du produit - des manuels aux dossiers de service."
+        "title": "Toujours Tout à Portée de Main",
+        "description": "Photos, documents et notes bien organisés, prêts à partager."
       },
       {
-        "title": "Service & Durabilité Optimisés",
-        "description": "Permettez un service efficace et des pratiques durables avec des données produit complètes."
+        "title": "Professionnel et Fiable",
+        "description": "Impressionnez avec une administration claire et un service rapide."
       }
     ],
     "moreInfo": "Plus d'infos"
   },
   "howItWorks": {
     "title": "Comment Ça Marche",
-    "subtitle": "Trois Étapes Simples pour Optimiser Votre Processus",
-    "description": "Wazzat? rend le suivi et la documentation sans effort avec un flux de travail optimisé que tout le monde peut suivre.",
+    "subtitle": "Trois étapes simples pour faciliter votre travail",
+    "description": "Avec Wazzat, documentez votre travail rapidement et clairement, pour le retrouver et le partager facilement plus tard.",
     "steps": {
       "tag": {
-        "title": "Étiquetez",
-        "description": "Utilisez des codes QR (visibles) ou NFC/RFID (invisibles) pour donner à votre produit une identité numérique pendant la production ou l'installation."
+        "title": "Collez",
+        "description": "Collez un QR ou NFC sur votre produit ou projet."
       },
       "link": {
-        "title": "Liez",
-        "description": "Lieez l'étiquette à un produit ou projet (prédéfini) et à un emplacement. Les produits et projets peuvent être importés depuis votre ERP, CRM ou backoffice existant."
+        "title": "Cliquez",
+        "description": "Photo, notes et tout sauvegardé ensemble."
       },
       "track": {
-        "title": "Suivez",
-        "description": "Ajoutez des photos, des notes, des documents, etc. pour créer un passeport numérique complet avec un historique de service complet."
+        "title": "Oubliez jusqu'à ce que vous en ayez besoin",
+        "description": "Scannez ou touchez quand vous avez besoin d'infos ou de service."
       }
     },
     "tracking": {

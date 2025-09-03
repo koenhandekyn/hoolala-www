@@ -65,7 +65,7 @@ const UseCases: React.FC = () => {
           </h2>
 
           <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
-            <i>Wazzat?</i> {t('useCases.description')}
+            {t('useCases.description')}
           </p>
         </div>
 

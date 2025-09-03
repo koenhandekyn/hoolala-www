@@ -201,6 +201,30 @@
       }
     ]
   },
+  "testimonials": {
+    "title": "What Our Customers Say",
+    "subtitle": "Discover how Wazzat makes work easier for craftsmen, contractors and service teams",
+    "items": [
+    {
+      "quote": "I used to waste hours looking for invoices. Now everything is neatly organized in Wazzat.",
+      "name": "John",
+      "role": "Carpenter",
+      "location": "Ghent"
+    },
+    {
+      "quote": "As customer service, I now always get exact information. No more guessing, just the right details directly at hand.",
+      "name": "Sarah",
+      "role": "Customer Service",
+      "location": "Antwerp"
+    },
+    {
+      "quote": "With Wazzat I always have all the information at hand, which makes my work much more efficient.",
+      "name": "James",
+      "role": "Installer",
+      "location": "Brussels"
+    }
+  ]
+},
   "footer": {
     "product": {
       "title": "Product",

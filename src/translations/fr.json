@@ -201,6 +201,30 @@
       }
     ]
   },
+  "testimonials": {
+    "title": "Ce que disent nos clients",
+    "subtitle": "Découvrez comment Wazzat facilite le travail des artisans, entrepreneurs et équipes de service",
+    "items": [
+    {
+      "quote": "Je perdais des heures à chercher des factures. Maintenant tout est bien organisé dans Wazzat.",
+      "name": "Jean",
+      "role": "Menuisier",
+      "location": "Gand"
+    },
+    {
+      "quote": "En tant que service client, j'obtiens maintenant toujours des informations exactes. Plus de devinettes, juste les bons détails directement à portée de main.",
+      "name": "Sophie",
+      "role": "Service Client",
+      "location": "Anvers"
+    },
+    {
+      "quote": "Avec Wazzat j'ai toujours toutes les informations à portée de main, ce qui rend mon travail beaucoup plus efficace.",
+      "name": "Jérôme",
+      "role": "Installateur",
+      "location": "Bruxelles"
+    }
+  ]
+},
   "footer": {
     "product": {
       "title": "Produit",

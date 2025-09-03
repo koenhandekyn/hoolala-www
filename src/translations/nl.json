@@ -3,26 +3,26 @@
     "title": "Product Samenvatting",
     "overview": {
       "title": "Product Overzicht",
-      "description": "<i class='brand'>Wazzat?</i> maakt service eenvoudig.",
+      "description": "<i class='brand'>Wazzat?</i> maakt je werk makkelijker.",
       "what": {
         "title": "Wat is Wazzat?",
-        "description": "Verbind elk product eenvoudig met zijn digitale identiteit. Wazzat vereenvoudigt asset management, documentatie en after-sales service—informatie is direct toegankelijk voor fabrikanten, aannemers en serviceteams. Geen verloren handleidingen of servicegeschiedenis meer: gewoon scannen."
+        "description": "Verbind elk product snel met een digitaal paspoort. Wazzat helpt je werk vastleggen, documenten bewaren en service regelen – alles overzichtelijk en makkelijk terug te vinden. Geen gedoe meer met zoekgeraakte handleidingen of onduidelijke afspraken."
       }
     },
     "howItWorks": {
       "title": "Hoe Het Werkt",
       "steps": {
         "tag": {
-          "title": "1. Label",
-          "description": "Gebruik QR-codes (zichtbaar) of NFC/RFID (onzichtbaar) om uw producten te labelen voor eenvoudige identificatie."
+          "title": "1. Plak",
+          "description": "Plak een QR-code of onzichtbare NFC-tag op je product, zodat je het makkelijk herkent."
         },
         "enrich": {
-          "title": "2. Verrijk",
-          "description": "Voeg foto's, notities, documenten en interne metadata toe om een complete servicegeschiedenis te creëren."
+          "title": "2. Klik",
+          "description": "Maak een foto, voeg notities toe en bewaar belangrijke documenten – zo heb je alles bij de hand."
         },
         "share": {
-          "title": "3. Deel",
-          "description": "Klanten en technici kunnen een QR-code scannen of een NFC-label aanraken om informatie te bekijken of service aan te vragen."
+          "title": "3. Vergeet tot je het nodig hebt",
+          "description": "Scan de code of tik op de tag als je info of service nodig hebt, snel en zonder gedoe."
         }
       }
     },
@@ -30,69 +30,69 @@
       "title": "Belangrijkste Functies",
       "items": [
         {
-          "title": "Directe Toegang",
-          "description": "Scan een QR-code om direct alle productdetails en documentatie te bekijken."
+          "title": "Bespaar Tijd",
+          "description": "Met één scan heb je meteen alle info, geen eindeloos zoeken meer."
         },
         {
-          "title": "Geen Verloren Informatie Meer",
-          "description": "Bewaar documenten en servicegeschiedenis op één plek, altijd toegankelijk."
+          "title": "Altijd Overzicht",
+          "description": "Bewaar foto’s, documenten en notities netjes bij elkaar, klaar voor later."
         },
         {
-          "title": "10+ Jaar Archief",
-          "description": "Houd records langdurig beschikbaar voor compliance en gemoedsrust."
+          "title": "Langdurige Opslag",
+          "description": "Je werk en servicegegevens blijven jaren bewaard, handig voor garantie en administratie."
         },
         {
-          "title": "Snelle Serviceverwerking",
-          "description": "Klanten kunnen serviceverzoeken indienen met één scan, wat het proces vereenvoudigt."
+          "title": "Eenvoudige Service",
+          "description": "Klanten kunnen makkelijk een serviceverzoek doen met één scan."
         },
         {
-          "title": "Veilig & Betrouwbaar",
-          "description": "Uw gegevens worden veilig opgeslagen en zijn alleen toegankelijk voor de juiste personen."
+          "title": "Veilig & Vertrouwd",
+          "description": "Je gegevens zijn veilig en alleen toegankelijk voor wie jij wilt."
         },
         {
-          "title": "Werkt op Elke Moderne Telefoon",
-          "description": "Geen app nodig, gewoon scannen met elke smartphonecamera."
+          "title": "Werkt op Elke Telefoon",
+          "description": "Geen app nodig, gewoon scannen met je smartphone."
         }
       ]
     },
     "useCases": {
       "title": "Gebruikssituaties",
       "manufacturers": {
-        "title": "Fabrikanten",
-        "description": "Digitale paspoorten voor uw producten",
+        "title": "Vakmannen",
+        "description": "Digitale paspoorten voor jouw werk",
         "benefits": [
-          "Deel documentatie met klanten",
-          "Installatiefoto's",
-          "Directe toegang tot originele specificaties",
-          "Complete servicegeschiedenis",
-          "Vereenvoudigde garantieclaims"
+          "Deel makkelijk handleidingen en foto’s met klanten",
+          "Leg je werk vast met foto’s en notities",
+          "Altijd toegang tot originele specificaties",
+          "Hou service en garantie overzichtelijk",
+          "Maak factureren sneller en eenvoudiger"
         ]
       },
       "contractors": {
         "title": "Aannemers",
-        "description": "Vereenvoudig ondersteuning",
+        "description": "Werk slimmer samen",
         "benefits": [
-          "Documenteer installaties correct",
-          "Bied eenvoudige toegang tot handleidingen",
-          "Houd servicegeschiedenis bij",
-          "Verminder supportgesprekken",
-          "Versterk klantloyaliteit"
+          "Documenteer projecten snel en duidelijk",
+          "Deel handleidingen en afspraken makkelijk",
+          "Hou overzicht van service en onderhoud",
+          "Minder vragen en misverstanden met klanten",
+          "Bouw vertrouwen op met duidelijke communicatie"
         ]
       },
       "serviceTeams": {
         "title": "Serviceteams",
-        "description": "Professionele ondersteuning",
+        "description": "Snelle en duidelijke service",
         "benefits": [
-          "Bereid servicebezoeken beter voor",
-          "Verminder diagnosetijd",
-          "Toegang tot complete servicegeschiedenis",
-          "Verbeter klanttevredenheid",
-          "Maak proactief onderhoud mogelijk"
+          "Bereid je bezoek goed voor met alle info bij de hand",
+          "Minder zoektijd, sneller oplossen",
+          "Altijd volledige servicegeschiedenis beschikbaar",
+          "Tevreden klanten door snelle en duidelijke service",
+          "Voorkom onverwachte problemen met proactief onderhoud"
         ]
       }
     },
     "footer": {
-      "visit": "Voor meer informatie, bezoek",
+      "visit": "Meer weten? Bezoek",
       "contact": "of neem contact op via",
       "copyright": "© 2025 Wazzat. Alle rechten voorbehouden."
     }
@@ -108,100 +108,126 @@
     "euBadge": {
       "text": "Klaar voor EU Digitaal Productpaspoort",
       "title": "EU Digitaal Productpaspoort",
-      "description": "Het EU Digitaal Productpaspoort is een digitaal systeem dat productinformatie opslaat en deelt gedurende de hele waardeketen, waardoor gegevens toegankelijk zijn voor consumenten en bedrijven om duurzaamheid en circulaire economiepraktijken te bevorderen."
+      "description": "Het EU Digitaal Productpaspoort slaat productinfo op en deelt die makkelijk, zodat jij en je klanten altijd weten wat er speelt – handig voor duurzaamheid en overzicht."
     },
-    "title": "Slimme digitale paspoorten",
-    "description": "Verbind elk product of project eenvoudig met een digitaal paspoort. Wazzat vereenvoudigt asset tracking, documentatie en service gedurende de levenscyclus — waardoor kritieke informatie direct toegankelijk is voor fabrikanten, aannemers en serviceteams. Labels kunnen zichtbaar (QR) of onzichtbaar (NFC/RFID) zijn, waardoor naadloze toegang mogelijk is met elke telefoon (geen app nodig). Gewoon scannen en klaar — geen verloren handleidingen of servicegeschiedenis meer.",
+    "title": "Sophie’s badkamer. Luc’s dakraam. Wazzat onthoudt het voor jou.",
+    "description": "Leg je werk snel vast met een foto en notities, plak een QR-code of NFC-tag, en vind alles makkelijk terug wanneer je het nodig hebt. Geen gedoe, geen zoekwerk. Zo houd je tijd over voor wat echt telt.",
     "cta": {
-      "createAccount": "Maak een gratis account aan!",
-      "howItWorks": "Hoe het werkt"
+      "createAccount": "Probeer Wazzat gratis",
+      "howItWorks": "Zie hoe het werkt"
     }
   },
   "features": {
     "title": "Functies",
     "items": [
       {
-        "title": "Slimme Productidentiteit",
-        "description": "Transformeer producten in slimme assets met directe toegang - gewoon scannen en klaar, geen app nodig."
+        "title": "Snel en Eenvoudig",
+        "description": "Leg je werk vast met één scan, zonder gedoe of apps."
       },
       {
-        "title": "Complete Productgeschiedenis",
-        "description": "Volg en krijg toegang tot de complete productgeschiedenis - van handleidingen tot servicedossiers."
+        "title": "Altijd Alles Bij De Hand",
+        "description": "Foto’s, documenten en notities netjes bij elkaar, klaar om te delen."
       },
       {
-        "title": "Geoptimaliseerde Service & Duurzaamheid",
-        "description": "Maak efficiënte service en duurzame praktijken mogelijk met complete productgegevens."
+        "title": "Professioneel en Betrouwbaar",
+        "description": "Maak indruk met overzichtelijke administratie en snelle service."
       }
     ],
     "moreInfo": "Meer info"
   },
   "howItWorks": {
     "title": "Hoe Het Werkt",
-    "subtitle": "Drie Eenvoudige Stappen om Uw Proces te Optimaliseren",
-    "description": "Wazzat? maakt tracking en documentatie moeiteloos met een geoptimaliseerde workflow die iedereen kan volgen.",
+    "subtitle": "Drie simpele stappen om je werk makkelijker te maken",
+    "description": "Met Wazzat leg je je werk snel en duidelijk vast, zodat je het later makkelijk terugvindt en deelt.",
     "steps": {
       "tag": {
-        "title": "Label",
-        "description": "Gebruik QR-codes (zichtbaar) of NFC/RFID (onzichtbaar) om uw product een digitale identiteit te geven tijdens productie of installatie."
+        "title": "Plak",
+        "description": "Plak een QR-code of onzichtbare NFC-tag op je product of project."
       },
       "link": {
-        "title": "Koppel",
-        "description": "Koppel het label aan een product of project (vooraf gedefinieerd) en locatie. Producten en projecten kunnen worden geïmporteerd vanuit uw bestaande ERP, CRM of backoffice."
+        "title": "Klik",
+        "description": "Maak een foto, voeg notities toe en bewaar alles bij elkaar."
       },
       "track": {
-        "title": "Volg",
-        "description": "Voeg foto's, notities, documenten, etc. toe om een compleet digitaal paspoort te creëren met een complete servicegeschiedenis."
+        "title": "Vergeet tot je het nodig hebt",
+        "description": "Scan de code of tik op de tag als je info nodig hebt of service wilt aanvragen."
       }
     },
     "tracking": {
       "qr": {
         "title": "QR-code Tracking",
-        "description": "Scan QR-codes op apparatuur zoals boilers voor directe toegang tot servicegeschiedenis, documentatie en ondersteuningsopties. Geen app downloaden nodig."
+        "description": "Scan een QR-code met je telefoon voor snelle toegang tot alle info, zonder app."
       },
       "nfc": {
         "title": "NFC/RFID Tracking",
-        "description": "Raak eenvoudig uw telefoon aan op apparatuur met onzichtbare NFC/RFID-labels voor directe toegang tot servicegeschiedenis, documentatie en ondersteuningsopties."
+        "description": "Tik met je telefoon op een onzichtbare NFC-tag voor directe toegang tot gegevens."
       }
     }
   },
   "useCases": {
-    "title": "Perfect voor Elke Industrie & Behoefte",
-    "description": "Wazzat? past zich aan aan verschillende industrieën en gebruikssituaties, en biedt op maat gemaakte oplossingen voor verschillende tracking- en servicedoeleinden.",
+    "title": "Perfect voor Vakmannen, Aannemers en Serviceteams",
+    "description": "Wazzat? past zich aan jouw werk aan, met eenvoudige oplossingen voor vastleggen, delen en service.",
     "items": [
       {
-        "title": "Fabrikanten",
-        "description": "Digitale paspoorten voor uw producten",
+        "title": "Vakmannen",
+        "description": "Leg je werk vast en deel het makkelijk met klanten",
         "benefits": [
-          "Deel eenvoudig documentatie met klanten",
-          "Directe toegang tot originele specificaties",
-          "Complete servicegeschiedenis",
-          "Neem controle over servicelevering",
-          "Vereenvoudigde garantieclaims"
+          "Foto’s en notities snel toevoegen",
+          "Altijd toegang tot handleidingen en specificaties",
+          "Hou service en garantie overzichtelijk",
+          "Factureer sneller en duidelijker",
+          "Bouw vertrouwen met klanten op"
         ]
       },
       {
         "title": "Aannemers",
-        "description": "Versterk loyaliteit",
+        "description": "Werk overzichtelijk en versterk klantrelaties",
         "benefits": [
-          "Documenteer projecten correct met foto's",
-          "Houd servicegeschiedenis bij voor elk project",
-          "Maak supportgesprekken effectiever met directe toegang tot de juiste informatie",
-          "Verbeter klanttevredenheid en versterk loyaliteit"
+          "Documenteer projecten met foto’s en notities",
+          "Deel makkelijk informatie met klanten en collega’s",
+          "Hou service en onderhoud bij",
+          "Minder vragen door duidelijke communicatie",
+          "Versterk loyaliteit met transparantie"
         ]
       },
       {
         "title": "Serviceteams",
-        "description": "Verbeter klanttevredenheid",
+        "description": "Snelle service met alle info bij de hand",
         "benefits": [
-          "Bereid servicebezoeken beter voor en verminder diagnosetijd met directe toegang tot handleidingen en specificaties",
-          "Verbeter teamcollaboratie met gedeelde gegevens en toegang tot complete servicegeschiedenis",
-          "Verbeter klanttevredenheid en versterk loyaliteit",
-          "Maak proactief onderhoud mogelijk"
+          "Bereid servicebezoeken goed voor",
+          "Minder zoektijd, sneller oplossen",
+          "Altijd volledige servicegeschiedenis beschikbaar",
+          "Tevreden klanten door snelle service",
+          "Voorkom problemen met proactief onderhoud"
         ]
-      }
-    ]
-  },
-  "footer": {
+             }
+     ]
+   },
+   "testimonials": {
+     "title": "Wat onze klanten zeggen",
+     "subtitle": "Ontdek hoe Wazzat het werk van vakmannen, aannemers en serviceteams eenvoudiger maakt",
+     "items": [
+       {
+         "quote": "Ik verloor vroeger uren met informatie terugzoeken. Nu staat alles netjes in Wazzat.",
+         "name": "Koen",
+         "role": "Schrijnwerker",
+         "location": "Gent"
+       },
+               {
+          "quote": "Ik krijg nu altijd exacte informatie. Geen giswerk meer, gewoon de juiste details direct bij de hand.",
+          "name": "Sofie",
+          "role": "Klantenservice Schrijnwerkerij",
+          "location": "Antwerpen"
+        },
+       {
+         "quote": "Met Wazzat heb ik altijd alle informatie bij de hand, dat maakt mijn werk veel efficiënter.",
+         "name": "Jeroen",
+         "role": "Installateur",
+         "location": "Brussel"
+       }
+     ]
+   },
+   "footer": {
     "product": {
       "title": "Product",
       "overview": "Overzicht",

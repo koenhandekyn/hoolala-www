@@ -3,7 +3,7 @@
     "title": "Samenvatting",
     "overview": {
       "title": "Overzicht",
-      "description": "Sophie's badkamer. Luc's dakraam. Wazzat onthoudt het voor jou.",
+      "description": "Sophie's badkamer. Luc's dakraam. Wazzat? onthoudt het voor jou.",
       "what": {
         "title": "Wat is Wazzat?",
         "description": "Met Wazzat geef je elk project of product een digitaal paspoort. Documenteer wat je installeert met foto's en notities, bewaar documenten en vind alles snel terug. Minder administratie, meer tijd voor je vak."
@@ -56,7 +56,7 @@
       ]
     },
     "useCases": {
-      "title": "Gebruikssituaties",
+      "title": "Waar?",
       "manufacturers": {
         "title": "Vakmannen",
         "description": "Digitale paspoorten voor jouw werk",
@@ -97,9 +97,9 @@
     }
   },
   "header": {
-    "features": "Functies",
-    "howItWorks": "Hoe Het Werkt",
-    "useCases": "Gebruikssituaties",
+    "features": "Wat?",
+    "howItWorks": "Hoe?",
+    "useCases": "Waar?",
     "pricing": "Prijzen",
     "login": "Inloggen"
   },
@@ -109,11 +109,26 @@
       "title": "EU Digitaal Productpaspoort",
       "description": "Het EU Digitaal Productpaspoort slaat productinfo op en deelt die makkelijk, zodat jij en je klanten altijd weten wat er speelt – handig voor duurzaamheid en overzicht."
     },
-    "title": "Sophie’s badkamer. Luc’s dakraam. Wazzat onthoudt het voor jou.",
+    "title": "Sophie's badkamer. Luc's dakraam. Wazzat? onthoudt het voor jou.",
     "description": "Leg je werk snel vast met een foto en notities, plak een QR-code of NFC-tag, en vind alles makkelijk terug wanneer je het nodig hebt. Geen gedoe, geen zoekwerk. Zo houd je tijd over voor wat echt telt.",
     "cta": {
-      "createAccount": "Probeer Wazzat gratis",
+      "createAccount": "Probeer het gratis",
       "howItWorks": "Zie hoe het werkt"
+    }
+  },
+  "userStories": {
+    "title": "Herken je dit?",
+    "billingStress": {
+      "title": "Donderdagavond. Je bent aan het factureren voor een project van drie weken geleden.",
+      "description": "Welke schroeven gebruikte ik? Wat voor isolatie? Welk raam werd geïnstalleerd? Heb ik dat extra paneel toegevoegd dat ik met de klant besprak? Met Wazzat staat alles visueel vastgelegd, gesorteerd per klant en direct vindbaar. Geen paniekaanvallen meer, geen verspilde tijd."
+    },
+    "windowDamage": {
+      "title": "Discussie over projectafwerking",
+      "description": "De klant belt over schade aan het raam. 'Hoe is dit geïnstalleerd?' Met Wazzat heb je direct alle details bij de hand – foto's, specificaties, afspraken. Geen discussie, gewoon feiten."
+    },
+    "serviceRequest": {
+      "title": "Service in één keer goed",
+      "description": "Het raam van de eindklant sluit niet goed en lekt water. Via de app wordt een serviceverzoek ingediend. De vakman komt met de juiste materialen – fittingen en rubbers – en het is in één keer opgelost."
     }
   },
   "features": {
@@ -135,7 +150,7 @@
     "moreInfo": "Meer info"
   },
   "howItWorks": {
-    "title": "Hoe Het Werkt",
+    "title": "Hoe?",
     "subtitle": "Drie simpele stappen om je werk makkelijker te maken",
     "description": "Met Wazzat leg je je werk snel en duidelijk vast, zodat je het later makkelijk terugvindt en deelt.",
     "steps": {

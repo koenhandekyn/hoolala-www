@@ -40,10 +40,6 @@ const HowItWorks: React.FC = () => {
     <section id="how-it-works" className="py-20 overflow-hidden bg-white">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center mb-16 animate-fade-in">
-          <div className="inline-flex items-center px-3 py-1 rounded-full bg-primary/10 text-primary mb-6">
-            <span className="text-xs font-medium">{t('howItWorks.title')}</span>
-          </div>
-
           <h2 className="mb-6">
             {t('howItWorks.subtitle')}
           </h2>

@@ -116,6 +116,21 @@
       "howItWorks": "Voir comment ça marche"
     }
   },
+  "userStories": {
+    "title": "Ça vous dit quelque chose ?",
+    "billingStress": {
+      "title": "Jeudi soir. Vous facturez pour un projet d'il y a trois semaines.",
+      "description": "Quelles vis ai-je utilisées ? Quel type d'isolation ? Quelle fenêtre a été installée ? Ai-je ajouté ce panneau supplémentaire dont j'ai discuté avec le client ? Avec Wazzat, tout est enregistré visuellement, trié par client et instantanément trouvable. Plus de crises de panique, plus de temps perdu."
+    },
+    "windowDamage": {
+      "title": "Discussion sur la livraison du projet",
+      "description": "Le client appelle pour des dégâts à la fenêtre. 'Comment c'était installé ?' Avec Wazzat vous avez tous les détails à portée de main immédiatement – photos, spécifications, accords. Pas de discussion, juste des faits."
+    },
+    "serviceRequest": {
+      "title": "Service bien fait du premier coup",
+      "description": "La fenêtre du client final ne se ferme pas bien et fuit. Une demande de service est déposée via l'app. Le professionnel envoie quelqu'un avec les bons matériaux – raccords et joints – et c'est réparé en une fois."
+    }
+  },
   "features": {
     "title": "Fonctionnalités",
     "items": [

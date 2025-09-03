@@ -117,6 +117,21 @@
       "howItWorks": "How It Works"
     }
   },
+  "userStories": {
+    "title": "Sound familiar?",
+    "billingStress": {
+      "title": "Thursday evening. You're billing for a project from three weeks ago.",
+      "description": "Which screws did I use? What type of insulation? Which window was installed? Did I add that extra panel I discussed with the client? With Wazzat, all of that's logged visually, sorted per client and instantly findable. No more panic attacks, no more time wasted."
+    },
+    "windowDamage": {
+      "title": "Discussion about project delivery",
+      "description": "The client calls about damage to the window. 'How was this installed?' With Wazzat you have all the details at hand immediately – photos, specifications, agreements. No discussion, just facts."
+    },
+    "serviceRequest": {
+      "title": "Service done right the first time",
+      "description": "The end customer's window isn't closing properly and leaks water. A service request is filed through the app. The professional sends someone with the right materials – fittings and rubbers – and it's fixed in one go."
+    }
+  },
   "features": {
     "title": "Features",
     "items": [
